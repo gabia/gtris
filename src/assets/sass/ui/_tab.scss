@@ -1,0 +1,21 @@
+/* Tab */
+.gt-tab {
+	.gt-tab-nav {
+		.gt-nav-item {
+			float: left;
+			padding: 10px 20px;
+			background-color: $gray-eee;
+
+			&:hover {
+				transition-duration: .3s;
+				background-color: $gray-ddd;
+			}
+
+			&.gt-active {
+				background-color: $primary;
+				color: $white;
+			}
+		}
+		@include clearfix();
+	}
+}

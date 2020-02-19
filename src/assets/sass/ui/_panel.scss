@@ -1,0 +1,28 @@
+/* Panel */
+.panel {
+	margin: 0 8px 8px;
+	border: 1px solid $gray-ccc;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+
+	.panel-header {
+		position: relative;
+		padding: 10px 15px;
+		color: #333;
+		background-color: $gray-eee;
+		overflow: hidden;
+	}
+	.panel-body {
+		padding: 15px;
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		background: #fff;
+	}
+	.panel-footer {
+		padding: 10px 15px;
+		background-color: $gray-eee;
+		border-bottom-right-radius: 3px;
+		border-bottom-left-radius: 3px;
+		@include clearfix();
+	}
+}

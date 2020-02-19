@@ -1,0 +1,47 @@
+/* Dropdown */
+.gt-dropdown {
+	position: relative;
+	display: inline-block;
+
+	.gt-dd-menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1000;
+		display: none;
+		float: left;
+		min-width: 160px;
+		padding: 5px 0;
+		margin: 2px 0 0;
+		list-style: none;
+		text-align: left;
+		background-color: $white;
+		border: 1px solid $gray-ccc;
+		box-shadow: 4px 4px 10px $gray-ccc;
+
+		.gt-dd-item {
+			display: block;
+			padding: 4px 20px;
+			clear: both;
+			font-weight: normal;
+			white-space: nowrap;
+
+			&:hover, &:focus {
+				background-color: $gray-eee;
+			}
+		}
+
+		.gt-dd-divider {
+			height: 1px;
+			margin: 9px 0;
+			overflow: hidden;
+			background-color: $gray-eee;
+		}
+	}
+
+	&.gt-active .gt-dd-menu {
+		display: block;
+	}
+
+	@include clearfix();
+}

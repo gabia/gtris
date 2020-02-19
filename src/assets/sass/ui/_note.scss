@@ -1,0 +1,26 @@
+/* note */
+.gt-note {
+	padding: 10px;
+	border-left: 10px solid $gray;
+	background: lighten($gray, 40%);;
+
+	&.gt-note-primary {
+		border-left: 10px solid $blue;
+		background: lighten($blue, 40%);
+	}
+
+	&.gt-note-success {
+		border-left: 10px solid $success;
+		background: lighten($success, 40%);
+	}
+
+	&.gt-note-info {
+		border-left: 10px solid $info;
+		background: lighten($info, 40%);
+	}
+
+	&.gt-note-danger {
+		border-left: 10px solid $danger;
+		background: lighten($danger, 40%);
+	}
+}

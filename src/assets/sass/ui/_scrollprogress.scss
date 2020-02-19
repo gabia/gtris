@@ -1,0 +1,10 @@
+/* scrollprogress */
+.gt-scrollprogress {
+	position: fixed;
+	left: 0;
+	width: 0;
+	height: 5px;
+	background: $blue;
+	transition: width .4s ease-out;
+	transform: rotateZ(0deg);
+}

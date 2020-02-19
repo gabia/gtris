@@ -1,0 +1,67 @@
+/* Display */
+
+.gt-display-container { position: relative; }
+
+.gt-display-topleft {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.gt-display-topright {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.gt-display-bottomleft {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.gt-display-bottomright {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.gt-display-middle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.gt-display-left {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+}
+
+.gt-display-right {
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+}
+
+.gt-display-topmiddle {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+}
+
+.gt-display-bottommiddle {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+}

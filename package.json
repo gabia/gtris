@@ -1,10 +1,11 @@
 {
-  "name": "vue-gtris",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@gtris/vue",
+  "version": "0.1.2",
+  "private": false,
+  "main": "dist/gtris3.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name gtris3 src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -18,21 +19,9 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
   },
   "browserslist": [
     "> 1%",

@@ -1,0 +1,193 @@
+/* Tooltip */
+.gt-tooltip {
+	position: relative;
+  display: inline-block;
+  
+  .gt-arrow {
+    position: absolute;
+  }
+
+	.gt-tooltip-content, .gt-tt-content {
+		display: none;
+		position: absolute;
+		padding: 5px 25px;
+		min-width: 300px;
+		background: $gray;
+		color: $white;
+		text-align: center;
+		user-select: none;
+		cursor: default;
+		z-index: 1000;
+	}
+
+	&[data-placement="right"] {
+		.gt-triangle {
+			position: absolute;
+			@include triangle(left, 6px, 6px, $gray);
+		}
+	}
+
+	&[data-placement="left"] {
+		.gt-triangle {
+			position: absolute;
+			@include triangle(right, 6px, 6px, $gray);
+		}
+	}
+
+	&[data-placement="bottom"] {
+		.gt-triangle {
+			position: absolute;
+			@include triangle(top, 6px, 6px, $gray);
+		}
+	}
+
+	&[data-placement="top"] {
+		.gt-triangle {
+			position: absolute;
+			@include triangle(bottom, 6px, 6px, $gray);
+		}
+	}
+
+	.gt-triangle {
+		position: absolute;
+		@include triangle(bottom, 6px, 6px, $gray);
+	}
+
+	&.gt-tooltip-primary {
+		.gt-tt-content {
+			background: $primary;
+		}
+		&[data-placement="right"] {
+			.gt-triangle {
+				@include triangle(left, 6px, 6px, $primary);
+			}
+		}
+		&[data-placement="left"] {
+			.gt-triangle {
+				@include triangle(right, 6px, 6px, $primary);
+			}
+		}
+		&[data-placement="bottom"] {
+			.gt-triangle {
+				@include triangle(top, 6px, 6px, $primary);
+			}
+		}
+		&[data-placement="top"] {
+			.gt-triangle {
+				@include triangle(bottom, 6px, 6px, $primary);
+			}
+		}
+	}
+
+	&.gt-tooltip-success {
+		.gt-tt-content {
+			background: $success;
+		}
+		&[data-placement="right"] {
+			.gt-triangle {
+				@include triangle(left, 6px, 6px, $success);
+			}
+		}
+		&[data-placement="left"] {
+			.gt-triangle {
+				@include triangle(right, 6px, 6px, $success);
+			}
+		}
+		&[data-placement="bottom"] {
+			.gt-triangle {
+				@include triangle(top, 6px, 6px, $success);
+			}
+		}
+		&[data-placement="top"] {
+			.gt-triangle {
+				@include triangle(bottom, 6px, 6px, $success);
+			}
+		}
+	}
+
+	&.gt-tooltip-info {
+		.gt-tt-content {
+			background: $info;
+		}
+		&[data-placement="right"] {
+			.gt-triangle {
+				@include triangle(left, 6px, 6px, $info);
+			}
+		}
+		&[data-placement="left"] {
+			.gt-triangle {
+				@include triangle(right, 6px, 6px, $info);
+			}
+		}
+
+		&[data-placement="bottom"] {
+			.gt-triangle {
+				@include triangle(top, 6px, 6px, $info);
+			}
+		}
+
+		&[data-placement="top"] {
+			.gt-triangle {
+				@include triangle(bottom, 6px, 6px, $info);
+			}
+		}
+	}
+
+	&.gt-tooltip-warning {
+		.gt-tt-content {
+			background: $warning;
+		}
+		&[data-placement="right"] {
+			.gt-triangle {
+				@include triangle(left, 6px, 6px, $warning);
+			}
+		}
+
+		&[data-placement="left"] {
+			.gt-triangle {
+				@include triangle(right, 6px, 6px, $warning);
+			}
+		}
+
+		&[data-placement="bottom"] {
+			.gt-triangle {
+				@include triangle(top, 6px, 6px, $warning);
+			}
+		}
+
+		&[data-placement="top"] {
+			.gt-triangle {
+				@include triangle(bottom, 6px, 6px, $warning);
+			}
+		}
+	}
+
+	&.gt-tooltip-danger {
+		.gt-tt-content {
+			background: $danger;
+		}
+		&[data-placement="right"] {
+			.gt-triangle {
+				@include triangle(left, 6px, 6px, $danger);
+			}
+		}
+		&[data-placement="left"] {
+			.gt-triangle {
+				@include triangle(right, 6px, 6px, $danger);
+			}
+		}
+
+		&[data-placement="bottom"] {
+			.gt-triangle {
+				@include triangle(top, 6px, 6px, $danger);
+			}
+		}
+
+		&[data-placement="top"] {
+			.gt-triangle {
+				@include triangle(bottom, 6px, 6px, $danger);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,31 @@
+/* Collapse */
+.gt-collapse {
+	.gt-collapse-item {
+		.gt-collapse-header {
+			display: block;
+			position: relative;
+			cursor: pointer;
+			padding: 20px;
+			.gt-collapse-arrow {
+				position: absolute;
+				right: 20px;
+				transition-duration: .2s;
+			}
+		}
+		&.gt-active {
+			.gt-collapse-header {
+				background: $primary;
+				color: $white;
+				.gt-collapse-arrow {
+					transform: rotate(180deg);
+				}
+			}
+		}
+		.gt-collapse-content {
+			padding: 30px;
+			background: $white;
+			border: 1px solid $gray-ddd;
+			display: none;
+		}
+	}
+}
