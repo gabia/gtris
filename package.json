@@ -1,7 +1,6 @@
 {
-  "name": "@gtris/vue",
-  "version": "0.1.2",
-  "private": false,
+  "name": "gtris/vue",
+  "version": "0.1.3",
   "main": "dist/gtris3.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -26,5 +25,8 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "http://repo.gabia.com/repository/npm-repository/"
+  }
 }
