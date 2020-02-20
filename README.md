@@ -2,7 +2,7 @@
 
 ## Project setup
 ```
-npm install git+https://gm1702759:zKzTTuQkg7unZ-NdrAYM@gitlab.gabia.com/ui/gtris3-vue.git
+npm install --save git+https://gm1702759:zKzTTuQkg7unZ-NdrAYM@gitlab.gabia.com/ui/gtris3-vue.git
 ```
 
 ### Compiles and hot-reloads for development
