@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button type="button" class="gt-btn gt-btn-primary">Primeeeary({{output}})</button>
+        <button type="button" class="gt-btn gt-btn-primary">Priy({{output}})</button>
     </div>
 </template>
 
