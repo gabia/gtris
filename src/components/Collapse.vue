@@ -2,10 +2,14 @@
   <div class="gt-collapse-item" :class="userCustomClassName">
     <div class="gt-collapse-head" :class="headActiveClass" @click="toggleShowing">
       <p class="title">{{title}}</p>
-      <i v-show="isShowing" class="gi gi-short-arrow-down-alt"/>
-      <i v-show="!isShowing" class="gi gi-short-arrow-up-alt"/>
+      <i v-show="isShowing" class="gi gi-short-arrow-up-alt"/>
+      <i v-show="!isShowing" class="gi gi-short-arrow-down-alt"/>
     </div>
-    <div v-show="isShowing" class="gt-collapse-body" v-html="content"></div>
+    <div v-show="isShowing" class="gt-collapse-body">
+      <!-- nested -->
+      <slot v-if="Object.keys(this.$slots).length" name="collapse-body" v-html="content"></slot>
+      <template v-else>{{content}}</template>
+    </div>
   </div>
 </template>
 
@@ -63,6 +67,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  &.active {
+    background-color: #eee;
+  }
 
   .title {
     flex: 1 1 0;
