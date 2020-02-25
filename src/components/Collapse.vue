@@ -1,6 +1,10 @@
 <template>
   <div class="gt-collapse-item" :class="userCustomClassName">
-    <div class="gt-collapse-head" :class="headActiveClass" @click="toggleShowing">{{title}}</div>
+    <div class="gt-collapse-head" :class="headActiveClass" @click="toggleShowing">
+      <p class="title">{{title}}</p>
+      <i v-show="isShowing" class="gi gi-short-arrow-down-alt"/>
+      <i v-show="!isShowing" class="gi gi-short-arrow-up-alt"/>
+    </div>
     <div v-show="isShowing" class="gt-collapse-body" v-html="content"></div>
   </div>
 </template>
@@ -30,7 +34,7 @@ export default {
       return this.customClassName || null;
     },
     headActiveClass() {
-      return this.isShowing ? "collapse-active" : null;
+      return this.isShowing ? "active" : null;
     },
   }
 };
@@ -40,7 +44,8 @@ export default {
 .gt-collapse-item {
   color: #333;
   line-height: 1.5;
-  border: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   & + .gt-collapse-item {
     border-top: 0;
   }
@@ -54,11 +59,18 @@ export default {
 
 .gt-collapse-head {
   background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
-  &.collapse-active {
-    background-color: #333;
-    color: #fff;
-    font-weight: bold;
+
+  .title {
+    flex: 1 1 0;
+    -ms-flex: 1 1 auto;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
