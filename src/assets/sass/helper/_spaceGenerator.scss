@@ -1,0 +1,50 @@
+/*
+* USAGE
+* range of num: 0~50
+* margin: .mt-{num} .mr-{num}, .mb-{num}, .ml-{num}, .mv-{num}, .mh-{num}
+* padding: .pt-{num} .pr-{num}, .pb-{num}, .pl-{num}, .pv-{num}, .ph-{num}
+*
+*/
+
+$attributes: (
+  // $mp: $attribute
+  'm': 'margin',
+  'p': 'padding',
+);
+
+$directions: (
+  // $dir: $direction
+  '': '',
+  't': 'top',
+  'r': 'right',
+  'b': 'bottom',
+  'l': 'left',
+  'v': ('top', 'bottom'),
+  'h': ('left', 'right')
+);
+
+@for $i from 0 through 50 {
+  @each $dir, $direction in $directions {
+    @each $mp, $attribute in $attributes {
+
+      .#{$mp}#{$dir}-#{$i} {
+        @if($dir == '') {
+          #{$attribute}: #{$i}px !important;
+        }
+        @else if($dir == 'v' or $dir == 'h') {
+          #{$attribute}-#{nth($direction, 1)}: #{$i}px !important;
+          #{$attribute}-#{nth($direction, 2)}: #{$i}px !important;
+        }
+        @else {
+          #{$attribute}-#{$direction}: #{$i}px !important;
+        }
+      }
+
+    }
+  }
+}
+
+// etc
+.no-padding { padding: 0 !important; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
