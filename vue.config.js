@@ -14,6 +14,7 @@ module.exports = {
       scss: {
         prependData: `@import url('https://static.gabia.com/fonts/icons/v1.0.1/style.css');`
       }
-    }
+    },
+    sourceMap: true
   },
 }
