@@ -1,14 +1,4 @@
-//clearfix
-@mixin clearfix() {
-	&:before,
-	&:after {
-		display: block;
-		content: " ";
-		clear: both;
-	}
-}
-
-//triangle
+//make triangle
 @mixin triangle($direction, $sizeH, $sizeV, $color) {
 	display: block;
 	content: " ";

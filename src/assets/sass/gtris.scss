@@ -1,26 +1,20 @@
-//util
-@import 'util/variables';
-@import 'util/mixins';
 //base
 @import 'base/reset';
-@import 'base/helper';
-//ui
-@import 'ui/color';
-@import 'ui/button';
-@import 'ui/grid';
-@import 'ui/modal';
-@import 'ui/cell';
-@import 'ui/display';
-@import 'ui/pagination';
-@import 'ui/input';
-@import 'ui/table';
-@import 'ui/panel';
-@import 'ui/collapse';
-@import 'ui/tab';
-@import 'ui/tooltip';
-@import 'ui/dropdown';
-@import 'ui/layer';
-@import 'ui/note';
-@import 'ui/indicator';
-@import 'ui/scrollprogress';
-@import 'ui/toast';
+@import 'base/variables';
+
+//helper
+@import 'helper/align';
+@import 'helper/clearfix';
+@import 'helper/display';
+@import 'helper/flex';
+@import 'helper/float';
+@import 'helper/position';
+@import 'helper/sizing';
+@import 'helper/spaceGenerator';
+@import 'helper/text';
+
+//mixins
+@import 'mixins/clearfix';
+@import 'mixins/_makeTriangle';
+@import 'mixins/_truncate';
+@import 'mixins/_truncateFlexChild';
