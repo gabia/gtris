@@ -1,4 +1,4 @@
-@mixin clearfix() {
+@mixin gtrisvueclearfix() {
   &::after {
     display: block;
     clear: both;
