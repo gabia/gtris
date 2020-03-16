@@ -2,9 +2,15 @@
   <div id="app">
     <div>
       <!-- <gtbutton /> -->
-
+      <gtbutton
+        :type="`icon`"
+        :text="`Button`"
+        :indicator="`primary`"
+        :icon="`check`"
+        @click="test"
+      />
       <!-- default -->
-      <gtCollapse
+      <!-- <gtCollapse
       :id="`collapse1-${index}`"
       :title="item.title"
       :content="item.content"
@@ -13,10 +19,10 @@
       @collapse-opened="$_onCollapseOpened"
       @collapse-closed="$_onCollapseClosed" />
 
-      <br><br>
+      <br><br> -->
 
       <!-- nested collapse -->
-      <gtCollapse
+      <!-- <gtCollapse
       :id="`collapse2-${index}`"
       :title="item.title"
       :content="item.content"
@@ -34,19 +40,19 @@
             @collapse-opened="$_onCollapseOpened"
             @collapse-closed="$_onCollapseClosed" />
         </template>
-      </gtCollapse>
+      </gtCollapse> -->
     </div>
   </div>
 </template>
 
 <script>
-// import gtbutton from './components/button.vue'
-import gtCollapse from './components/Collapse.vue'
+import gtbutton from './components/button.vue'
+//import gtCollapse from './components/Collapse.vue'
 export default {
   name: 'app',
   components: {
-    // gtbutton,
-    gtCollapse
+    gtbutton
+    //gtCollapse
   },
   data() {
     return {

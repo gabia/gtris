@@ -391,20 +391,13 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
 var es_function_name = __webpack_require__("b0c0");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"584bc0d4-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/button.vue?vue&type=template&id=ae0daeb8&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('button',{staticClass:"gt-btn gt-btn-primary",attrs:{"type":"button"}},[_vm._v("Priy("+_vm._s(_vm.output)+")")])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"584bc0d4-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/button.vue?vue&type=template&id=00291946&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(_vm.type=='icon')?_c('button',{staticClass:"gt-btn gt-btn-icon",on:{"click":_vm.eventClick}},[_c('i',{staticClass:"gis",class:[_vm.icon? 'gis gi-'+_vm.icon: '']})]):_vm._e(),(_vm.type!='icon')?_c('button',{staticClass:"gt-btn",class:[_vm.indicator? 'gt-btn-'+_vm.indicator: ''],attrs:{"type":_vm.type,"disabled":_vm.disabled},on:{"click":_vm.eventClick}},[_vm._v(" "+_vm._s(_vm.text)+" ")]):_vm._e()])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/button.vue?vue&type=template&id=ae0daeb8&
+// CONCATENATED MODULE: ./src/components/button.vue?vue&type=template&id=00291946&
 
-// CONCATENATED MODULE: ./src/assets/js/common.js
-var common = {
-  test: function test() {
-    return "test";
-  }
-};
-/* harmony default export */ var js_common = (common);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/button.vue?vue&type=script&lang=js&
 //
 //
@@ -412,31 +405,69 @@ var common = {
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//import common from '@/assets/js/common.js'
 /* harmony default export */ var buttonvue_type_script_lang_js_ = ({
   name: 'gtbutton',
   data: function data() {
     return {
-      output: ""
+      isOnComposition: false
     };
   },
   props: {
-    awesomeUrl: {
+    type: {
       type: String,
-      default: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'
+      required: false,
+      default: null
+    },
+    text: {
+      type: String,
+      required: true
+    },
+    disabled: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    indicator: {
+      type: String,
+      required: false,
+      default: null
+    },
+    icon: {
+      type: String,
+      required: false,
+      default: null
     }
+    /* ,
+    pill: {type: String, required: false, default: null },
+    float: {type: String, required: false, default: null },
+    size: { type: String, required: false, default: null } */
+
   },
-  mounted: function mounted() {
-    var awesomeExist = !!document.getElementById('font-awesome');
-
-    if (!awesomeExist) {
-      var link = document.createElement('link');
-      link.src = this.awesomeUrl;
-      link.id = 'font-awesome';
-      document.body.appendChild(link);
+  methods: {
+    eventClick: function eventClick(evt) {
+      this.$emit('click', evt);
     }
-
-    this.output = js_common.test();
   }
 });
 // CONCATENATED MODULE: ./src/components/button.vue?vue&type=script&lang=js&
@@ -565,6 +596,7 @@ var gtris = __webpack_require__("f0d9");
 
 // CONCATENATED MODULE: ./src/index.js
 
+ //import gtcollaps from './components/collapse.vue'
 
 
 

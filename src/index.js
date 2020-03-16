@@ -1,4 +1,5 @@
 import gtbutton from './components/button.vue'
+//import gtcollaps from './components/collapse.vue'
 import '@/assets/sass/gtris.scss'
 
 const install = (Vue) => {
