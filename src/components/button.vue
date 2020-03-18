@@ -1,27 +1,24 @@
 <template>
-    <div>
-        <button 
-          v-if="type=='icon'"
-          class="gt-btn gt-btn-icon"
-          @click="eventClick"
-        >
-          <i 
-            class="gis"
-            :class="[icon? 'gis gi-'+icon: '']"
-          ></i>
-        </button>
-        <button 
-          v-if="type!='icon'"
-          class="gt-btn"
-          :type="type"
-          :disabled="disabled"
-          :class="[indicator? 'gt-btn-'+indicator: '']"
-          @click="eventClick"
-        >
-          {{text}}
-        </button>
-        
-    </div>
+  <button 
+    v-if="type=='icon'"
+    class="gt-btn gt-btn-icon"
+    @click="eventClick"
+  >
+    <i 
+      class="gis"
+      :class="[icon? 'gis gi-'+icon: '']"
+    ></i>
+  </button>
+  <button 
+    v-else-if="type!='icon'"
+    class="gt-btn"
+    :type="type"
+    :disabled="disabled"
+    :class="[indicator? 'gt-btn-'+indicator: '']"
+    @click="eventClick"
+  >
+    {{text}}
+  </button>
 </template>
 
 <script>

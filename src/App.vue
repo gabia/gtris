@@ -3,10 +3,8 @@
     <div>
       <!-- <gtbutton /> -->
       <gtbutton
-        :type="`icon`"
         :text="`Button`"
         :indicator="`primary`"
-        :icon="`check`"
         @click="test"
       />
       <!-- default -->
