@@ -30,7 +30,6 @@ export default {
   },
   props: {    
     type: { type: String, required: false, default: null},
-    text: { type: String, required: true },
     disabled: { type: Boolean, required: false, default: false },
     indicator: { type: String, required: false, default: null },
     icon: { type: String, required: false, default: null }/* ,
