@@ -2,11 +2,19 @@
   <div id="app">
     <div>
       <!-- <gtbutton /> -->
-      <gtbutton
-        :text="`Button`"
-        :indicator="`primary`"
+      <!-- <gtbutton
+        :type="`icon`"
+        :icon="`trash`"
         @click="test"
-      />
+      >
+        test
+      </gtbutton> -->
+      <gtbutton
+        :indicator="`primary`"
+        :disabled="true"
+        @click="test">
+        test
+      </gtbutton>
       <!-- default -->
       <!-- <gtCollapse
       :id="`collapse1-${index}`"

@@ -1,23 +1,20 @@
 <template>
-  <button 
-    v-if="type=='icon'"
-    class="gt-btn gt-btn-icon"
-    @click="eventClick"
-  >
-    <i 
-      class="gis"
-      :class="[icon? 'gis gi-'+icon: '']"
-    ></i>
-  </button>
-  <button 
-    v-else-if="type!='icon'"
+  <button
     class="gt-btn"
     :type="type"
     :disabled="disabled"
-    :class="[indicator? 'gt-btn-'+indicator: '']"
+    :class="[
+      indicator? 'gt-btn-'+indicator: '',
+      isIcon? 'gt-btn-icon': ''
+    ]"
     @click="eventClick"
   >
-    {{text}}
+    <i 
+      v-if="type=='icon'"
+      class="gis"
+      :class="[icon? 'gis gi-'+icon: '']"
+    ></i>
+    <slot v-else></slot>
   </button>
 </template>
 
@@ -40,6 +37,11 @@ export default {
     pill: {type: String, required: false, default: null },
     float: {type: String, required: false, default: null },
     size: { type: String, required: false, default: null } */
+  },
+  computed: {
+    isIcon() {
+      return this.icon? true: false;
+    }
   },
   methods: {
     eventClick(evt) {
