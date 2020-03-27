@@ -96,6 +96,17 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
+/***/ "0a0f":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tooltip_vue_vue_type_style_index_0_id_241514c8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("f081");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tooltip_vue_vue_type_style_index_0_id_241514c8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tooltip_vue_vue_type_style_index_0_id_241514c8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tooltip_vue_vue_type_style_index_0_id_241514c8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "0cfb":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -336,6 +347,13 @@ module.exports =
 /***/ }),
 
 /***/ "e2a0":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "f081":
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -745,6 +763,146 @@ var Collapse_component = normalizeComponent(
 )
 
 /* harmony default export */ var Collapse = (Collapse_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"584bc0d4-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/tooltip.vue?vue&type=template&id=241514c8&scoped=true&
+var tooltipvue_type_template_id_241514c8_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"gt-tooltip",staticClass:"gt-tooltip",class:[("gt-tooltip-" + _vm.type)],attrs:{"data-placement":_vm.position},on:{"mouseover":_vm.$_mouseover,"mouseleave":_vm.$_mouseleave}},[_vm._t("default"),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isVisible),expression:"isVisible"}],ref:"gt-content",staticClass:"gt-tt-content",style:(_vm.ct_style)},[_c('span',{ref:"gt-triangle",staticClass:"gt-triangle",style:(_vm.tr_style)}),_c('p',{staticClass:"gt-tiny"},[_vm._v(_vm._s(_vm.message))])])],2)}
+var tooltipvue_type_template_id_241514c8_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/tooltip.vue?vue&type=template&id=241514c8&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/tooltip.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var tooltipvue_type_script_lang_js_ = ({
+  name: "gt-tooltip",
+  data: function data() {
+    return {
+      isVisible: false,
+      ct_style: {
+        background: 'transparent',
+        color: 'transparent',
+        "border-color": 'transparent'
+      },
+      tr_style: {
+        background: 'transparent',
+        color: 'transparent',
+        "border-color": 'transparent'
+      }
+    };
+  },
+  props: {
+    type: {
+      type: String,
+      default: 'primary'
+    },
+    position: {
+      type: String,
+      default: 'bottom'
+    },
+    message: {
+      type: String,
+      default: 'message'
+    }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    this.isVisible = true;
+    setTimeout(function () {
+      _this.$_setPosition();
+    }, 1);
+  },
+  methods: {
+    $_mouseover: function $_mouseover() {
+      this.isVisible = true;
+    },
+    $_mouseleave: function $_mouseleave() {
+      this.isVisible = false;
+    },
+    $_setPosition: function $_setPosition() {
+      var btn_width = this.$refs['gt-tooltip'].offsetWidth;
+      var btn_height = this.$refs['gt-tooltip'].offsetHeight;
+      var cnt_width = this.$refs['gt-content'].offsetWidth;
+      var cnt_height = this.$refs['gt-content'].offsetHeight;
+      var triangle_width = this.$refs['gt-triangle'].offsetWidth;
+      var triangle_height = this.$refs['gt-triangle'].offsetHeight;
+
+      if (this.position == 'right') {
+        this.ct_style = {
+          left: "".concat(btn_width + triangle_width, "px"),
+          top: "".concat((btn_height - cnt_height) / 2, "px")
+        };
+        this.tr_style = {
+          left: "-".concat(triangle_width, "px"),
+          top: "".concat((cnt_height - triangle_height) / 2, "px")
+        };
+      } else if (this.position == 'left') {
+        this.ct_style = {
+          right: "".concat(btn_width + triangle_width, "px"),
+          top: "".concat((btn_height - cnt_height) / 2, "px")
+        };
+        this.tr_style = {
+          right: "-".concat(triangle_width, "px"),
+          top: "".concat((cnt_height - triangle_height) / 2, "px")
+        };
+      } else if (this.position == 'top') {
+        this.ct_style = {
+          left: "".concat((btn_width - cnt_width) / 2, "px"),
+          top: "-".concat(cnt_height + triangle_height, "px")
+        };
+        this.tr_style = {
+          left: "".concat(cnt_width / 2 - triangle_width / 2, "px"),
+          top: "".concat(cnt_height, "px")
+        };
+      } else {
+        this.ct_style = {
+          left: "".concat((btn_width - cnt_width) / 2, "px"),
+          top: "".concat(btn_height + triangle_height, "px")
+        };
+        this.tr_style = {
+          left: "".concat(cnt_width / 2 - triangle_width / 2, "px"),
+          top: "-".concat(triangle_height, "px")
+        };
+      }
+
+      this.isVisible = false;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/tooltip.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_tooltipvue_type_script_lang_js_ = (tooltipvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/components/tooltip.vue?vue&type=style&index=0&id=241514c8&lang=scss&scoped=true&
+var tooltipvue_type_style_index_0_id_241514c8_lang_scss_scoped_true_ = __webpack_require__("0a0f");
+
+// CONCATENATED MODULE: ./src/components/tooltip.vue
+
+
+
+
+
+
+/* normalize component */
+
+var tooltip_component = normalizeComponent(
+  components_tooltipvue_type_script_lang_js_,
+  tooltipvue_type_template_id_241514c8_scoped_true_render,
+  tooltipvue_type_template_id_241514c8_scoped_true_staticRenderFns,
+  false,
+  null,
+  "241514c8",
+  null
+  
+)
+
+/* harmony default export */ var tooltip = (tooltip_component.exports);
 // EXTERNAL MODULE: ./src/assets/sass/gtris.scss
 var gtris = __webpack_require__("f0d9");
 
@@ -754,8 +912,10 @@ var gtris = __webpack_require__("f0d9");
 
 
 
+
 var src_install = function install(Vue) {
   Vue.component(components_button.name, components_button), Vue.component(Collapse.name, Collapse);
+  Vue.component(tooltip.name, tooltip);
 }; // auto install if used in browser
 
 
