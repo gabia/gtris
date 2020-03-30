@@ -33,8 +33,8 @@ export default {
 .gt-collapse-item {
   color: #333;
   line-height: 1.5;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid $collapse-border;
+  border-bottom: 1px solid $collapse-border;
   & + .gt-collapse-item {
     border-top: 0;
   }
@@ -47,13 +47,13 @@ export default {
 }
 
 .gt-collapse-head {
-  background-color: #fff;
+  background-color: $background-normal;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   &.active {
-    background-color: #eee;
+    background-color: $background-active-gray;
   }
 
   .title {
