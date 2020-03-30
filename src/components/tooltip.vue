@@ -67,8 +67,6 @@ export default {
 @import '@/assets/sass/base/_reset.scss';
 @import '@/assets/sass/mixins/_triangle.scss';
 
-
-
 .gt-tooltip {
   position: relative;
   display: inline-block;
@@ -83,7 +81,7 @@ export default {
     box-sizing: border-box;
     padding: 0px 15px; 
     min-width: 100px;
-    background: $dark-primary-color;    
+    background: $primary;    
     text-align: center;
     user-select: none;
     cursor: default;
@@ -93,71 +91,42 @@ export default {
   &[data-placement="right"] {
     .gt-triangle {
       position: absolute;
-      @include triangle(left, 6px, 6px, $dark-primary-color);
+      @include triangle(left, 6px, 6px, $primary);
     }
   }
 
   &[data-placement="left"] {
     .gt-triangle {
       position: absolute;
-      @include triangle(right, 6px, 6px, $dark-primary-color);
+      @include triangle(right, 6px, 6px, $primary);
     }
   }
 
   &[data-placement="bottom"] {
     .gt-triangle {
       position: absolute;
-      @include triangle(top, 6px, 6px, $dark-primary-color);
+      @include triangle(top, 6px, 6px, $primary);
     }
   }
 
   &[data-placement="top"] {
     .gt-triangle {
       position: absolute;
-      @include triangle(bottom, 6px, 6px, $dark-primary-color);
+      @include triangle(bottom, 6px, 6px, $primary);
     }
   }
 
   .gt-triangle {
     position: absolute;
-    @include triangle(bottom, 6px, 6px, $dark-primary-color);
+    @include triangle(bottom, 6px, 6px, $primary);
   }
 
-  // &.gt-tooltip-primary {
-  //   .gt-tt-content {
-  //     background: $primary-color;
-  //   }
-  //   &[data-placement="right"] {
-  //     .gt-triangle {
-  //       @include triangle(left, 6px, 6px, $primary-color);
-  //     }
-  //   }
-  //   &[data-placement="left"] {
-  //     .gt-triangle {
-  //       @include triangle(right, 6px, 6px, $primary-color);
-  //     }
-  //   }
-  //   &[data-placement="bottom"] {
-  //     .gt-triangle {
-  //       @include triangle(top, 6px, 6px, $primary-color);
-  //     }
-  //   }
-  //   &[data-placement="top"] {
-  //     .gt-triangle {
-  //       @include triangle(bottom, 6px, 6px, $primary-color);
-  //     }
-  //   }
-  // }
-
-
-
   $types: (
-    'primary' : $primary-color,
-    'warning' : $warning-color,
-    'danger' : $danger-color,
-    'info' : $info-color
+    'primary' : $primary,
+    'warning' : $warning,
+    'danger' : $danger,
+    'info' : $info
   );
-
 
   @each $key, $colorType in $types {
 
