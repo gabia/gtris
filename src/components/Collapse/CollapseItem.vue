@@ -2,10 +2,8 @@
   <div class="gt-collapse-item">
     <div class="gt-collapse-head" :class="headActiveClass" @click="toggleShowing">
       <slot name="head" :isShowing="isShowing"/>
-      <template v-if="true">
-        <i v-show="isShowing" class="gi gi-short-arrow-up-alt"/>
-        <i v-show="!isShowing" class="gi gi-short-arrow-down-alt"/>
-      </template>
+      <i v-show="isShowing" class="gi gi-short-arrow-up-alt"/>
+      <i v-show="!isShowing" class="gi gi-short-arrow-down-alt"/>
     </div>
     <div v-show="isShowing" class="gt-collapse-body">
       <slot name="content">default child content</slot>
