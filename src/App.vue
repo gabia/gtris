@@ -32,6 +32,37 @@
       </div>
       -->
 
+      <!-- gtinput 예시 -->
+      
+      <!-- <div style="position: absolute;left: 500px; top: 400px; width:600px; border:1px red solid;">
+
+        <h2 class="anchor">Input</h2>
+        <div class="ui-wrap">
+          <gtinput placeholder="Basic usage" @pressEnter="$_pressEnter" @keyup="$_keyup" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput defaultValue="기본 값입니다." placeholder="Basic usage" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput size="sm" placeholder="small size" />
+          <br><br>
+          <gtinput placeholder="default size" />
+          <br><br>
+          <gtinput size="lg" placeholder="large size" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput custom-class="hiworks-input-custom-class" placeholder="Custom Class: !important를 붙여야 css가 적용됨^^;;" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput placeholder="width 값 조정" width="500px" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput placeholder="height 값 조정" height="100px" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput disabled placeholder="disabled" />
+        </div>
+      </div>       -->
 
       <!-- <gtbutton /> -->
       <!-- <gtbutton
@@ -54,10 +85,12 @@
 <script>
 import gtbutton from './components/button.vue'
 //import gttooltip from "./components/tooltip.vue"
+//import gtinput from "./components/Input.vue"
 export default {
   name: 'app',
   components: {
-    gtbutton
+    gtbutton,
+    //gtinput
     //,gttooltip
   },
   methods: {
