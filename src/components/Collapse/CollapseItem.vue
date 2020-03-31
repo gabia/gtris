@@ -19,6 +19,14 @@ import Toggle from "@/components/mixin/Toggle";
 export default {
   name: "gt-collapse-item",
   mixins: [Toggle],
+  props: {
+    defaultStatus: {type: Boolean, required: false, default: false},
+  },
+  // mounted() {
+  //   if(this.$parent.$props.activeIndex == this.myIndex) {
+  //     this.isShowing = true;
+  //   }
+  // },
   computed: {
     headActiveClass() {
       return this.isShowing ? "active" : null;

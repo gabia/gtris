@@ -6,7 +6,10 @@
 
 <script>
 export default {
-  name: "gt-collapse"
+  name: "gt-collapse",
+  props: {
+    activeIndex: {type: Number, required: false, default: null},
+  }
 };
 </script>
 
