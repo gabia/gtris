@@ -19,7 +19,7 @@ export default {
     closed: {type: Function, required: false, default: null}
   },
   mounted() {
-    // initialize activate child
+    // initialize child
     if(this.init) {
       this.activeItems.push(this.init);
     }
