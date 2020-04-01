@@ -1,12 +1,12 @@
 <template>
   <div class="gt-collapse-item">
-    <div class="gt-collapse-head" :class="headActiveClass" @click="toggleShowing">
-      <slot name="head" :isShowing="isShowing"/>
+    <div class="gt-collapse-head" :class="{'active': isShowing}" @click="$_toggleShowing">
+      <slot name="head"/>
       <i v-show="isShowing" class="gi gi-short-arrow-up-alt"/>
       <i v-show="!isShowing" class="gi gi-short-arrow-down-alt"/>
     </div>
     <div v-show="isShowing" class="gt-collapse-body">
-      <slot name="content">default child content</slot>
+      <slot name="content"/>
       <!-- nested -->
       <!-- <slot v-if="Object.keys(this.$slots).length" name="collapse-body" v-html="content"></slot>
       <template v-else>{{content}}</template> -->
@@ -15,22 +15,47 @@
 </template>
 
 <script>
-import Toggle from "@/components/mixin/Toggle";
 export default {
   name: "gt-collapse-item",
-  mixins: [Toggle],
-  props: {
-    defaultStatus: {type: Boolean, required: false, default: false},
+  data() {
+    return {
+      id: this.name || `gt-collapse-item-${Math.random().toString(36).substr(2, 8)}`
+    }
   },
-  // mounted() {
-  //   if(this.$parent.$props.activeIndex == this.myIndex) {
-  //     this.isShowing = true;
-  //   }
-  // },
+  props: {
+    name: {type: [String, Number], required: false, default: null}
+  },
   computed: {
-    headActiveClass() {
-      return this.isShowing ? "active" : null;
+    isShowing() {
+      return this.activeItems.indexOf(this.id) !== -1;
     },
+    parent() {
+      return this.$parent;
+    },
+    activeItems() {
+      return this.parent.activeItems;
+    },
+  },
+  methods: {
+    $_toggleShowing() {
+      const index = this.activeItems.indexOf(this.id);
+      // accordion
+      if(this.parent.accordion) {
+        if(index !== -1) {
+          this.activeItems.splice(index, 1);
+        } else {
+          this.activeItems.splice(index, 1, this.id);
+        }
+      }
+      // default
+      else {
+        if(index !== -1) {
+          this.activeItems.splice(index, 1);
+        } else {
+          this.activeItems.push(this.id);
+        }
+      }
+    }
   }
 }
 </script>

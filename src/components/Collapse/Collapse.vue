@@ -7,11 +7,19 @@
 <script>
 export default {
   name: "gt-collapse",
+  data() {
+    return {
+      activeItems: []
+    }
+  },
   props: {
-    activeIndex: {type: Number, required: false, default: null},
+    accordion: {type: Boolean, required: false, default: false},
+    init: {type: String, required: false, default: null},
+  },
+  mounted() {
+    if(this.init) {
+      this.activeItems.push(this.init);
+    }
   }
 };
 </script>
-
-<style lang="scss" scoped>
-</style>
