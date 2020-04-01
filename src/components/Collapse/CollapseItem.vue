@@ -1,6 +1,6 @@
 <template>
   <div class="gt-collapse-item">
-    <div class="gt-collapse-head" :class="{'active': isShowing}" @click="$_toggleShowing">
+    <div class="gt-collapse-head" :class="{'active': isShowing}" @click="$_toggle">
       <slot name="head"/>
       <i v-show="isShowing" class="gi gi-short-arrow-up-alt"/>
       <i v-show="!isShowing" class="gi gi-short-arrow-down-alt"/>
@@ -37,7 +37,7 @@ export default {
     },
   },
   methods: {
-    $_toggleShowing() {
+    $_toggle() {
       const index = this.activeItems.indexOf(this.id);
       // accordion
       if(this.parent.accordion) {
@@ -55,7 +55,21 @@ export default {
           this.activeItems.push(this.id);
         }
       }
+      
     }
+  },
+  watch: {
+    isShowing(newValue, oldValue) {
+      if(newValue != oldValue) {
+        if(this.isShowing) {
+          this.parent.$emit('gt::opend::collapse', this.id);
+        }
+        else {
+          this.parent.$emit('gt::closed::collapse', this.id);
+        }
+      }
+    }
+    
   }
 }
 </script>
