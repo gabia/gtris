@@ -1415,12 +1415,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var components_button = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"584bc0d4-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Collapse/Collapse.vue?vue&type=template&id=17d03404&
-var Collapsevue_type_template_id_17d03404_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._t("default")],2)}
-var Collapsevue_type_template_id_17d03404_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"584bc0d4-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Collapse/Collapse.vue?vue&type=template&id=b08ad67e&
+var Collapsevue_type_template_id_b08ad67e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._t("default")],2)}
+var Collapsevue_type_template_id_b08ad67e_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Collapse/Collapse.vue?vue&type=template&id=17d03404&
+// CONCATENATED MODULE: ./src/components/Collapse/Collapse.vue?vue&type=template&id=b08ad67e&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Collapse/Collapse.vue?vue&type=script&lang=js&
 //
@@ -1467,7 +1467,7 @@ var Collapsevue_type_template_id_17d03404_staticRenderFns = []
     } // event handling
 
 
-    this.$on('gt::opend::collapse', function (payload) {
+    this.$on('gt::opened::collapse', function (payload) {
       _this.opened && _this.opened(payload);
     });
     this.$on('gt::closed::collapse', function (payload) {
@@ -1487,8 +1487,8 @@ var Collapsevue_type_template_id_17d03404_staticRenderFns = []
 
 var Collapse_component = normalizeComponent(
   Collapse_Collapsevue_type_script_lang_js_,
-  Collapsevue_type_template_id_17d03404_render,
-  Collapsevue_type_template_id_17d03404_staticRenderFns,
+  Collapsevue_type_template_id_b08ad67e_render,
+  Collapsevue_type_template_id_b08ad67e_staticRenderFns,
   false,
   null,
   null,

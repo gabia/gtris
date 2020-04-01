@@ -24,7 +24,7 @@ export default {
       this.activeItems.push(this.init);
     }
     // event handling
-    this.$on('gt::opend::collapse', (payload) => {
+    this.$on('gt::opened::collapse', (payload) => {
       this.opened && this.opened(payload);
     });
     this.$on('gt::closed::collapse', (payload) => {

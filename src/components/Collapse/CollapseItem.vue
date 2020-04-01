@@ -62,7 +62,7 @@ export default {
     isShowing(newValue, oldValue) {
       if(newValue != oldValue) {
         if(this.isShowing) {
-          this.parent.$emit('gt::opend::collapse', this.id);
+          this.parent.$emit('gt::opened::collapse', this.id);
         }
         else {
           this.parent.$emit('gt::closed::collapse', this.id);
