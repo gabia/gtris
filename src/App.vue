@@ -1,6 +1,69 @@
 <template>
   <div id="app">
     <div>
+
+      <!-- gttooltip 예시 -->
+      <!--
+      <div style="position: absolute;left: 500px; top: 400px;">
+        <table style="width: 500px;">
+          <tr>
+            <td>
+              <gttooltip v-bind="{position:'bottom', message:'gabia' }" >
+                <p style="background: red; padding:5px 10px;">bottom</p>
+              </gttooltip>
+            </td>
+            <td>
+              <gttooltip  v-bind="{position:'left' , message:'frontend' , type:'warning'}" >
+                <p style="background: blue; padding:5px 10px;">left</p>
+              </gttooltip>
+            </td>
+            <td>
+              <gttooltip v-bind="{position:'right', message:'js', type:'danger'}" >
+                <p style="background: yellow; padding:5px 10px;">right</p>
+              </gttooltip>
+            </td>
+            <td>
+              <gttooltip  v-bind="{position:'top', message:'hiworks' , type:'info'}" >
+                <p style="background: green; padding:5px 10px;">top</p>
+              </gttooltip>
+            </td>                    
+          </tr>
+        </table>
+      </div>
+      -->
+
+      <!-- gtinput 예시 -->
+      
+      <!-- <div style="position: absolute;left: 500px; top: 400px; width:600px; border:1px red solid;">
+
+        <h2 class="anchor">Input</h2>
+        <div class="ui-wrap">
+          <gtinput placeholder="Basic usage" @pressEnter="$_pressEnter" @keyup="$_keyup" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput defaultValue="기본 값입니다." placeholder="Basic usage" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput size="sm" placeholder="small size" />
+          <br><br>
+          <gtinput placeholder="default size" />
+          <br><br>
+          <gtinput size="lg" placeholder="large size" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput custom-class="hiworks-input-custom-class" placeholder="Custom Class: !important를 붙여야 css가 적용됨^^;;" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput placeholder="width 값 조정" width="500px" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput placeholder="height 값 조정" height="100px" />
+        </div>
+        <div class="ui-wrap">
+          <gtinput disabled placeholder="disabled" />
+        </div>
+      </div>       -->
+
       <!-- <gtbutton /> -->
       <!-- <gtbutton
         :type="`icon`"
@@ -14,39 +77,6 @@
         :disabled="true">
         test
       </gtbutton>
-      <!-- default -->
-      <!-- <gtCollapse
-      :id="`collapse1-${index}`"
-      :title="item.title"
-      :content="item.content"
-      v-for="(item, index) in items1"
-      :key="`collapse1-${index}`"
-      @collapse-opened="$_onCollapseOpened"
-      @collapse-closed="$_onCollapseClosed" />
-
-      <br><br> -->
-
-      <!-- nested collapse -->
-      <!-- <gtCollapse
-      :id="`collapse2-${index}`"
-      :title="item.title"
-      :content="item.content"
-      v-for="(item, index) in items2"
-      :key="`collapse2-${index}`"
-      @collapse-opened="$_onCollapseOpened"
-      @collapse-closed="$_onCollapseClosed">
-        <template slot="collapse-body">
-          <gtCollapse
-            :id="`collapse2-1-${childIndex}`"
-            :title="childItem.title"
-            :content="childItem.content"
-            v-for="(childItem, childIndex) in items3"
-            :key="`collapse2-1-${childIndex}`"
-            @collapse-opened="$_onCollapseOpened"
-            @collapse-closed="$_onCollapseClosed" />
-        </template>
-      </gtCollapse> -->
-      <pagination v-model="page" :last_page="20"/>
     </div>
   </div>
 </template>
@@ -54,12 +84,14 @@
 <script>
 import gtbutton from './components/button.vue'
 //import gtCollapse from './components/Collapse.vue'
-import pagination from './components/Pagination.vue'
+//import pagination from './components/Pagination.vue'
+//import gttooltip from "./components/tooltip.vue"
+//import gtinput from "./components/Input.vue"
 export default {
   name: 'app',
   components: {
     gtbutton,
-    pagination
+    //pagination,
     //gtCollapse
   },
   data() {
@@ -81,6 +113,8 @@ export default {
       ],
       page : 1
     };
+    //gtinput
+    //,gttooltip
   },
   methods: {
     $_onCollapseOpened(payload) {

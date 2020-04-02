@@ -1,0 +1,47 @@
+/************************************/
+// global colors
+/************************************/
+// functional
+$primary: #2985db;
+$primary-hover: #056AC9;
+$secondary: #ebebeb;
+$secondary-hover: #d6d6d6;
+$info: #909090;
+$info-hover: #575757;
+$warning: #ea6923;
+$warning-hover: #da5a15;
+$danger: #C70909;
+$danger-hover: #ff010e;
+
+// font
+$font-normal: #333;
+$font-reverse: #fff;
+$font-soft: #666;
+$font-light1: #999;
+$font-light2: #909090;
+
+
+// border
+$border-normal1: #ebebeb;
+$border-normal2: #d6d6d6;
+
+// background
+$background-normal: #fff;
+$background-active-primary: $primary;
+$background-active-gray: #eee;
+
+/************************************/
+// components colors
+/************************************/
+// forms
+$form-border: $border-normal2;
+$form-border-focus: $primary;
+$form-bg: #fff;
+$form-bg-disabled: #f8f8f8;
+$form-font: $font-normal;
+$form-font-placeholder: #acacac;
+
+// collapse
+$collapse-border: $border-normal1;
+$collpase-font-head: $font-normal;
+$collpase-font-body: $font-soft;
