@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="customClass">
     <slot/>
   </div>
 </template>
@@ -16,7 +16,8 @@ export default {
     accordion: {type: Boolean, required: false, default: false},
     init: {type: String, required: false, default: null},
     opened: {type: Function, required: false, default: null},
-    closed: {type: Function, required: false, default: null}
+    closed: {type: Function, required: false, default: null},
+    customClass: {type: String, required: false, default: null}
   },
   mounted() {
     // initialize child

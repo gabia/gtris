@@ -1,6 +1,6 @@
 <template>
-  <div class="gt-collapse-item">
-    <div class="gt-collapse-head" :class="{'active': isShowing}" @click="$_toggle">
+  <div class="gt-collapse-item" :class="{'active': isShowing}">
+    <div class="gt-collapse-head" @click="$_toggle">
       <slot name="head"/>
       <i v-show="isShowing" class="gi gi-short-arrow-up-alt"/>
       <i v-show="!isShowing" class="gi gi-short-arrow-down-alt"/>
@@ -83,7 +83,10 @@ export default {
   & + .gt-collapse-item {
     border-top: 0;
   }
-  
+
+  &.active .gt-collapse-head {
+    background-color: $background-active-gray;
+  }
 }
 
 .gt-collapse-head,
@@ -97,9 +100,6 @@ export default {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  &.active {
-    background-color: $background-active-gray;
-  }
 
   .title {
     flex: 1 1 0;
