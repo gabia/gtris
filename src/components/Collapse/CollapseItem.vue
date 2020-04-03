@@ -7,9 +7,6 @@
     </div>
     <div v-show="isShowing" class="gt-collapse-body">
       <slot name="content"/>
-      <!-- nested -->
-      <!-- <slot v-if="Object.keys(this.$slots).length" name="collapse-body" v-html="content"></slot>
-      <template v-else>{{content}}</template> -->
     </div>
   </div>
 </template>
