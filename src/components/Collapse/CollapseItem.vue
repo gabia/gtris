@@ -84,7 +84,7 @@ export default {
     border-top: 0;
   }
 
-  &.active .gt-collapse-head {
+  &.active > .gt-collapse-head {
     background-color: $background-active-gray;
   }
 }
