@@ -15,17 +15,14 @@ export default {
   name: "gtpagination",
   data() {
     return {
-      page: 1 // 현재 페이지
+      page: 1, // 현재 페이지
+      current_page: 1
     };
   },
   props: {
     length : {
       type: Number,
       default: 10
-    },
-    current_page : {
-      type: Number,
-      default: 1,
     },
     from : {
       type: Number,
@@ -35,15 +32,7 @@ export default {
       type: Number,
       default: 10,
     },
-    per_page : {
-      type: Number,
-      default: 10,
-    },
     to : {
-      type: Number,
-      default: 0,
-    },
-    total : {
       type: Number,
       default: 0,
     }
