@@ -2,7 +2,7 @@
   <div class="gt-pagination">
     <button type="button" class="gt-pagination-nav" :disabled="enabledPrev" :class="{'gt-disabled': enabledPrev}"  @click="setPageFirst()"><i class="gi gi-double-arrows-left"></i></button>
     <button type="button" class="gt-pagination-nav" :disabled="enabledPrev"  :class="{'gt-disabled': enabledPrev}" @click="setPagePrev()"><i class="gi gi-short-arrow-left-alt"></i></button>
-    <button type="button" class="gt-pagination-num" v-for="(p, index) in paginate" :key="index" :class="{'gt-active':p == page}" @click="setPage(p)">
+    <button type="button" class="gt-pagination-num" v-for="(p, index) in paginate" :key="index" :class="{'gt-active':p == current_page}" @click="setPage(p)">
         {{ p }}
     </button>
     <button type="button" class="gt-pagination-nav" :disabled="enabledNext" :class="{'gt-disabled': enabledNext}" @click="setPageEnd()"><i class="gi gi-double-arrows-right" /></button>
@@ -15,7 +15,6 @@ export default {
   name: "gtpagination",
   data() {
     return {
-      page: 1, // 현재 페이지
       current_page: 1
     };
   },
@@ -24,17 +23,9 @@ export default {
       type: Number,
       default: 10
     },
-    from : {
-      type: Number,
-      default: 1,
-    },
     last_page : {
       type: Number,
-      default: 10,
-    },
-    to : {
-      type: Number,
-      default: 0,
+      default: 1,
     }
   },
   computed: {
@@ -69,13 +60,12 @@ export default {
         }
       } else {
         // Set Page
-        this.page = num;
         this.current_page = num;
-        this.$emit('input', this.page); // 현재 페이지
+        this.$emit('input', this.current_page); // 현재 페이지
       }
     },
     setPageNext() {
-      if(this.enabledNext !== false || this.page === 0 ){
+      if(this.enabledNext !== false || this.current_page === 0 ){
         return;
       }
 
@@ -87,7 +77,7 @@ export default {
       }
     },
     setPagePrev() {
-      if(this.enabledPrev !== false || this.page === 0){
+      if(this.enabledPrev !== false || this.current_page === 0){
         return;
       }
       let tmpPrev = (Math.ceil(this.current_page/ this.length) - 1 ) * this.length  ;
