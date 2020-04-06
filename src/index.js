@@ -4,8 +4,8 @@ import gtcollapseitem from './components/Collapse/CollapseItem.vue'
 import gttooltip from "./components/tooltip.vue"
 import gtinput from "./components/Input.vue"
 import gttoast from "./components/toast.vue"
-import gtpagination from "./components/Pagination.vue"
-import gtpaginationscroll from "./components/PaginationInfinite.js"
+import gtpagination from "./components/Pagination/Pagination.vue"
+import gtpaginationscroll from "./components/Pagination/PaginationInfinite.js"
 
 const install = (Vue) => {
   Vue.component(gtbutton.name, gtbutton),
