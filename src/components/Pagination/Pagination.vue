@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  name: "gtpagination",
   data() {
     return {
       page: 1 // 현재 페이지
