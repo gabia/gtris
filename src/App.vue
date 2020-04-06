@@ -72,17 +72,24 @@
       >
         test
       </gtbutton> -->
-      <gtbutton
-        :indicator="`primary`"
-        :disabled="true">
-        test
-      </gtbutton>
+      <div
+          v-infinite-scroll="doScroll"
+          infinite-scroll-disabled="scrolling"
+          infinite-scroll-distance="10">
+          현재 세로 길이: {{height}}
+          <gtbutton
+            :indicator="`primary`"
+            :disabled="true">
+            test
+          </gtbutton>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import gtbutton from './components/button.vue'
+import gtInfinite from './components/Pagination/PaginationInfinite'
 //import pagination from './components/Pagination.vue'
 //import gttooltip from "./components/tooltip.vue"
 //import gtinput from "./components/Input.vue"
@@ -92,12 +99,29 @@ export default {
     gtbutton,
     //pagination,
   },
+  directives: {
+      infiniteScroll: gtInfinite
+  },
   data() {
     return {
-      page : 1
+      page : 1,
+      scrolling: false,
+      height: 0
     };
     //gtinput
     //,gttooltip
+  },
+  methods: {
+    doScroll: function() {
+        var app = document.querySelector('#app');
+        var self = this;
+        self.height = app.clientHeight;
+        self.scrolling = true;
+        setTimeout(function () {
+          app.style.height = self.height + 300 + 'px';
+          self.scrolling = false
+        }, 2000)
+      }
   }
 }
 </script>

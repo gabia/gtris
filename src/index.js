@@ -4,13 +4,16 @@ import gtcollapseitem from './components/Collapse/CollapseItem.vue'
 import gttooltip from "./components/tooltip.vue"
 import gtinput from "./components/Input.vue"
 import gttoast from "./components/toast.vue"
-import '@/assets/sass/gtris.scss'
+import gtpagination from "./components/Pagination.vue"
+import gtpaginationscroll from "./components/PaginationInfinite.js"
 
 const install = (Vue) => {
   Vue.component(gtbutton.name, gtbutton),
   Vue.component(gtcollapse.name, gtcollapse)
   Vue.component(gtcollapseitem.name, gtcollapseitem)
-  Vue.component(gttooltip.name, gttooltip)  
+  Vue.component(gttooltip.name, gttooltip)
+  Vue.component(gtpagination.name, gtpagination)
+  Vue.directive(gtpaginationscroll.name, gtpaginationscroll)
   Vue.component(gtinput.name, gtinput)    
   Vue.component(gttoast.name, gttoast)  //! 사용성 테스트 필요  
 }
