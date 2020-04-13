@@ -43,5 +43,8 @@ $form-font-placeholder: #acacac;
 
 // collapse
 $collapse-border: $border-normal1;
-$collpase-font-head: $font-normal;
-$collpase-font-body: $font-soft;
+$collapse-head-bg: $background-normal;
+$collapse-head-bg-active: $background-active-gray;
+
+// modal
+$modal-border: $border-normal1;

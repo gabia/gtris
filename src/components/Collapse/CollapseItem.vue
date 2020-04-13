@@ -82,7 +82,7 @@ export default {
   }
 
   &.active > .gt-collapse-head {
-    background-color: $background-active-gray;
+    background-color: $collapse-head-bg-active;
   }
 }
 
@@ -92,7 +92,7 @@ export default {
 }
 
 .gt-collapse-head {
-  background-color: $background-normal;
+  background-color: $collapse-head-bg;
   display: flex;
   justify-content: space-between;
   align-items: center;
