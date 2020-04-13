@@ -73,7 +73,7 @@ export default {
 
 <style lang="scss" scoped>
 .gt-collapse-item {
-  color: #333;
+  color: $collapse-font;
   line-height: 1.5;
   border-top: 1px solid $collapse-border;
   border-bottom: 1px solid $collapse-border;
