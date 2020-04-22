@@ -1,9 +1,9 @@
 <template>
   <div class="gt-tooltip" ref="gt-tooltip" :class="[`gt-tooltip-${type}`]"  :data-placement="position" @mouseover="$_mouseover" @mouseleave="$_mouseleave">
     <slot></slot>
-    <div class="gt-tt-content"  ref="gt-content" :style="ct_style" v-show="isVisible" >
+    <div class="gt-tt-content"  :class="[`gt-tooltip-${cursor}`]"   ref="gt-content" :style="ct_style" v-show="isVisible" >
       <span class="gt-triangle" :style="tr_style" ref="gt-triangle" ></span>
-      <p class="gt-tiny">{{message}}</p>
+      <p class="gt-tiny" :style="user_style" >{{message}}</p>
     </div>
   </div>  
 </template>
@@ -13,17 +13,23 @@ export default {
   name: "gt-tooltip",  
   data() {
     return {
+      user_style:{ color:'' , fontSize:'' },
+      cursor:'show',
       isVisible: false,
       ct_style :{background: 'transparent', color:'transparent', "border-color":'transparent'},
       tr_style :{background: 'transparent', color:'transparent', "border-color":'transparent'}
     }
   },
   props: {
-    type:{ type: String, default : 'primary'},
-    position:{ type: String, default : 'bottom'},
+    userStyle:{ type: Object,  required: false },
+    type:{ type: String, default : 'primary', required: false  },
+    position:{ type: String, default : 'bottom', required: false},
     message: { type: String, default : 'message' }    
   },
   mounted(){ 
+    //{color:'red' , fontSize:'25px' }
+    this.user_style.color = (this.userStyle !== undefined && this.userStyle.color !== undefined) ? this.userStyle.color : '#fff' ;
+    this.user_style.fontSize = (this.userStyle !== undefined  && this.userStyle.fontSize !== undefined) ? this.userStyle.fontSize : '12px' ;
     this.isVisible = true;     
     setTimeout(() => {
       this.$_setPosition()   
@@ -31,9 +37,11 @@ export default {
   },
   methods:{
     $_mouseover(){
-     this.isVisible = true;
+      this.cursor = 'show'
+      this.isVisible = true;
     },
     $_mouseleave(){ 
+      this.cursor = 'hide'
       this.isVisible = false;
     },
     $_setPosition() {        
@@ -75,17 +83,37 @@ export default {
     position: absolute;
   }
 
-  .gt-tooltip-content, .gt-tt-content {
+  .gt-tt-content {
     //display: none;
     position: absolute;
     box-sizing: border-box;
-    padding: 0px 15px; 
+    padding: 6px 8px;
+    font-size: 12px;
+    color: #fff;
+    background: #575757;
+    border-radius: 4px; 
     min-width: 100px;
     background: $primary;    
     text-align: center;
     user-select: none;
     cursor: default;
     z-index: 1000;
+
+    &.gt-tooltip-show {
+      animation: aniTooltipVisible .1s forwards;
+      @keyframes aniTooltipVisible {
+        from { transform: scale(0); opacity: 0 }
+        to { transform: scale(1); opacity: 1 }
+      }
+    }
+    &.gt-tooltip-hide {
+      animation: aniTooltipIvisible .1s forwards;
+      @keyframes aniTooltipIvisible {
+        from { transform: scale(1); opacity: 1 }
+        to { transform: scale(0); opacity: 0 }
+      }
+    }
+
   }
 
   &[data-placement="right"] {
@@ -102,7 +130,7 @@ export default {
     }
   }
 
-  &[data-placement="bottom"] {
+  &[data-placement="bottom"] {    
     .gt-triangle {
       position: absolute;
       @include triangle(top, 6px, 6px, $primary);
