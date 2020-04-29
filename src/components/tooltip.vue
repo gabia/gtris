@@ -27,7 +27,6 @@ export default {
     message: { type: String, default : 'message' }    
   },
   mounted(){ 
-    //{color:'red' , fontSize:'25px' }
     this.user_style.color = (this.userStyle !== undefined && this.userStyle.color !== undefined) ? this.userStyle.color : '#fff' ;
     this.user_style.fontSize = (this.userStyle !== undefined  && this.userStyle.fontSize !== undefined) ? this.userStyle.fontSize : '12px' ;
     this.isVisible = true;     
