@@ -16,7 +16,7 @@ export default {
   name: "gt-collapse-item",
   data() {
     return {
-      id: this.name || `gt-collapse-item-${Math.random().toString(36).substr(2, 8)}`
+      id: this.name || `gt-collapse-item-${Math.random().toString(36).substr(2, 8)}`  // props로 name을 지정하지 않은 경우 랜덤 생성
     }
   },
   props: {
