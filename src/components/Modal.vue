@@ -1,7 +1,7 @@
 <template>
   <div v-show="isShowing" ref="modalRoot">
     <div class="gt-modal-wrapper">
-      <div class="gt-modal" :class="customClass" :style="{flex: `0 0 ${width}`}">
+      <div class="gt-modal" :class="customClass" :style="{width: width}">
         <div class="gt-modal-head" v-if="hasTitle">
           <slot name="head"/>
         </div>
@@ -9,10 +9,7 @@
           <slot name="body"/>
         </div>
         <div class="gt-modal-foot">
-          <slot name="foot">
-            <gtbutton @click="$_close" indicator="secondary">취소</gtbutton>
-            <gtbutton @click="$_close" indicator="primary">확인</gtbutton>
-          </slot>
+          <slot name="foot"></slot>
         </div>
       </div>
     </div>
@@ -20,12 +17,8 @@
 </template>
 
 <script>
-import gtbutton from './button.vue'
 export default {
   name: "gt-modal",
-  components: {
-    gtbutton
-  },
   data() {
     return {
       isShowing: false
@@ -77,22 +70,31 @@ export default {
 .gt-modal-wrapper {
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   overflow: auto;
   margin: 0;
   z-index: 5001;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+
+  &:before {
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+  }
 }
 .gt-modal {
-  padding: 1em;
-  margin: 10vh 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5vh auto;
+  padding: 1rem;
   border: 1px solid $modal-border;
   background: #fff;
   color: $modal-font;
+  text-align: left;
 }
 .gt-modal-head {
   padding-bottom: 1em;
