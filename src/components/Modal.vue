@@ -1,6 +1,6 @@
 <template>
   <div v-show="isShowing" ref="modalRoot">
-    <div class="gt-modal-wrapper">
+    <div class="gt-modal-wrapper" :style="{'z-index': backdropZIndex ? backdropZIndex + 1 : 'auto'}">
       <div class="gt-modal" :class="customClass" :style="{width: width}">
         <div class="gt-modal-head" v-if="hasTitle">
           <slot name="head"/>
@@ -21,7 +21,8 @@ export default {
   name: "gt-modal",
   data() {
     return {
-      isShowing: false
+      isShowing: false,
+      backdropZIndex: null
     }
   },
   props: {
@@ -45,6 +46,7 @@ export default {
   methods: {
     $_open() {
       this.isShowing = true;
+      this.$_findTheHighestZindex();
       this.$_createBackdrop();
     },
     $_close() {
@@ -56,9 +58,12 @@ export default {
       let backdrop = document.createElement("div");
       backdrop.setAttribute("id", `gt_modal_backdroup_${this.name}`);
       backdrop.setAttribute("class", "gt-modal-backdrop");
-      backdrop.setAttribute("style", "position: fixed; left: 0; top: 0; width: 100%; height: 100%; opacity: 0.5; background: #000; z-index: 5000;");
+      backdrop.setAttribute("style", `position: fixed; left: 0; top: 0; width: 100%; height: 100%; opacity: 0.5; background: #000; z-index: ${this.backdropZIndex ? this.backdropZIndex : 'auto'};`);
       backdrop.addEventListener('click', this.$_close, false);
       this.$refs.modalRoot.appendChild(backdrop);
+    },
+    $_findTheHighestZindex() {
+      this.backdropZIndex = Math.max(...[...document.querySelectorAll('*')].map(e => ~~window.getComputedStyle(e).getPropertyValue('z-index'))) + 5000;
     }
   },
   watch: {
@@ -75,7 +80,6 @@ export default {
   height: 100%;
   overflow: auto;
   margin: 0;
-  z-index: 5001;
   text-align: center;
 
   &:before {
