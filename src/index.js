@@ -6,6 +6,7 @@ import gtinput from "./components/Input.vue"
 import gttoast from "./components/toast.vue"
 import gtpagination from "./components/Pagination/Pagination.vue"
 import gtpaginationscroll from "./components/Pagination/PaginationInfinite.js"
+import gtModal from "./components/Modal.vue"
 
 const install = (Vue) => {
   Vue.component(gtbutton.name, gtbutton),
@@ -16,6 +17,7 @@ const install = (Vue) => {
   Vue.directive(gtpaginationscroll.name, gtpaginationscroll)
   Vue.component(gtinput.name, gtinput)    
   Vue.component(gttoast.name, gttoast)  //! 사용성 테스트 필요  
+  Vue.component(gtModal.name, gtModal)
 }
 
 // auto install if used in browser
