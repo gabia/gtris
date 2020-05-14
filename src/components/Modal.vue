@@ -40,9 +40,15 @@ export default {
     this.$eventHub.$on(`gt::opened::modal-${this.name}`, this.$_open);
     this.$eventHub.$on(`gt::closed::modal-${this.name}`, this.$_close);
   },
+  mounted() {
+    document.body.appendChild(this.$el);
+  },
   destroyed() {
     this.$eventHub.$off(`gt::opened::modal-${this.name}`, this.$_open);
     this.$eventHub.$off(`gt::closed::modal-${this.name}`, this.$_close);
+    if (this.$el && this.$el.parentNode) {
+      this.$el.parentNode.removeChild(this.$el);
+    }
   },
   methods: {
     $_open() {
