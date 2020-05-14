@@ -40,13 +40,19 @@ export default {
     this.$eventHub.$on(`gt::opened::modal-${this.name}`, this.$_open);
     this.$eventHub.$on(`gt::closed::modal-${this.name}`, this.$_close);
   },
+  mounted() {
+  },
   destroyed() {
     this.$eventHub.$off(`gt::opened::modal-${this.name}`, this.$_open);
     this.$eventHub.$off(`gt::closed::modal-${this.name}`, this.$_close);
+    if (this.$el && this.$el.parentNode) {
+      this.$el.parentNode.removeChild(this.$el);
+    }
   },
   methods: {
     $_open() {
       this.isShowing = true;
+      document.body.appendChild(this.$el);
       this.$_findTheHighestZindex();
       this.$_createBackdrop();
     },
@@ -60,11 +66,14 @@ export default {
       backdrop.setAttribute("id", `gt_modal_backdroup_${this.name}`);
       backdrop.setAttribute("class", "gt-modal-backdrop");
       backdrop.setAttribute("style", `position: fixed; left: 0; top: 0; width: 100%; height: 100%; opacity: 0.5; background: #000; z-index: ${this.backdropZIndex ? this.backdropZIndex : 'auto'};`);
+      // backdrop.addEventListener('click', this.$_close, false);
       this.$refs.modalRoot.appendChild(backdrop);
     },
     $_findTheHighestZindex() {
+      // console.log('all elements', document.querySelectorAll('body *'));
       var theHighestZindex = Math.max(...[...document.querySelectorAll('*')].map(e => ~~window.getComputedStyle(e).getPropertyValue('z-index'))); 
       this.backdropZIndex = theHighestZindex == BROWSER_MAX_ZINDEX ? 5000 : theHighestZindex + 1;
+      console.log(this.backdropZIndex);
     }
   }
 }
