@@ -99,18 +99,18 @@ export default {
   display: inline-block;
   vertical-align: middle;
   margin: 5vh auto;
-  padding: 1rem;
+  padding: 0 1rem;
   border: 1px solid $modal-border;
   background: #fff;
   color: $modal-font;
   text-align: left;
 }
 .gt-modal-head {
-  padding-bottom: 1em;
+  padding: 1rem 0;
   border-bottom: 1px solid $modal-border;
 }
 .gt-modal-body {
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 .gt-modal-foot {
   text-align: center;
