@@ -39,36 +39,32 @@
 
 <!--split:Input_1:prismEditor-->
 
-<gt-panel>
-  <template #title>Basic</template>
-  <template #body>
-    <div style="padding:10px;">
-      <div class="ui-wrap">
-        <gt-input placeholder="Basic usage" @pressEnter="$_pressEnter" @keyup="$_keyup" />
-      </div>
-      <div class="ui-wrap">
-        <gt-input defaultValue="기본 값입니다." placeholder="Basic usage" />
-      </div>
-      <div class="ui-wrap">
-        <gt-input size="sm" placeholder="small size" />        
-        <gt-input placeholder="default size" />        
-        <gt-input size="lg" placeholder="large size" />
-      </div>
-      <div class="ui-wrap">
-        <gt-input custom-class="hiworks-input-custom-class" placeholder="Custom Class:!important 필요" />
-      </div>
-      <div class="ui-wrap">
-        <gt-input placeholder="width 값 조정" width="500px" />
-      </div>
-      <div class="ui-wrap">
-        <gt-input placeholder="height 값 조정" height="100px" />
-      </div>
-      <div class="ui-wrap">
-        <gt-input disabled placeholder="disabled" />
-      </div>
-    </div>
-  </template>
-</gt-panel>
+<div style="padding:10px;">
+  <div class="ui-wrap">
+    <gt-input placeholder="Basic usage" @pressEnter="$_pressEnter" @keyup="$_keyup" />
+  </div>
+  <div class="ui-wrap">
+    <gt-input defaultValue="기본 값입니다." placeholder="Basic usage" />
+  </div>
+  <div class="ui-wrap">
+    <gt-input size="sm" placeholder="small size" />        
+    <gt-input placeholder="default size" />        
+    <gt-input size="lg" placeholder="large size" />
+  </div>
+  <div class="ui-wrap">
+    <gt-input custom-class="hiworks-input-custom-class" placeholder="Custom Class:!important 필요" />
+  </div>
+  <div class="ui-wrap">
+    <gt-input placeholder="width 값 조정" width="500px" />
+  </div>
+  <div class="ui-wrap">
+    <gt-input placeholder="height 값 조정" height="100px" />
+  </div>
+  <div class="ui-wrap">
+    <gt-input disabled placeholder="disabled" />
+  </div>
+</div>
+
 
 ## CSS ## 
 .hiworks-input-custom-class {
