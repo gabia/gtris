@@ -2,7 +2,7 @@
 [ { "componentName":"Toast_1", "menuName":"basic" , "sourceCode":""  , "prismEditor" : ""  }]
 
 <!--split:Toast_1:sourceCode-->
-<gt-toast v-model="toast_payload" />
+<gt-toast v-model="toast_payload" ></gt-toast>
 <div style="padding:10px;">
   <gtbutton indicator="primary" @click="$_test({type:'primary', message:'hello world', direction: 'center-top' })" style="margin-right:10px;">테스트(상단 중앙)</gtbutton>
   <gtbutton indicator="secondary" @click="$_test({type:'warning', message:'hello world2', direction: 'left-bottom' })" style="margin-right:10px;" >테스트(하단 왼쪽)</gtbutton>
