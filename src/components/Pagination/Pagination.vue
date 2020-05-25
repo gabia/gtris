@@ -5,8 +5,8 @@
     <button type="button" class="gt-pagination-num" v-for="(p, index) in paginate" :key="index" :class="{'gt-active':p == current_page}" @click="setPage(p)">
         {{ p }}
     </button>
-    <button type="button" class="gt-pagination-nav" :disabled="enabledNext" :class="{'gt-disabled': enabledNext}" @click="setPageEnd()"><i class="gi gi-double-arrows-right" /></button>
     <button type="button" class="gt-pagination-nav" :disabled="enabledNext" :class="{'gt-disabled': enabledNext}"  @click="setPageNext()"><i class="gi gi-short-arrow-right-alt"></i></button>
+    <button type="button" class="gt-pagination-nav" :disabled="enabledNext" :class="{'gt-disabled': enabledNext}" @click="setPageEnd()"><i class="gi gi-double-arrows-right" /></button>
   </div>
 </template>
 
