@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "gtpagination",
+  name: "gt-pagination",
   data() {
     return {
       current_page: 1

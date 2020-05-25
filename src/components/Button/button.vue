@@ -22,7 +22,7 @@
 //import common from '@/assets/js/common.js'
 
 export default {
-  name: 'gtbutton',
+  name: 'gt-button',
   data() {
     return {
       isOnComposition: false
