@@ -48,22 +48,22 @@ export default {
   min-height: 34px;
   font-size: 14px;
   padding: 0 10px;
-  border: 1px solid #d6d6d6;
+  border: 1px solid $input-border;
   transition-duration: .2s;
   box-sizing: border-box;
   &:hover {
-    border-color: #c0c4cc;
+    border-color: $input-border-hover;
   }
   &:focus {
-    border-color: $primary;
+    border-color: $input-border-active;
     outline: none;
   }
   &::placeholder {
-    color: #acacac;
+    color: $input-placeholder;
   }
   &[disabled] {
-    background: #f8f8f8;
-    border-color: #d6d6d6;
+    background: $input-disabled;
+    border-color: $input-border;
     user-select: none;
   }
   &.sm {

@@ -7,16 +7,16 @@
   <template #title>basic</template>
   <template #box>
     <gt-tooltip v-bind="{ position: 'bottom', message: 'gabia' }" style="margin-right:30px;" >
-      <gtbutton indicator="primary" >bottom</gtbutton>
+      <gt-button indicator="primary" >bottom</gt-button>
     </gt-tooltip>
     <gt-tooltip v-bind="{ position: 'top', message: 'hiworks', type: 'info' }" style="margin-right:30px;"  >
-      <gtbutton indicator="secondary" >top</gtbutton>
+      <gt-button indicator="secondary" >top</gt-button>
     </gt-tooltip>
     <gt-tooltip v-bind="{ position: 'left', message: 'frontend',  type: 'warning' }" style="margin-right:30px;" >
-        <gtbutton indicator="danger" >left</gtbutton>
+        <gt-button indicator="danger" >left</gt-button>
     </gt-tooltip>
     <gt-tooltip v-bind="{ position: 'right', message: 'js', type: 'danger' }" style="margin-right:30px;"  >
-      <gtbutton type="icon" icon="lock" />
+      <gt-button type="icon" icon="lock" />
     </gt-tooltip>
     <gt-tooltip v-bind="{ position: 'bottom', message: 'userStyle', type: 'info' , userStyle:{color:'red' , fontSize:'16px'} }" style="margin-right:30px;"  >
       <span class="gt-btn red">userStyle</span>
@@ -27,16 +27,16 @@
 <!--split:Tooltip_1:prismEditor-->
 
 <gt-tooltip v-bind="{ position: 'bottom', message: 'gabia' }" style="margin-right:30px;" >
-  <gtbutton indicator="primary" >bottom</gtbutton>
+  <gt-button indicator="primary" >bottom</gt-button>
 </gt-tooltip>
 <gt-tooltip v-bind="{ position: 'top', message: 'hiworks', type: 'info' }" style="margin-right:30px;"  >
-  <gtbutton indicator="secondary" >top</gtbutton>
+  <gt-button indicator="secondary" >top</gt-button>
 </gt-tooltip>
 <gt-tooltip v-bind="{ position: 'left', message: 'frontend',  type: 'warning' }" style="margin-right:30px;" >
-    <gtbutton indicator="danger" >left</gtbutton>
+    <gt-button indicator="danger" >left</gt-button>
 </gt-tooltip>
 <gt-tooltip v-bind="{ position: 'right', message: 'js', type: 'danger' }" style="margin-right:30px;"  >
-  <gtbutton type="icon" icon="lock" />
+  <gt-button type="icon" icon="lock" />
 </gt-tooltip>
 <gt-tooltip v-bind="{ position: 'bottom', message: 'userStyle', type: 'info' , userStyle:{color:'red' , fontSize:'16px'} }" style="margin-right:30px;"  >
   <span class="gt-btn red">userStyle</span>

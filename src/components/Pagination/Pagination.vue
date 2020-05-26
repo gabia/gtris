@@ -120,8 +120,9 @@ export default {
   font-size: 13px;
   font-weight: 500;
   font-family: arial;
-  color: #909090;
-  border: 1px solid #d6d6d6;
+  color: $pagination-font;
+  border: 1px solid $pagination-border;
+  background: $pagination-bg;
   user-select: none;
   border-radius: 4px;
   transition-duration: .1s;
@@ -130,16 +131,16 @@ export default {
 
 .gt-pagination .gt-pagination-nav:hover,
 .gt-pagination .gt-pagination-num:hover {
-  background: #ccc;
-  border-color: #d6d6d6;
-  color: #fff
+  background: $pagination-bg-hover;
+  border-color: $pagination-border-hover;
+  color: $pagination-font-hover
 }
 
 .gt-pagination .gt-pagination-nav.gt-active,
 .gt-pagination .gt-pagination-num.gt-active {
-  background: #2985db;
-  border-color: #2985db;
-  color: #fff;
+  background: $pagination-bg-active;
+  border-color: $pagination-border-active;
+  color: $pagination-font-active;
   pointer-events: none
 }
 

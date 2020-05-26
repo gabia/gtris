@@ -117,9 +117,9 @@ export default {
 		padding: 10px;
 		width: 300px;
 		font-size: 0.8em;
-		color: #fff;
-		background-color: #808080;
-		box-shadow: 2px 2px 10px #ccc;
+		color: $toast-font;
+		background-color: $toast-bg;
+		box-shadow: 2px 2px 10px $toast-shadow;
 		cursor: pointer;
 
 		&.gt-toast-over {
