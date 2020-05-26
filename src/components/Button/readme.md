@@ -6,15 +6,15 @@
 <gt-panel>
   <template #title>basic</template>
   <template #box>
-    <gtbutton>버튼(default)</gtbutton>
-    <gtbutton :disabled="true">버튼(disabled)</gtbutton>
+    <gt-button>버튼(default)</gt-button>
+    <gt-button :disabled="true">버튼(disabled)</gt-button>
   </template>
 </gt-panel>
 
 <!--split:Button_1:prismEditor-->
 
-<gtbutton>버튼(default)</gtbutton>
-<gtbutton :disabled="true">버튼(disabled)</gtbutton>
+<gt-button>버튼(default)</gt-button>
+<gt-button :disabled="true">버튼(disabled)</gt-button>
 
 
 <!--split:Button_2:sourceCode-->
@@ -22,82 +22,82 @@
 <gt-panel>
   <template #title>Colored</template>
   <template #box>
-    <gtbutton indicator="primary" style="margin-right:10px;">버튼(Primary)</gtbutton>
-    <gtbutton indicator="secondary" style="margin-right:10px;">버튼(Secondary)</gtbutton>
-    <gtbutton indicator="danger" style="margin-right:10px;">버튼(Danger)</gtbutton>
-    <gtbutton indicator="primary" style="margin-right:10px;" :disabled="true">
+    <gt-button indicator="primary" style="margin-right:10px;">버튼(Primary)</gt-button>
+    <gt-button indicator="secondary" style="margin-right:10px;">버튼(Secondary)</gt-button>
+    <gt-button indicator="danger" style="margin-right:10px;">버튼(Danger)</gt-button>
+    <gt-button indicator="primary" style="margin-right:10px;" :disabled="true">
       버튼(Primary)
-    </gtbutton>
-    <gtbutton indicator="secondary" style="margin-right:10px;" :disabled="true">
+    </gt-button>
+    <gt-button indicator="secondary" style="margin-right:10px;" :disabled="true">
       버튼(Secondary)
-    </gtbutton>
-    <gtbutton indicator="danger" style="margin-right:10px;" :disabled="true">
+    </gt-button>
+    <gt-button indicator="danger" style="margin-right:10px;" :disabled="true">
       버튼(Danger)
-    </gtbutton>
+    </gt-button>
   </template>
 </gt-panel>
 
 <!--split:Button_2:prismEditor-->
 
-<gtbutton indicator="primary">버튼(Primary)</gtbutton>
-<gtbutton indicator="secondary">버튼(Secondary)</gtbutton>
-<gtbutton indicator="danger">버튼(Danger)</gtbutton>
-<gtbutton indicator="primary" :disabled="true">
+<gt-button indicator="primary">버튼(Primary)</gt-button>
+<gt-button indicator="secondary">버튼(Secondary)</gt-button>
+<gt-button indicator="danger">버튼(Danger)</gt-button>
+<gt-button indicator="primary" :disabled="true">
   버튼(Primary)
-</gtbutton>
-<gtbutton indicator="secondary" :disabled="true">
+</gt-button>
+<gt-button indicator="secondary" :disabled="true">
   버튼(Secondary)
-</gtbutton>
-<gtbutton indicator="danger" :disabled="true">
+</gt-button>
+<gt-button indicator="danger" :disabled="true">
   버튼(Danger)
-</gtbutton>
+</gt-button>
 
 <!--split:Button_3:sourceCode-->
 
 <gt-panel>
   <template #title>Colored</template>
   <template #box>
-    <gtbutton type="icon" icon="trash" ></gtbutton>
-    <gtbutton type="icon" icon="check" ></gtbutton>
-    <gtbutton type="icon" icon="heart" ></gtbutton>
-    <gtbutton type="icon" icon="cog" ></gtbutton>
-    <gtbutton type="icon" icon="label" ></gtbutton>
-    <gtbutton type="icon" icon="mail" ></gtbutton>
-    <gtbutton type="icon" icon="memo" ></gtbutton>
-    <gtbutton type="icon" icon="message" ></gtbutton>
-    <gtbutton type="icon" icon="plus" ></gtbutton>
-    <gtbutton type="icon" icon="minus" ></gtbutton>
-    <gtbutton type="icon" icon="bell" ></gtbutton>
-    <gtbutton type="icon" icon="lock" ></gtbutton>
-    <gtbutton type="icon" icon="paperclip" ></gtbutton>
-    <gtbutton type="icon" icon="search" ></gtbutton>
-    <gtbutton type="icon" icon="star" ></gtbutton>
-    <gtbutton type="icon" icon="star-cancel" ></gtbutton>
-    <gtbutton type="icon" icon="user" ></gtbutton>
-    <gtbutton type="icon" icon="print" ></gtbutton>
+    <gt-button type="icon" icon="trash" ></gt-button>
+    <gt-button type="icon" icon="check" ></gt-button>
+    <gt-button type="icon" icon="heart" ></gt-button>
+    <gt-button type="icon" icon="cog" ></gt-button>
+    <gt-button type="icon" icon="label" ></gt-button>
+    <gt-button type="icon" icon="mail" ></gt-button>
+    <gt-button type="icon" icon="memo" ></gt-button>
+    <gt-button type="icon" icon="message" ></gt-button>
+    <gt-button type="icon" icon="plus" ></gt-button>
+    <gt-button type="icon" icon="minus" ></gt-button>
+    <gt-button type="icon" icon="bell" ></gt-button>
+    <gt-button type="icon" icon="lock" ></gt-button>
+    <gt-button type="icon" icon="paperclip" ></gt-button>
+    <gt-button type="icon" icon="search" ></gt-button>
+    <gt-button type="icon" icon="star" ></gt-button>
+    <gt-button type="icon" icon="star-cancel" ></gt-button>
+    <gt-button type="icon" icon="user" ></gt-button>
+    <gt-button type="icon" icon="print" ></gt-button>
  </template>
 </gt-panel>    
 
 <!--split:Button_3:prismEditor-->
 
-<gtbutton type="icon" icon="trash" />
-<gtbutton type="icon" icon="check" />
-<gtbutton type="icon" icon="heart" />
-<gtbutton type="icon" icon="cog" />
-<gtbutton type="icon" icon="label" />
-<gtbutton type="icon" icon="mail" />
-<gtbutton type="icon" icon="memo" />
-<gtbutton type="icon" icon="message" />
-<gtbutton type="icon" icon="plus" />
-<gtbutton type="icon" icon="minus" />
-<gtbutton type="icon" icon="bell" />
-<gtbutton type="icon" icon="lock" />
-<gtbutton type="icon" icon="paperclip" />
-<gtbutton type="icon" icon="search" />
-<gtbutton type="icon" icon="star" />
-<gtbutton type="icon" icon="star-cancel" />
-<gtbutton type="icon" icon="user" />
-<gtbutton type="icon" icon="print" />
+<gt-button type="icon" icon="trash" />
+<gt-button type="icon" icon="check" />
+<gt-button type="icon" icon="heart" />
+<gt-button type="icon" icon="cog" />
+<gt-button type="icon" icon="label" />
+<gt-button type="icon" icon="mail" />
+<gt-button type="icon" icon="memo" />
+<gt-button type="icon" icon="message" />
+<gt-button type="icon" icon="plus" />
+<gt-button type="icon" icon="minus" />
+<gt-button type="icon" icon="bell" />
+<gt-button type="icon" icon="lock" />
+<gt-button type="icon" icon="paperclip" />
+<gt-button type="icon" icon="search" />
+<gt-button type="icon" icon="star" />
+<gt-button type="icon" icon="star-cancel" />
+<gt-button type="icon" icon="user" />
+<gt-button type="icon" icon="print" />
 
 <!--split:props-->
 

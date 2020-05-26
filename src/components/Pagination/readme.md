@@ -7,7 +7,7 @@
 <gt-panel>
   <template #title>Pagination(Basic)</template>
   <template #box>
-    <gtpagination :length="10" :last_page="40" v-model="page" />
+    <gt-pagination :length="10" :last_page="40" v-model="page" />
     <p>현재 페이지: {{ page }}</p>
     <p>JSON API 기준의 값을 사용하므로 게시물 갯수가 아닌 페이지 범위만 사용함</p>
   </template>
@@ -15,7 +15,7 @@
 
 <!--split:Pagination_1:prismEditor-->
 
-<gtpagination :length="10" :last_page="40" v-model="page" />
+<gt-pagination :length="10" :last_page="40" v-model="page" />
 
 <!--split:props-->
 

@@ -6,7 +6,7 @@ import gtinput from "./components/Input/Input.vue"
 import gttoast from "./components/Toast/toast.vue"
 import gtpagination from "./components/Pagination/Pagination.vue"
 import gtpaginationscroll from "./components/Pagination/PaginationInfinite.js"
-import gtModal from "./components/Modal.vue"
+import gtModal from "./components/Modal/Modal.vue"
 
 const install = (Vue) => {
   Vue.component(gtbutton.name, gtbutton),
