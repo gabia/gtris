@@ -88,8 +88,7 @@ export default {
     box-sizing: border-box;
     padding: 6px 8px;
     font-size: 12px;
-    color: #fff;
-    background: #575757;
+    color: $tooltip-font;
     border-radius: 4px; 
     min-width: 100px;
     background: $primary;    
