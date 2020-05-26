@@ -2,51 +2,78 @@
 // global colors
 /************************************/
 // functional
-$primary: #2985db;
-$primary-hover: #056AC9;
-$secondary: #ebebeb;
-$secondary-hover: #d6d6d6;
-$info: #909090;
-$info-hover: #575757;
-$warning: #ea6923;
-$warning-hover: #da5a15;
-$danger: #C70909;
-$danger-hover: #ff010e;
+$primary: #2985db !default;
+$primary-hover: #056AC9 !default;
+$secondary: #ebebeb !default;
+$secondary-hover: #d6d6d6 !default;
+$info: #909090 !default;
+$info-hover: #575757 !default;
+$warning: #ea6923 !default;
+$warning-hover: #da5a15 !default;
+$danger: #C70909 !default;
+$danger-hover: #ff010e !default;
+$error: #D50000 !default;
+$attention: #EC6E00 !default;
+$importance: #FDC036 !default;
+$white: #fff !default;
 
 // font
-$font-normal: #333;
-$font-reverse: #fff;
-$font-soft: #666;
-$font-light1: #999;
-$font-light2: #909090;
-
+$font-dark: #333 !default;
+$font-gray-1: #676767 !default;
+$font-lightgray-1: #909090 !default;
+$font-lightgray-2: #c4c4c4 !default;
+$font-blue: #2985db !default;
+$font-steelblue: #6D88A4 !default;
+$font-placeholder: #acacac !default;
 
 // border
-$border-normal1: #ebebeb;
-$border-normal2: #d6d6d6;
+$border-lightgray-1: #ebebeb !default;
+$border-lightgray-2: #d6d6d6 !default;
+$border-lightgray-3: #c0c4cc !default;
 
 // background
-$background-normal: #fff;
-$background-active-primary: $primary;
-$background-active-gray: #eee;
+$bg-lightgray-1: #eee !default;
+$bg-lightgray-2: #f8f8f8 !default;
+$bg-lightgray-3: #ccc !default;
+$bg-gray-1: #808080 !default;
+$bg-dark: #575757 !default;
 
 /************************************/
 // components colors
 /************************************/
-// forms
-$form-border: $border-normal2;
-$form-border-focus: $primary;
-$form-bg: #fff;
-$form-bg-disabled: #f8f8f8;
-$form-font: $font-normal;
-$form-font-placeholder: #acacac;
-
 // collapse
-$collapse-border: $border-normal1;
-$collapse-head-bg: $background-normal;
-$collapse-head-bg-active: $background-active-gray;
-$collapse-font: $font-normal;
+$collapse-border: $border-lightgray-1;
+$collapse-head-bg: $white;
+$collapse-head-bg-active: $bg-lightgray-1;
+$collapse-font: $font-dark;
+
+// input
+$input-border: $border-lightgray-2;
+$input-border-hover: $border-lightgray-3;
+$input-border-active: $primary;
+$input-placeholder: $font-placeholder;
+$input-disabled: $bg-lightgray-2;
 
 // modal
-$modal-border: $border-normal1;
-$modal-font: $font-normal;
+$modal-border: $border-lightgray-1;
+$modal-font: $font-dark;
+
+// pagination
+$pagination-font: $font-lightgray-1;
+$pagination-border: $border-lightgray-2;
+$pagination-bg: $white;
+$pagination-font-hover: $white;
+$pagination-border-hover: $border-lightgray-2;
+$pagination-bg-hover: $bg-lightgray-3;
+$pagination-font-active: $white;
+$pagination-border-active: $primary;
+$pagination-bg-active: $primary;
+
+// tooltip
+$tooltip-font: $white;
+$tooltip-bg: $primary;
+
+// toast
+$toast-font: $white;
+$toast-bg: $bg-gray-1;
+$toast-shadow: $bg-lightgray-3;
