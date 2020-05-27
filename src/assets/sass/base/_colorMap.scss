@@ -1,0 +1,59 @@
+// functional
+$color-functional:
+  primary #2985db,
+  primary-hover #056AC9,
+  secondary #ebebeb,
+  secondary-hover #d6d6d6,
+  info #909090,
+  info-hover #575757,
+  warning #ea6923,
+  warning-hover #da5a15,
+  danger #C70909,
+  danger-hover #ff010e,
+  error #D50000,
+  attention #EC6E00,
+  importance #FDC036,
+  white #fff;
+@each $kvp in $color-functional {
+  .gt-background-#{nth($kvp, 1)} { background: nth($kvp, 2);}
+  .gt-font-#{nth($kvp, 1)} { color: nth($kvp, 2);}
+}
+
+// font
+$color-font:
+  dark #333,
+  gray-1 #676767,
+  lightgray-1 #909090,
+  lightgray-2 #c4c4c4,
+  blue #2985db,
+  steelblue #6D88A4,
+  placeholder #acacac;
+@each $kvp in $color-font {
+  .gt-font-#{nth($kvp, 1)} {
+    color: nth($kvp, 2);
+  }
+}
+
+// border
+$color-border:
+  lightgray-1 #ebebeb,
+  lightgray-2 #d6d6d6,
+  lightgray-3 #c0c4cc;
+@each $kvp in $color-border {
+  .gt-border-#{nth($kvp, 1)} {
+    border: 1px solid nth($kvp, 2);
+  }
+}
+
+// background
+$color-background:
+  lightgray-1 #eee,
+  lightgray-2 #f8f8f8,
+  lightgray-3 #ccc,
+  gray-1 #808080,
+  dark #575757;
+@each $kvp in $color-background {
+  .gt-background-#{nth($kvp, 1)} {
+    background: nth($kvp, 2);
+  }
+}
