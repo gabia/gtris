@@ -3131,6 +3131,13 @@ module.exports = function (it) {
 
 /***/ }),
 
+/***/ "f0d9":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "f5df":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4573,7 +4580,11 @@ var Modal_component = normalizeComponent(
 )
 
 /* harmony default export */ var Modal = (Modal_component.exports);
+// EXTERNAL MODULE: ./src/assets/sass/gtris.scss
+var gtris = __webpack_require__("f0d9");
+
 // CONCATENATED MODULE: ./src/index.js
+
 
 
 
