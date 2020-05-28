@@ -1,5 +1,5 @@
 <!--split:basic-->
-[ { "componentName":"Color_1", "menuName":null , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Color_2", "menuName":"Untitled" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Color_3", "menuName":"Nested" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Color_4", "menuName":"Nested" , "sourceCode":"" , "prismEditor" : "" }]
+[ { "componentName":"Color_1", "menuName":"" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Color_2", "menuName":"Font" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Color_3", "menuName":"Background" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Color_4", "menuName":"Border" , "sourceCode":"" , "prismEditor" : "" }]
 
 <!--split:Color_1:sourceCode-->
 
@@ -129,7 +129,7 @@
 <div class="gt-background-info-hover">info-hover</div>
 <div class="gt-background-warning">warning</div>
 <div class="gt-background-warning-hover">warning-hover</div>
-<div class="gt-background-danger">danger</div>
+<div class="gt-background-danger">danger</div>`
 <div class="gt-background-danger-hover">danger-hover</div>
 <div class="gt-background-error">error</div>
 <div class="gt-background-attention">attention</div>
