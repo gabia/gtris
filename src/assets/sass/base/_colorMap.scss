@@ -15,8 +15,9 @@ $color-functional:
   importance #FDC036,
   white #fff;
 @each $kvp in $color-functional {
-  .gt-background-#{nth($kvp, 1)} { background: nth($kvp, 2);}
   .gt-font-#{nth($kvp, 1)} { color: nth($kvp, 2);}
+  .gt-border-#{nth($kvp, 1)} { border: 1px solid nth($kvp, 2);}
+  .gt-background-#{nth($kvp, 1)} { background: nth($kvp, 2);}
 }
 
 // font
