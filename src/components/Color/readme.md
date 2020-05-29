@@ -65,27 +65,29 @@
 
 <!--split:Color_2:prismEditor-->
 
-<div class="gt-font-primary">primary</div>
-<div class="gt-font-primary-hover">primary-hover</div>
-<div class="gt-font-secondary">secondary</div>
-<div class="gt-font-secondary-hover">secondary-hover</div>
-<div class="gt-font-info">info</div>
-<div class="gt-font-info-hover">info-hover</div>
-<div class="gt-font-warning">warning</div>
-<div class="gt-font-warning-hover">warning-hover</div>
-<div class="gt-font-danger">danger</div>
-<div class="gt-font-danger-hover">danger-hover</div>
-<div class="gt-font-error">error</div>
-<div class="gt-font-attention">attention</div>
-<div class="gt-font-importance">importance</div>
-<div class="gt-font-white">white</div>
-<div class="gt-font-dark">dark</div>
-<div class="gt-font-gray-1">gray-1</div>
-<div class="gt-font-lightgray-1">lightgray-1</div>
-<div class="gt-font-lightgray-2">lightgray-2</div>
-<div class="gt-font-blue">blue</div>
-<div class="gt-font-steelblue">steelblue</div>
-<div class="gt-font-placeholder">placeholder</div>
+<div>
+  <div class="gt-font-primary">primary</div>
+  <div class="gt-font-primary-hover">primary-hover</div>
+  <div class="gt-font-secondary">secondary</div>
+  <div class="gt-font-secondary-hover">secondary-hover</div>
+  <div class="gt-font-info">info</div>
+  <div class="gt-font-info-hover">info-hover</div>
+  <div class="gt-font-warning">warning</div>
+  <div class="gt-font-warning-hover">warning-hover</div>
+  <div class="gt-font-danger">danger</div>
+  <div class="gt-font-danger-hover">danger-hover</div>
+  <div class="gt-font-error">error</div>
+  <div class="gt-font-attention">attention</div>
+  <div class="gt-font-importance">importance</div>
+  <div class="gt-font-white">white</div>
+  <div class="gt-font-dark">dark</div>
+  <div class="gt-font-gray-1">gray-1</div>
+  <div class="gt-font-lightgray-1">lightgray-1</div>
+  <div class="gt-font-lightgray-2">lightgray-2</div>
+  <div class="gt-font-blue">blue</div>
+  <div class="gt-font-steelblue">steelblue</div>
+  <div class="gt-font-placeholder">placeholder</div>
+</div>
 
 <!--split:Color_3:sourceCode-->
 
@@ -121,25 +123,27 @@
 
 <!--split:Color_3:prismEditor-->
 
-<div class="gt-background-primary">primary</div>
-<div class="gt-background-primary-hover">primary-hover</div>
-<div class="gt-background-secondary">secondary</div>
-<div class="gt-background-secondary-hover">secondary-hover</div>
-<div class="gt-background-info">info</div>
-<div class="gt-background-info-hover">info-hover</div>
-<div class="gt-background-warning">warning</div>
-<div class="gt-background-warning-hover">warning-hover</div>
-<div class="gt-background-danger">danger</div>`
-<div class="gt-background-danger-hover">danger-hover</div>
-<div class="gt-background-error">error</div>
-<div class="gt-background-attention">attention</div>
-<div class="gt-background-importance">importance</div>
-<div class="gt-background-white">white</div>
-<div class="gt-background-gray-1">gray-1</div>
-<div class="gt-background-lightgray-1">lightgray-1</div>
-<div class="gt-background-lightgray-2">lightgray-2</div>
-<div class="gt-background-lightgray-3">lightgray-3</div>
-<div class="gt-background-dark">dark</div>
+<div>
+  <div class="gt-background-primary">primary</div>
+  <div class="gt-background-primary-hover">primary-hover</div>
+  <div class="gt-background-secondary">secondary</div>
+  <div class="gt-background-secondary-hover">secondary-hover</div>
+  <div class="gt-background-info">info</div>
+  <div class="gt-background-info-hover">info-hover</div>
+  <div class="gt-background-warning">warning</div>
+  <div class="gt-background-warning-hover">warning-hover</div>
+  <div class="gt-background-danger">danger</div>`
+  <div class="gt-background-danger-hover">danger-hover</div>
+  <div class="gt-background-error">error</div>
+  <div class="gt-background-attention">attention</div>
+  <div class="gt-background-importance">importance</div>
+  <div class="gt-background-white">white</div>
+  <div class="gt-background-gray-1">gray-1</div>
+  <div class="gt-background-lightgray-1">lightgray-1</div>
+  <div class="gt-background-lightgray-2">lightgray-2</div>
+  <div class="gt-background-lightgray-3">lightgray-3</div>
+  <div class="gt-background-dark">dark</div>
+</div>
 
 <!--split:Color_4:sourceCode-->
 
@@ -173,23 +177,25 @@
 
 <!--split:Color_4:prismEditor-->
 
-<div class="gt-border-primary">primary</div>
-<div class="gt-border-primary-hover">primary-hover</div>
-<div class="gt-border-secondary">secondary</div>
-<div class="gt-border-secondary-hover">secondary-hover</div>
-<div class="gt-border-info">info</div>
-<div class="gt-border-info-hover">info-hover</div>
-<div class="gt-border-warning">warning</div>
-<div class="gt-border-warning-hover">warning-hover</div>
-<div class="gt-border-danger">danger</div>
-<div class="gt-border-danger-hover">danger-hover</div>
-<div class="gt-border-error">error</div>
-<div class="gt-border-attention">attention</div>
-<div class="gt-border-importance">importance</div>
-<div class="gt-border-white">white</div>
-<div class="gt-border-lightgray-1">lightgray-1</div>
-<div class="gt-border-lightgray-2">lightgray-2</div>
-<div class="gt-border-lightgray-3">lightgray-3</div>
+<div>
+  <div class="gt-border-primary">primary</div>
+  <div class="gt-border-primary-hover">primary-hover</div>
+  <div class="gt-border-secondary">secondary</div>
+  <div class="gt-border-secondary-hover">secondary-hover</div>
+  <div class="gt-border-info">info</div>
+  <div class="gt-border-info-hover">info-hover</div>
+  <div class="gt-border-warning">warning</div>
+  <div class="gt-border-warning-hover">warning-hover</div>
+  <div class="gt-border-danger">danger</div>
+  <div class="gt-border-danger-hover">danger-hover</div>
+  <div class="gt-border-error">error</div>
+  <div class="gt-border-attention">attention</div>
+  <div class="gt-border-importance">importance</div>
+  <div class="gt-border-white">white</div>
+  <div class="gt-border-lightgray-1">lightgray-1</div>
+  <div class="gt-border-lightgray-2">lightgray-2</div>
+  <div class="gt-border-lightgray-3">lightgray-3</div>
+</div>
 
 <!--split:props-->
 
