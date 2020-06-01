@@ -131,6 +131,7 @@
 
 | OPTION | TYPE | DEFAULT | DESCRIPTION |
 |--|--|--|----| 
-| name | [String, Number] | true | - |
-| customClass | String | false | null |
-| width | String | false | default: 700px |
+| name | [String, Number] | true | The unique name of an element. |
+| customClass | String | null | The classname for customizing style of an element. |
+| width | String | false | Width of an element. default: 700px |
+| closeOnClickBackdrop | Boolean | false | Whether the Modal can be closed by clicking the backdrop. default: false |

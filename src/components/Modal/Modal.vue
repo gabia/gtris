@@ -1,6 +1,6 @@
 <template>
   <div v-show="isShowing" ref="modalRoot">
-    <div class="gt-modal-wrapper" :style="{'z-index': backdropZIndex ? backdropZIndex + 1 : 'auto'}">
+    <div class="gt-modal-wrapper" @click.self="$_onClickBackdrop" :style="{'z-index': backdropZIndex ? backdropZIndex + 1 : 'auto'}">
       <div class="gt-modal" :class="customClass" :style="{width: width}">
         <div class="gt-modal-head" v-if="hasTitle">
           <slot name="head"/>
@@ -29,7 +29,8 @@ export default {
   props: {
     name: {type: [String, Number], required: true},
     customClass: {type: String, required: false, default: null},
-    width: {type: String, required: false, default: '700px'}
+    width: {type: String, required: false, default: '700px'},
+    closeOnClickBackdrop: {type: Boolean, required: false, default: false}
   },
   computed: {
     hasTitle() {
@@ -71,6 +72,10 @@ export default {
     $_findTheHighestZindex() {
       var theHighestZindex = Math.max(...[...document.querySelectorAll('*')].map(e => ~~window.getComputedStyle(e).getPropertyValue('z-index'))); 
       this.backdropZIndex = theHighestZindex == BROWSER_MAX_ZINDEX ? 5000 : theHighestZindex + 1;
+    },
+    $_onClickBackdrop() {
+      if(!this.closeOnClickBackdrop) return;
+      this.$_close();
     }
   }
 }
