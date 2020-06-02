@@ -1,5 +1,5 @@
 <!--split:basic-->
-[ { "componentName":"Modal_1", "menuName":"basic" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Modal_2", "menuName":"Untitled" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Modal_3", "menuName":"Nested" , "sourceCode":"" , "prismEditor" : "" }]
+[ { "componentName":"Modal_1", "menuName":"Basic" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Modal_2", "menuName":"Untitled" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Modal_3", "menuName":"Nested" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Modal_4", "menuName":"ClickBackdrop" , "sourceCode":"" , "prismEditor" : "" }]
 
 <!--split:Modal_1:sourceCode-->
 
@@ -127,11 +127,51 @@
   </template>
 </gt-modal>
 
+<!--split:Modal_4:sourceCode-->
+
+<gt-panel>
+  <template #title>ClickBackdrop</template>
+  <template #box>
+    <gt-button @click="$_openModal('clickBackdropModal')" indicator="primary">Open Modal</gt-button>
+    <gt-modal name="clickBackdropModal">
+      <template #head>제목없음</template>
+      <template #body>
+        청춘이 이름자를 시와 같이 피어나듯이 그러나 시인의 없이 있습니다. 새겨지는 풀이 애기 묻힌 우는 같이 까닭입니다. 덮어 그리워 묻힌 듯합니다. 아침이 이름자를 사람들의 별빛이 경, 내 파란 아무 있습니다. 하나에 풀이 패, 거외다. 하나에 내 않은 하나의 무엇인지 시인의 북간도에 이름과, 봅니다. 어머님, 하나에 헤일 까닭입니다. 그리워 나의 프랑시스 없이 나는 시와 있습니다. 남은 가난한 마리아 동경과 이제 까닭입니다. 별빛이 파란 이런 별에도 때 한 있습니다.
+      </template>
+      <template #foot>
+        <gt-button @click="$_closeModal('clickBackdropModal')" indicator="secondary">취소</gt-button>
+        <gt-button @click="$_submit('clickBackdropModal', 'data')" indicator="primary">확인</gt-button>
+      </template>
+    </gt-modal>
+  </template>
+</gt-panel>
+
+<!--split:Modal_4:prismEditor-->
+
+<gt-button @click="$_openModal('clickBackdropModal')" indicator="primary">Open Modal</gt-button>
+<gt-modal name="clickBackdropModal">
+  <template #head>제목없음</template>
+  <template #body>
+    청춘이 이름자를 시와 같이 피어나듯이 그러나 시인의 없이 있습니다. 새겨지는 풀이 애기 묻힌 우는 같이 까닭입니다. 덮어 그리워 묻힌 듯합니다. 아침이 이름자를 사람들의 별빛이 경, 내 파란 아무 있습니다. 하나에 풀이 패, 거외다. 하나에 내 않은 하나의 무엇인지 시인의 북간도에 이름과, 봅니다. 어머님, 하나에 헤일 까닭입니다. 그리워 나의 프랑시스 없이 나는 시와 있습니다. 남은 가난한 마리아 동경과 이제 까닭입니다. 별빛이 파란 이런 별에도 때 한 있습니다.
+  </template>
+  <template #foot>
+    <gt-button @click="$_closeModal('clickBackdropModal')" indicator="secondary">취소</gt-button>
+    <gt-button @click="$_submit('clickBackdropModal', 'data')" indicator="primary">확인</gt-button>
+  </template>
+</gt-modal>
+
 <!--split:props-->
 
 | OPTION | TYPE | DEFAULT | DESCRIPTION |
 |--|--|--|----| 
 | name | [String, Number] | true | The unique name of an element. |
 | customClass | String | null | The classname for customizing style of an element. |
-| width | String | false | Width of an element. default: 700px |
-| closeOnClickBackdrop | Boolean | false | Whether the Modal can be closed by clicking the backdrop. default: false |
+| width | String | 700px | Width of an element. |
+| closeOnClickBackdrop | Boolean | false | Whether the Modal can be closed by clicking the backdrop. |
+
+<!--split:events-->
+
+| NAME | DESCRIPTION |
+|--|--|
+| gt::opened::modal-${name} | Triggered when a Modal opened. |
+| gt::closed::modal-${name} | Triggered when a Modal closed. |
