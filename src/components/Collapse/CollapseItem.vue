@@ -1,12 +1,16 @@
 <template>
   <div class="gt-collapse-item" :class="{'active': isShowing}">
     <div class="gt-collapse-head" @click="$_toggle">
-      <slot name="head"/>
-      <i v-show="isShowing" class="gi gi-short-arrow-up-alt"/>
-      <i v-show="!isShowing" class="gi gi-short-arrow-down-alt"/>
+      <div class="title" :class="{'reverse': parent.arrowPositionLeft}">
+        <slot name="head" />
+      </div>
+      <span class="arrow" :class="{'reverse': parent.arrowPositionLeft}">
+        <i v-show="isShowing" class="gi gi-short-arrow-up-alt" />
+        <i v-show="!isShowing" class="gi gi-short-arrow-down-alt" />
+      </span>
     </div>
     <div v-show="isShowing" class="gt-collapse-body">
-      <slot name="content"/>
+      <slot name="content" />
     </div>
   </div>
 </template>
@@ -105,6 +109,18 @@ export default {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    order: 1;
+    padding-right: 10px;
+    &.reverse {
+      order: 2;
+      padding-left: 10px;
+    }
+  }
+  .arrow {
+    order: 2;
+    &.reverse {
+      order: 1;
+    }
   }
 }
 

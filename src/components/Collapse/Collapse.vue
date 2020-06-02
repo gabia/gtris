@@ -14,6 +14,7 @@ export default {
   },
   props: {
     accordion: {type: Boolean, required: false, default: false},
+    arrowPositionLeft: { type: Boolean, default: false },
     init: {type: String, required: false, default: null},
     opened: {type: Function, required: false, default: null},
     closed: {type: Function, required: false, default: null},

@@ -1,5 +1,5 @@
 <!--split:basic-->
-[ { "componentName":"Collapse_1", "menuName":"basic" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Collapse_2", "menuName":"activate" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Collapse_3", "menuName":"accordion" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Collapse_4", "menuName":"event" , "sourceCode":"" , "prismEditor" : "" },{ "componentName":"Collapse_5", "menuName":"nestsed" , "sourceCode":"" , "prismEditor" : "" }]
+[ { "componentName":"Collapse_1", "menuName":"Basic" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Collapse_2", "menuName":"Activate" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Collapse_3", "menuName":"Accordion" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Collapse_4", "menuName":"Event" , "sourceCode":"" , "prismEditor" : "" },{ "componentName":"Collapse_5", "menuName":"Nestsed" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Collapse_6", "menuName":"ArrowPosition" , "sourceCode":"" , "prismEditor" : "" }]
 
 <!--split:Collapse_1:sourceCode-->
 
@@ -215,13 +215,47 @@
   </gt-collapse-item> 
 </gt-collapse>
 
+<!--split:Collapse_6:sourceCode-->
+
+<gt-panel>
+  <template #title>ArrowPosition</template>
+  <template #box>
+    <gt-collapse :arrowPositionLeft="true">
+      <gt-collapse-item>
+        <template  #head>제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1</template>
+        <template #content>소학교 아침이 파란 새겨지는 경, 있습니다. 묻힌 라이너 마디씩 내 보고, 어머님, 버리었습니다.</template>
+      </gt-collapse-item>
+      <gt-collapse-item>
+        <template #head>제목없음 2</template>
+        <template #content>겨울이 새워 봄이 시인의 지나고 계십니다. 겨울이 밤을 남은 밤이 북간도에 거외다.</template>
+      </gt-collapse-item>
+    </gt-collapse>
+  </template>
+</gt-panel>
+
+<!--split:Collapse_6:prismEditor-->
+
+<gt-collapse :arrowPositionLeft="true">
+  <gt-collapse-item>
+    <template  #head>제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1제목없음 1</template>
+    <template #content>소학교 아침이 파란 새겨지는 경, 있습니다. 묻힌 라이너 마디씩 내 보고, 어머님, 버리었습니다.</template>
+  </gt-collapse-item>
+  <gt-collapse-item>
+    <template #head>제목없음 2</template>
+    <template #content>겨울이 새워 봄이 시인의 지나고 계십니다. 겨울이 밤을 남은 밤이 북간도에 거외다.</template>
+  </gt-collapse-item>
+</gt-collapse>
+
 <!--split:props-->
 
 | OPTION | TYPE | DEFAULT | DESCRIPTION |
 |--|--|--|----| 
-| accordion | Boolean | false |   |
-| init | String | null | |
-| opened | Function | null | |
-| closed | Function | null | |
-| customClass | String | null | |
-| (gt-collapse-item) name | String, Number | null | |
+| gt-collapse ||||
+| accordion | Boolean | false | Whether the rest can be closed by clicking a gt-collapse-item. |
+| arrowPositionLeft | Boolean | false | The location of an arrow icon. Initially, the arrow icon is on right. |
+| init | String | null | The name(defined at each gt-collapse-item) of gt-collapse-item activated initially. |
+| opened | Function | null | Triggered when a gt-collapse-item opened. |
+| closed | Function | null | Triggered when a gt-collapse-item closed. |
+| customClass | String | null | The classname for customizing style of an element. |
+| gt-collapse-item ||||
+| name | String, Number | null | Unique name of each gt-collapse-item.|
