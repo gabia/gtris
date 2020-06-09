@@ -1,5 +1,5 @@
 <!--split:basic-->
-[ { "componentName":"Color_1", "menuName":"Functional Colors" , "sourceCode":"" , "prismEditor" : "" },
+[ { "componentName":"Color_1", "menuName":"Functional Colors" , "sourceCode":"" , "prismEditor" : null },
 { "componentName":"Color_2", "menuName":"Font" , "sourceCode":"" , "prismEditor" : "" },
 { "componentName":"Color_3", "menuName":"Background" , "sourceCode":"" , "prismEditor" : "" },
 { "componentName":"Color_4", "menuName":"Border" , "sourceCode":"" , "prismEditor" : "" }]
@@ -201,9 +201,3 @@
 </div>
 
 <!--split:props-->
-
-| OPTION | TYPE | DEFAULT | DESCRIPTION |
-|--|--|--|----| 
-| name | [String, Number] | true | - |
-| customClass | String | false | null |
-| width | String | false | default: 700px |
