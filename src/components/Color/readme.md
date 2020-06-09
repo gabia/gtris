@@ -201,9 +201,3 @@
 </div>
 
 <!--split:props-->
-
-| OPTION | TYPE | DEFAULT | DESCRIPTION |
-|--|--|--|----| 
-| name | [String, Number] | true | - |
-| customClass | String | false | null |
-| width | String | false | default: 700px |
