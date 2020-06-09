@@ -1,5 +1,5 @@
 <!--split:basic-->
-[ { "componentName":"Color_1", "menuName":"Functional Colors" , "sourceCode":"" , "prismEditor" : null },
+[ { "componentName":"Color_1", "menuName":"Functional Colors" , "sourceCode":""},
 { "componentName":"Color_2", "menuName":"Font" , "sourceCode":"" , "prismEditor" : "" },
 { "componentName":"Color_3", "menuName":"Background" , "sourceCode":"" , "prismEditor" : "" },
 { "componentName":"Color_4", "menuName":"Border" , "sourceCode":"" , "prismEditor" : "" }]
@@ -29,8 +29,6 @@
     GTRIS를 구성하는 주요 색상을 기능 혹은 중요도에 따라 구분하였으며, 컴포넌트의 배경색과 텍스트 색상 등에 사용되었습니다.
   </template>
 </gt-panel>
-
-<!--split:Color_1:prismEditor-->
 
 <!--split:Color_2:sourceCode-->
 
@@ -199,5 +197,3 @@
   <div class="gt-border-lightgray-2">lightgray-2</div>
   <div class="gt-border-lightgray-3">lightgray-3</div>
 </div>
-
-<!--split:props-->
