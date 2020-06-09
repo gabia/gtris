@@ -164,14 +164,14 @@
 
 | OPTION | TYPE | DEFAULT | DESCRIPTION |
 |--|--|--|----| 
-| name | [String, Number] | true | The unique name of an element. |
-| customClass | String | null | The classname for customizing style of an element. |
-| width | String | 700px | Width of an element. |
-| closeOnClickBackdrop | Boolean | false | Whether the Modal can be closed by clicking the backdrop. |
+| name | [String, Number] | true | 모달의 이름. 중복되지 않는 유일한 값. |
+| customClass | String | null | 사용자화를 위한 클래스명. |
+| width | String | 700px | 모달의 너비. |
+| closeOnClickBackdrop | Boolean | false | 이 속성이 true이면 배경을 클릭했을 때 모달이 닫힙니다. |
 
 <!--split:events-->
 
 | NAME | DESCRIPTION |
 |--|--|
-| gt::opened::modal-${name} | Triggered when a Modal opened. |
-| gt::closed::modal-${name} | Triggered when a Modal closed. |
+| gt::opened::modal-${name} | 모달이 열렸을 때 발생하는 이벤트. |
+| gt::closed::modal-${name} | 모달이 닫혔을 때 발생하는 이벤트. |

@@ -251,11 +251,11 @@
 | OPTION | TYPE | DEFAULT | DESCRIPTION |
 |--|--|--|----| 
 | gt-collapse ||||
-| accordion | Boolean | false | Whether the rest can be closed by clicking a gt-collapse-item. |
-| arrowPositionLeft | Boolean | false | The location of an arrow icon. Initially, the arrow icon is on right. |
-| init | String | null | The name(defined at each gt-collapse-item) of gt-collapse-item activated initially. |
-| opened | Function | null | Triggered when a gt-collapse-item opened. |
-| closed | Function | null | Triggered when a gt-collapse-item closed. |
-| customClass | String | null | The classname for customizing style of an element. |
+| accordion | Boolean | false | 이 속성이 true이면 하나의 아이템을 클릭 시 나머지 아이템들은 모두 닫힙니다. |
+| arrowPositionLeft | Boolean | false | 화살표 아이콘의 위치. 기본은 오른쪽입니다. |
+| init | String | null | 각 아이템에 정의된 이름들 중 초기에 활성화 시킬 하나의 아이템의 이름. |
+| opened | Function | null | 아이템이 열렸을 때 실행할 함수. |
+| closed | Function | null | 아이템이 닫혔을 때 실행할 함수. |
+| customClass | String | null | 사용자화를 위한 클래스명. |
 | gt-collapse-item ||||
-| name | String, Number | null | Unique name of each gt-collapse-item.|
+| name | String, Number | gt-collapse-item-${36진수로 구성된 난수} | 아이템의 이름. 중복되지 않는 유일한 값.|
