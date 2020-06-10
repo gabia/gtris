@@ -75,11 +75,11 @@
 
 | OPTION | TYPE | DEFAULT | DESCRIPTION |
 |--|--|--|----| 
-| defaultValue | String | '' | required : false  |
-| placeholder | String | false | required : false |
-| size | String | false | required : false |
-| width | String | false | required : false |
-| height | String | false | required : false |
-| customClass | String | false | required : false |
-| (event) pressEnter  |  |  |  |
-| (event) keyup  |  |  |  |
+| defaultValue | String | '' | 기본 값 설정시 사용합니다.  |
+| placeholder | String | false |  |
+| size | String | false |  |
+| width | String | false |  |
+| height | String | false |  |
+| customClass | String | false | 스타일 적용 시 !important 필요합니다. |
+| pressEnter  | Event  |  |  |
+| keyup  | Event |  |  |

@@ -18,7 +18,7 @@
     <gt-tooltip v-bind="{ position: 'right', message: 'js', type: 'danger' }" style="margin-right:30px;"  >
       <gt-button type="icon" icon="lock" />
     </gt-tooltip>
-    <gt-tooltip v-bind="{ position: 'bottom', message: 'userStyle', type: 'info' , userStyle:{color:'red' , fontSize:'16px'} }" style="margin-right:30px;"  >
+    <gt-tooltip v-bind="{ position: 'bottom', message: 'userStyle', type: 'info' , fontClass:'gt-font-dark'  }" style="margin-right:30px;"  >
       <span class="gt-btn red">userStyle</span>
     </gt-tooltip>
   </template>
@@ -38,7 +38,7 @@
 <gt-tooltip v-bind="{ position: 'right', message: 'js', type: 'danger' }" style="margin-right:30px;"  >
   <gt-button type="icon" icon="lock" />
 </gt-tooltip>
-<gt-tooltip v-bind="{ position: 'bottom', message: 'userStyle', type: 'info' , userStyle:{color:'red' , fontSize:'16px'} }" style="margin-right:30px;"  >
+<gt-tooltip v-bind="{ position: 'bottom', message: 'userStyle', type: 'info' , fontClass:'gt-font-dark' }" style="margin-right:30px;"  >
   <span class="gt-btn red">userStyle</span>
 </gt-tooltip>
 
@@ -47,7 +47,7 @@
 
 | OPTION | TYPE | DEFAULT | DESCRIPTION |
 |--|--|--|----| 
-| type | String | 'primary' | 'primary' , 'warning' , 'danger' , 'info' |
+| type | String | 'primary' | gtris에서 사용하는 타입을 사용할수 있습니다. |
 | position | String | 'bottom' |'bottom' , 'left' , 'right' , 'top' |
 | message | String | false | - |
-| userStyle | Object | false | ex> userStyle:{color:'red' , fontSize:'16px'} |
+| fontClass | String | false | gt-font-{타입} 클래스를 적용합니다.  |

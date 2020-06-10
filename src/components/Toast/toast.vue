@@ -1,7 +1,7 @@
 <template>
   <transition name="gt-toast-fade">
     <div class="gt-toast-container" :data-direction="direction" v-show="isVisible" >
-      <div class="gt-toast " :class="`gt-toast-${type}`">
+      <div class="gt-toast" :class="customClass">
         {{message}}       
       </div>
     </div>
@@ -36,15 +36,22 @@ export default {
       isVisible: false,     
       type:'primary',
       message:'',
-      direction:'center-top',       
+      direction:'center-top',
+      customClass:[]       
     }
   },
   methods: {
     $_payloadChecker(payload){
       let return_val = true;
-      if(payload.type === undefined || ['primary','info','warning','danger' ].indexOf(payload.type) === -1 ){
-        return_val = false;
-      }
+      if(payload.type !== undefined  && ['primary','info','warning','danger' ].indexOf(payload.type) !== -1 ){
+        this.customClass.push(`gt-toast-${payload.type}`)
+			}else{
+				this.customClass.push(`gt-toast-primary`)
+			}
+			
+			if(payload.gtColorClass !== undefined){
+				this.customClass = payload.gtColorClass
+			}
 
       if(payload.direction === undefined ||  ['right-top','left-top','right-bottom','left-bottom','center-top','center-bottom' ].indexOf(payload.type) !== -1 ){
         return_val = false;
@@ -117,8 +124,8 @@ export default {
 		padding: 10px;
 		width: 300px;
 		font-size: 0.8em;
-		color: $toast-font;
-		background-color: $toast-bg;
+		
+		//background-color: $toast-bg;
 		box-shadow: 2px 2px 10px $toast-shadow;
 		cursor: pointer;
 
@@ -128,18 +135,22 @@ export default {
 		}
 
 		&.gt-toast-primary {
+			color: $toast-font;
 			background-color:  $primary;
 		}
 
 		&.gt-toast-info {
+			color: $toast-font;
 			background-color: $info;
 		}
 
 		&.gt-toast-warning {
+			color: $toast-font;
 			background-color: $warning;
 		}
 
 		&.gt-toast-danger {
+			color: $toast-font;
 			background-color: $danger;
 		}
 	}

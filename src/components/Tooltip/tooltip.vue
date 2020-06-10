@@ -3,7 +3,7 @@
     <slot></slot>
     <div class="gt-tt-content"  :class="[`gt-tooltip-${cursor}`]"   ref="gt-content" :style="ct_style" v-show="isVisible" >
       <span class="gt-triangle" :style="tr_style" ref="gt-triangle" ></span>
-      <p class="gt-tiny" :style="user_style" >{{message}}</p>
+      <p class="gt-tiny" :class="fontClass" >{{message}}</p>
     </div>
   </div>  
 </template>
@@ -24,7 +24,8 @@ export default {
     userStyle:{ type: Object,  required: false },
     type:{ type: String, default : 'primary', required: false  },
     position:{ type: String, default : 'bottom', required: false},
-    message: { type: String, default : 'message' }    
+    message: { type: String, default : 'message' },
+    fontClass:{ type: String, default : 'gt-font-white', required: false},
   },
   mounted(){ 
     this.user_style.color = (this.userStyle !== undefined && this.userStyle.color !== undefined) ? this.userStyle.color : '#fff' ;
@@ -151,7 +152,12 @@ export default {
     'primary' : $primary,
     'warning' : $warning,
     'danger' : $danger,
-    'info' : $info
+    'info' : $info,
+    'secondary' : $secondary,
+    'error' : $error,
+    'importance' : $importance,
+    'white' : $white,
+    'attention' : $attention,
   );
 
   @each $key, $colorType in $types {
