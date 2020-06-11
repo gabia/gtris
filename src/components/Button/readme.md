@@ -35,9 +35,6 @@
       버튼(Danger)
     </gt-button>
   </template>
-</gt-panel>
-
-<gt-panel>
   <template #title>Invert</template>
   <template #box>
     <gt-button indicator="primary" style="margin-right:10px;">버튼(Primary)</gt-button>
