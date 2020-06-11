@@ -34,21 +34,9 @@
     <gt-button indicator="danger" style="margin-right:10px;" :disabled="true">
       버튼(Danger)
     </gt-button>
-  </template>
-  <template #title>Invert</template>
-  <template #box>
-    <gt-button indicator="primary" style="margin-right:10px;">버튼(Primary)</gt-button>
-    <gt-button indicator="secondary" style="margin-right:10px;">버튼(Secondary)</gt-button>
-    <gt-button indicator="danger" style="margin-right:10px;">버튼(Danger)</gt-button>
-    <gt-button indicator="primary" style="margin-right:10px;" :disabled="true">
-      버튼(Primary)
-    </gt-button>
-    <gt-button indicator="secondary" style="margin-right:10px;" :disabled="true">
-      버튼(Secondary)
-    </gt-button>
-    <gt-button indicator="danger" style="margin-right:10px;" :disabled="true">
-      버튼(Danger)
-    </gt-button>
+    <gt-button indicator="primary" invert="true" style="margin-right:10px;">버튼(Primary)</gt-button>
+    <gt-button indicator="secondary" invert="true" style="margin-right:10px;">버튼(Secondary)</gt-button>
+    <gt-button indicator="danger" invert="true" style="margin-right:10px;">버튼(Danger)</gt-button>
   </template>
 </gt-panel>
 
