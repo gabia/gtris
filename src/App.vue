@@ -2,12 +2,13 @@
   <div id="app">
     <div>
       <!-- Test -->
+      <gt-button indicator="danger" invert="true">버튼(Primary)</gt-button>
     </div>
   </div>
 </template>
 
 <script>
-//import gtbutton from './components/button.vue'
+import gtButton from './components/Button/button'
 //import gtInfinite from './components/Pagination/PaginationInfinite'
 //import pagination from './components/Pagination.vue'
 //import gttooltip from "./components/tooltip.vue"
@@ -15,7 +16,7 @@
 export default {
   name: 'app',
   components: {
-    //pagination,
+    gtButton,
   },
   directives: {
       //infiniteScroll: gtInfinite

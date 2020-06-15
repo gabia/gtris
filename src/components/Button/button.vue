@@ -5,7 +5,8 @@
     :disabled="disabled"
     :class="[
       indicator? 'gt-btn-'+indicator: '',
-      isIcon? 'gt-btn-icon': ''
+      isIcon? 'gt-btn-icon': '',
+      invert? 'invert' : ''
     ]"
     @click="eventClick"
   >
@@ -32,7 +33,8 @@ export default {
     type: { type: String, required: false, default: null},
     disabled: { type: Boolean, required: false, default: false },
     indicator: { type: String, required: false, default: null },
-    icon: { type: String, required: false, default: null }/* ,
+    icon: { type: String, required: false, default: null },
+    invert: { type: String, required: false, default: null }/* ,
     pill: {type: String, required: false, default: null },
     float: {type: String, required: false, default: null },
     size: { type: String, required: false, default: null } */
@@ -62,8 +64,7 @@ export default {
   min-width: 50px;
   padding-left: 16px;
   padding-right: 16px;
-  font-size: 16px;
-  border-radius: 0;
+  font-size: 14px;
   font-weight: 400;
   border: 1px solid transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -75,6 +76,7 @@ export default {
   cursor: pointer;
   user-select: none;
   outline: none;
+  border-radius: 2px;
 
   /* hover */
   &:hover,
@@ -124,6 +126,22 @@ export default {
       border-color: #2985db;
       color: #fff;
     }
+    
+    &.invert {
+      background: transparent !important;
+      border-color: #056ac9 !important;
+      color: #056ac9;
+
+      &:hover, &:focus {
+        background-color: #056ac9 !important;
+        border-color: #056ac9 !important;
+        color: #fff;
+      }
+
+      &:hover[disabled], &:focus[disabled] {
+        color: #fff;
+      }
+    }
   }
 
   /* secondary */
@@ -143,6 +161,22 @@ export default {
       border-color: #5a6268;
       color: #fff;
     }
+    
+    &.invert {
+      background: transparent !important;
+      border-color: #6c757d !important;
+      color: #6c757d;
+
+      &:hover, &:focus {
+        background-color: #5a6268 !important;
+        border-color: #5a6268 !important;
+        color: #fff;
+      }
+
+      &:hover[disabled], &:focus[disabled] {
+        color: #fff;
+      }
+    }
   }
 
   /* danger */
@@ -161,6 +195,21 @@ export default {
       background-color: #dc3545;
       border-color: #dc3545;
       color: #fff;
+    }
+    &.invert {
+      background: transparent !important;
+      border-color: #dc3545 !important;
+      color: #c82333;
+
+      &:hover, &:focus {
+        background-color: #dc3545 !important;
+        border-color: #dc3545 !important;
+        color: #fff;
+      }
+
+      &:hover[disabled], &:focus[disabled] {
+        color: #fff;
+      }
     }
   }
 

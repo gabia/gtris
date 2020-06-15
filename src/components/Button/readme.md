@@ -4,7 +4,7 @@
 <!--split:Button_1:sourceCode-->
 
 <gt-panel>
-  <template #title>basic</template>
+  <template #title>Default</template>
   <template #box>
     <gt-button>버튼(default)</gt-button>
     <gt-button :disabled="true">버튼(disabled)</gt-button>
@@ -34,28 +34,31 @@
     <gt-button indicator="danger" style="margin-right:10px;" :disabled="true">
       버튼(Danger)
     </gt-button>
+    <gt-button indicator="primary" invert="true" style="margin-right:10px;">버튼(Primary)</gt-button>
+    <gt-button indicator="secondary" invert="true" style="margin-right:10px;">버튼(Secondary)</gt-button>
+    <gt-button indicator="danger" invert="true" style="margin-right:10px;">버튼(Danger)</gt-button>
   </template>
 </gt-panel>
 
 <!--split:Button_2:prismEditor-->
 
-<gt-button indicator="primary">버튼(Primary)</gt-button>
-<gt-button indicator="secondary">버튼(Secondary)</gt-button>
-<gt-button indicator="danger">버튼(Danger)</gt-button>
+<gt-button indicator="primary">Primary</gt-button>
+<gt-button indicator="secondary">Secondary</gt-button>
+<gt-button indicator="danger">Danger</gt-button>
 <gt-button indicator="primary" :disabled="true">
-  버튼(Primary)
+  Primary
 </gt-button>
 <gt-button indicator="secondary" :disabled="true">
-  버튼(Secondary)
+  Secondary
 </gt-button>
 <gt-button indicator="danger" :disabled="true">
-  버튼(Danger)
+  Danger
 </gt-button>
 
 <!--split:Button_3:sourceCode-->
 
 <gt-panel>
-  <template #title>Colored</template>
+  <template #title>아이콘 버튼</template>
   <template #box>
     <gt-button type="icon" icon="trash" ></gt-button>
     <gt-button type="icon" icon="check" ></gt-button>
