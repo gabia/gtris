@@ -18,12 +18,12 @@
     <gt-tooltip content="안녕하세요" placement="right"   style="margin-right:30px;"  >
       <gt-button type="icon" icon="lock" />
     </gt-tooltip>
-    <gt-tooltip v-bind="{ placement: 'bottom', content: ,'userStyle' gtrisColor:{color:'white', background:'primary'}  }" style="margin-right:30px;"  >
-      <span class="gt-btn red">userStyle</span>
+    <gt-tooltip v-bind="{ placement: 'bottom', content: 'userStyle' , gtrisColor:{color:'white', background:'primary'}  }" style="margin-right:30px;"  >
+      <gt-button indicator="secondary" >userStyle</gt-button>
     </gt-tooltip>
     <gt-tooltip content="안녕하세요" placement="bottom" color="aquamarine" fontSize="1.1em" background="red"  style="margin-right:30px;"  >
-      <span class="gt-btn red">userStyle</span>
-    </gt-tooltip>    
+      <gt-button indicator="secondary" >userStyle</gt-button>
+    </gt-tooltip>   
   </template>
 </gt-panel>
 
@@ -42,11 +42,11 @@
   <gt-button type="icon" icon="lock" />
 </gt-tooltip>
 <gt-tooltip v-bind="{ placement: 'bottom', content: 'userStyle' , gtrisColor:{color:'white', background:'primary'}  }" style="margin-right:30px;"  >
-  <span class="gt-btn red">userStyle</span>
+  <gt-button indicator="secondary" >userStyle</gt-button>
 </gt-tooltip>
 <gt-tooltip content="안녕하세요" placement="bottom" color="aquamarine" fontSize="1.1em" background="red"  style="margin-right:30px;"  >
-  <span class="gt-btn red">userStyle</span>
-</gt-tooltip>  
+  <gt-button indicator="secondary" >userStyle</gt-button>
+</gt-tooltip>    
 
 <!--split:props-->
 
