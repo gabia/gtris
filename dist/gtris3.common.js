@@ -206,10 +206,14 @@ module.exports = !DESCRIPTORS && !fails(function () {
 
 /***/ }),
 
-/***/ "1b9f":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "0d7b":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tooltip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("d66e");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tooltip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tooltip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Tooltip_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -1492,14 +1496,14 @@ module.exports = store.inspectSource;
 
 /***/ }),
 
-/***/ "8d4e":
+/***/ "8b19":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tooltip_vue_vue_type_style_index_0_id_41c5a5d7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("1b9f");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tooltip_vue_vue_type_style_index_0_id_41c5a5d7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tooltip_vue_vue_type_style_index_0_id_41c5a5d7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Toast_vue_vue_type_style_index_0_id_403dd10f_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("f4e0");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Toast_vue_vue_type_style_index_0_id_403dd10f_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Toast_vue_vue_type_style_index_0_id_403dd10f_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_tooltip_vue_vue_type_style_index_0_id_41c5a5d7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Toast_vue_vue_type_style_index_0_id_403dd10f_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -2754,6 +2758,13 @@ module.exports = function (it, TAG, STATIC) {
 
 /***/ }),
 
+/***/ "d66e":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "d81d":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3082,6 +3093,13 @@ module.exports = function (it) {
 
 /***/ }),
 
+/***/ "f4e0":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "f5df":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3217,17 +3235,19 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
 var es_function_name = __webpack_require__("b0c0");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Button/button.vue?vue&type=template&id=67ef0121&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Button/button.vue?vue&type=template&id=30e8e6b4&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"gt-btn",class:[
     _vm.indicator? 'gt-btn-'+_vm.indicator: '',
-    _vm.isIcon? 'gt-btn-icon': ''
+    _vm.isIcon? 'gt-btn-icon': '',
+    _vm.invert? 'invert' : ''
   ],attrs:{"type":_vm.type,"disabled":_vm.disabled},on:{"click":_vm.eventClick}},[(_vm.type=='icon')?_c('i',{staticClass:"gis",class:[_vm.icon? 'gis gi-'+_vm.icon: '']}):_vm._t("default")],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Button/button.vue?vue&type=template&id=67ef0121&
+// CONCATENATED MODULE: ./src/components/Button/button.vue?vue&type=template&id=30e8e6b4&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Button/button.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -3273,6 +3293,11 @@ var staticRenderFns = []
       default: null
     },
     icon: {
+      type: String,
+      required: false,
+      default: null
+    },
+    invert: {
       type: String,
       required: false,
       default: null
@@ -3636,146 +3661,301 @@ var CollapseItem_component = normalizeComponent(
 )
 
 /* harmony default export */ var CollapseItem = (CollapseItem_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tooltip/tooltip.vue?vue&type=template&id=41c5a5d7&scoped=true&
-var tooltipvue_type_template_id_41c5a5d7_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"gt-tooltip",staticClass:"gt-tooltip",class:[("gt-tooltip-" + _vm.type)],attrs:{"data-placement":_vm.position},on:{"mouseover":_vm.$_mouseover,"mouseleave":_vm.$_mouseleave}},[_vm._t("default"),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isVisible),expression:"isVisible"}],ref:"gt-content",staticClass:"gt-tt-content",class:[("gt-tooltip-" + _vm.cursor)],style:(_vm.ct_style)},[_c('span',{ref:"gt-triangle",staticClass:"gt-triangle",style:(_vm.tr_style)}),_c('p',{staticClass:"gt-tiny",class:_vm.fontClass},[_vm._v(_vm._s(_vm.message))])])],2)}
-var tooltipvue_type_template_id_41c5a5d7_scoped_true_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tooltip/Tooltip.vue?vue&type=template&id=5ec916fa&
+var Tooltipvue_type_template_id_5ec916fa_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"d-inline-block",on:{"mouseenter":_vm.makeTT,"mouseleave":_vm.removeTT}},[_vm._t("default")],2)}
+var Tooltipvue_type_template_id_5ec916fa_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Tooltip/tooltip.vue?vue&type=template&id=41c5a5d7&scoped=true&
+// CONCATENATED MODULE: ./src/components/Tooltip/Tooltip.vue?vue&type=template&id=5ec916fa&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tooltip/tooltip.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tooltip/Tooltip.vue?vue&type=script&lang=js&
 //
 //
 //
 //
 //
 //
-//
-//
-//
-//
-/* harmony default export */ var tooltipvue_type_script_lang_js_ = ({
+/* harmony default export */ var Tooltipvue_type_script_lang_js_ = ({
   name: "gt-tooltip",
-  data: function data() {
-    return {
-      user_style: {
-        color: '',
-        fontSize: ''
-      },
-      cursor: 'show',
-      isVisible: false,
-      ct_style: {
-        background: 'transparent',
-        color: 'transparent',
-        "border-color": 'transparent'
-      },
-      tr_style: {
-        background: 'transparent',
-        color: 'transparent',
-        "border-color": 'transparent'
-      }
-    };
-  },
   props: {
-    userStyle: {
+    content: {
+      type: String,
+      required: true
+    },
+    placement: {
+      Type: String,
+      required: false,
+      default: "top"
+    },
+    background: {
+      Type: String,
+      required: false
+    },
+    color: {
+      type: String,
+      required: false
+    },
+    gtrisColor: {
       type: Object,
       required: false
     },
-    type: {
+    fontSize: {
       type: String,
-      default: 'primary',
-      required: false
-    },
-    position: {
-      type: String,
-      default: 'bottom',
-      required: false
-    },
-    message: {
-      type: String,
-      default: 'message'
-    },
-    fontClass: {
-      type: String,
-      default: 'gt-font-white',
       required: false
     }
   },
-  mounted: function mounted() {
-    var _this = this;
-
-    this.user_style.color = this.userStyle !== undefined && this.userStyle.color !== undefined ? this.userStyle.color : '#fff';
-    this.user_style.fontSize = this.userStyle !== undefined && this.userStyle.fontSize !== undefined ? this.userStyle.fontSize : '12px';
-    this.isVisible = true;
-    setTimeout(function () {
-      _this.$_setPosition();
-    }, 1);
+  data: function data() {
+    return {
+      gtrisColorClassFlag: {
+        'primary': '#2985db',
+        'secondary': '#ebebeb',
+        'info': '#909090',
+        'warning': '#ea6923',
+        'danger': '#C70909',
+        'error': '#D50000',
+        'importance': '#FDC036',
+        'white': '#fff'
+      }
+    };
   },
   methods: {
-    $_mouseover: function $_mouseover() {
-      this.cursor = 'show';
-      this.isVisible = true;
-    },
-    $_mouseleave: function $_mouseleave() {
-      this.cursor = 'hide';
-      this.isVisible = false;
-    },
-    $_setPosition: function $_setPosition() {
-      var btn_width = this.$refs['gt-tooltip'].offsetWidth;
-      var btn_height = this.$refs['gt-tooltip'].offsetHeight;
-      var cnt_width = this.$refs['gt-content'].offsetWidth;
-      var cnt_height = this.$refs['gt-content'].offsetHeight;
-      var triangle_width = this.$refs['gt-triangle'].offsetWidth;
-      var triangle_height = this.$refs['gt-triangle'].offsetHeight;
+    makeTT: function makeTT(event) {
+      var ttBtn = event.currentTarget;
+      /* 툴팁 Division 생성 */
 
-      if (this.position == 'right') {
-        this.ct_style = {
-          left: "".concat(btn_width + triangle_width, "px"),
-          top: "".concat((btn_height - cnt_height) / 2, "px")
-        };
-        this.tr_style = {
-          left: "-".concat(triangle_width, "px"),
-          top: "".concat((cnt_height - triangle_height) / 2, "px")
-        };
-      } else if (this.position == 'left') {
-        this.ct_style = {
-          right: "".concat(btn_width + triangle_width, "px"),
-          top: "".concat((btn_height - cnt_height) / 2, "px")
-        };
-        this.tr_style = {
-          right: "-".concat(triangle_width, "px"),
-          top: "".concat((cnt_height - triangle_height) / 2, "px")
-        };
-      } else if (this.position == 'top') {
-        this.ct_style = {
-          left: "".concat((btn_width - cnt_width) / 2, "px"),
-          top: "-".concat(cnt_height + triangle_height, "px")
-        };
-        this.tr_style = {
-          left: "".concat(cnt_width / 2 - triangle_width / 2, "px"),
-          top: "".concat(cnt_height, "px")
-        };
-      } else {
-        this.ct_style = {
-          left: "".concat((btn_width - cnt_width) / 2, "px"),
-          top: "".concat(btn_height + triangle_height, "px")
-        };
-        this.tr_style = {
-          left: "".concat(cnt_width / 2 - triangle_width / 2, "px"),
-          top: "-".concat(triangle_height, "px")
-        };
+      var tt = document.createElement("div");
+      tt.classList.add("gt-tooltip");
+      tt.innerHTML = this.content; //ttBtn.getAttribute("data-tooltip");
+
+      if (document.querySelector(".gt-tooltip")) {
+        document.body.removeChild(document.querySelector(".gt-tooltip"));
+      }
+      /* 툴팁 Append */
+
+
+      document.body.appendChild(tt);
+      tt.classList.add("gt-tooltip-show");
+      /* Caret(꼬다리) Division 생성 */
+
+      var caret = document.createElement("div");
+      caret.classList.add("gt-tooltip-caret");
+      tt.appendChild(caret);
+      /* 툴팁 위치 */
+
+      this.setPosition(ttBtn, tt);
+    },
+
+    /* 방향에 따라 툴팁 위치 변경 */
+    setPosition: function setPosition(ttBtn, tt) {
+      var placement;
+      var bg;
+      var fontColor;
+      var fontSize;
+      var ttBtnW;
+      var ttBtnH;
+      var ttBtnL;
+      var ttBtnT;
+      var ttW;
+      var ttH;
+      var caret;
+      var caretW;
+      var caretH;
+      var offset = 10;
+      /* 툴팁 방향 가져오기 */
+
+      placement = this.placement; //ttBtn.getAttribute("data-tooltip-placement");
+
+      /* 툴팁 배경 컬러 변경 */
+
+      bg = this.background; //ttBtn.getAttribute('data-tooltip-background');
+
+      if (bg === null || bg === undefined) bg = "#575757";
+      /* gtris class 가 우선순위가 높음 */
+
+      if (this.gtrisColor !== undefined && this.gtrisColor.background !== undefined) {
+        bg = this.gtrisColorClassFlag[this.gtrisColor.background];
       }
 
-      this.isVisible = false;
+      tt.style.background = bg;
+      /* Caret(꼬다리) */
+
+      caret = this.makeCaret(tt.querySelector(".gt-tooltip-caret"), placement, bg);
+      /* 툴팁 폰트 컬러 변경 */
+
+      fontColor = this.color; //ttBtn.getAttribute('data-tooltip-color');
+
+      tt.style.color = fontColor;
+      /* gtris class 가 우선순위가 높음 */
+
+      if (this.gtrisColor !== undefined && this.gtrisColor.color !== undefined) {
+        tt.style.color = this.gtrisColorClassFlag[this.gtrisColor.color];
+      }
+      /* 툴팁 폰트 크기 변경 */
+
+
+      fontSize = this.fontSize; //ttBtn.getAttribute('data-tooltip-fontSize');
+
+      tt.style.fontSize = fontSize;
+      /* 툴팁 요소: 너비, 높이, 좌표 */
+
+      ttBtnW = Math.ceil(ttBtn.offsetWidth);
+      ttBtnH = Math.ceil(ttBtn.offsetHeight);
+      ttBtnL = Math.ceil(ttBtn.getBoundingClientRect().left);
+      ttBtnT = Math.ceil(window.pageYOffset + ttBtn.getBoundingClientRect().top);
+      ttW = Math.ceil(tt.offsetWidth);
+      ttH = Math.ceil(tt.offsetHeight); // ttL = Math.ceil(tt.getBoundingClientRect().left);
+      // ttT = Math.ceil(tt.getBoundingClientRect().top);
+
+      caretW = Math.ceil(caret.offsetWidth);
+      caretH = Math.ceil(caret.offsetHeight);
+      /* 방향에 따른 툴팁 위치 조정 */
+
+      switch (placement) {
+        case "left":
+          tt.style.left = ttBtnL - ttW - offset + "px";
+          tt.style.top = ttBtnT + (ttBtnH - ttH) / 2 + "px";
+          caret.style.left = ttW + "px";
+          caret.style.top = ttH / 2 - caretH / 2 + "px";
+          tt.classList.add("gt-transform-origin-center-right"); // The transform-origin CSS property sets the origin for an element's transformations.(https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
+
+          break;
+
+        case "right":
+          tt.style.left = ttBtnL + ttBtnW + offset + "px";
+          tt.style.top = ttBtnT + (ttBtnH - ttH) / 2 + "px";
+          caret.style.left = -caretW + "px";
+          caret.style.top = ttH / 2 - caretH / 2 + "px";
+          tt.classList.add("gt-transform-origin-center-left");
+          break;
+
+        case "bottom":
+          tt.style.left = ttBtnL + (ttBtnW - ttW) / 2 + "px";
+          tt.style.top = ttBtnT + ttBtnH + offset + "px";
+          caret.style.left = ttW / 2 - caretW / 2 + "px";
+          caret.style.top = -caretH + "px";
+          tt.classList.add("gt-transform-origin-top-center");
+          break;
+
+        case "top-left":
+          tt.style.left = ttBtnL + "px";
+          tt.style.top = ttBtnT - ttH - offset + "px";
+          caret.style.left = ttW / 2 - caretW / 2 + "px";
+          caret.style.top = ttH + "px";
+          tt.classList.add("gt-transform-origin-bottom-left");
+          break;
+
+        case "top-right":
+          tt.style.left = ttBtnL + Math.abs(ttBtnW - ttW) + "px";
+          tt.style.top = ttBtnT - ttH - offset + "px";
+          caret.style.left = ttW / 2 - caretW / 2 + "px";
+          caret.style.top = ttH + "px";
+          tt.classList.add("gt-transform-origin-bottom-right");
+          break;
+
+        case "bottom-left":
+          tt.style.left = ttBtnL + "px";
+          tt.style.top = ttBtnT + ttBtnH + offset + "px";
+          caret.style.left = ttW / 2 - caretW / 2 + "px";
+          caret.style.top = -caretH + "px";
+          tt.classList.add("gt-transform-origin-top-left");
+          break;
+
+        case "bottom-right":
+          tt.style.left = ttBtnL + Math.abs(ttBtnW - ttW) + "px";
+          tt.style.top = ttBtnT + ttBtnH + offset + "px";
+          caret.style.left = ttW / 2 - caretW / 2 + "px";
+          caret.style.top = -caretH + "px";
+          tt.classList.add("gt-transform-origin-top-right");
+          break;
+
+        case "top":
+          tt.style.left = ttBtnL + (ttBtnW - ttW) / 2 + "px";
+          tt.style.top = ttBtnT - ttH - offset + "px";
+          caret.style.left = ttW / 2 - caretW / 2 + "px";
+          caret.style.top = ttH + "px";
+          tt.classList.add("gt-transform-origin-bottom-center");
+          break;
+
+        default:
+          tt.style.left = ttBtnL + (ttBtnW - ttW) / 2 + "px";
+          tt.style.top = ttBtnT - ttH - offset + "px";
+          caret.style.left = ttW / 2 - caretW / 2 + "px";
+          caret.style.top = ttH + "px";
+          tt.classList.add("gt-transform-origin-bottom-center");
+          break;
+      }
+    },
+
+    /* 방향에 따른 꼬다리 스타일링 */
+    makeCaret: function makeCaret(caret, placement, bgColor) {
+      switch (placement) {
+        case "left":
+          caret.style.borderWidth = "6px 0px 6px 6px";
+          caret.style.borderLeftColor = bgColor;
+          break;
+
+        case "right":
+          caret.style.borderWidth = "6px 6px 6px 0px";
+          caret.style.borderRightColor = bgColor;
+          break;
+
+        case "top":
+          caret.style.borderWidth = "6px 6px 0px 6px";
+          caret.style.borderTopColor = bgColor;
+          break;
+
+        case "top-left":
+          caret.style.borderWidth = "6px 6px 0px 6px";
+          caret.style.borderTopColor = bgColor;
+          break;
+
+        case "top-right":
+          caret.style.borderWidth = "6px 6px 0px 6px";
+          caret.style.borderTopColor = bgColor;
+          break;
+
+        case "bottom":
+          caret.style.borderWidth = "0px 6px 6px 6px";
+          caret.style.borderBottomColor = bgColor;
+          break;
+
+        case "bottom-left":
+          caret.style.borderWidth = "0px 6px 6px 6px";
+          caret.style.borderBottomColor = bgColor;
+          break;
+
+        case "bottom-right":
+          caret.style.borderWidth = "0px 6px 6px 6px";
+          caret.style.borderBottomColor = bgColor;
+          break;
+
+        default:
+          caret.style.borderWidth = "6px 6px 0px 6px";
+          caret.style.borderTopColor = bgColor;
+          break;
+      }
+
+      return caret;
+    },
+
+    /* Remove Tooltip */
+    removeTT: function removeTT() {
+      if (document.querySelector(".gt-tooltip")) {
+        var tt = document.body.querySelector(".gt-tooltip");
+        tt.classList.add("gt-tooltip-hide");
+        tt.addEventListener("animationend", function () {
+          document.body.removeChild(document.body.querySelector(".gt-tooltip"));
+        });
+      }
     }
   }
 });
-// CONCATENATED MODULE: ./src/components/Tooltip/tooltip.vue?vue&type=script&lang=js&
- /* harmony default export */ var Tooltip_tooltipvue_type_script_lang_js_ = (tooltipvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/Tooltip/tooltip.vue?vue&type=style&index=0&id=41c5a5d7&lang=scss&scoped=true&
-var tooltipvue_type_style_index_0_id_41c5a5d7_lang_scss_scoped_true_ = __webpack_require__("8d4e");
+// CONCATENATED MODULE: ./src/components/Tooltip/Tooltip.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Tooltip_Tooltipvue_type_script_lang_js_ = (Tooltipvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/components/Tooltip/Tooltip.vue?vue&type=style&index=0&lang=scss&
+var Tooltipvue_type_style_index_0_lang_scss_ = __webpack_require__("0d7b");
 
-// CONCATENATED MODULE: ./src/components/Tooltip/tooltip.vue
+// CONCATENATED MODULE: ./src/components/Tooltip/Tooltip.vue
 
 
 
@@ -3784,18 +3964,18 @@ var tooltipvue_type_style_index_0_id_41c5a5d7_lang_scss_scoped_true_ = __webpack
 
 /* normalize component */
 
-var tooltip_component = normalizeComponent(
-  Tooltip_tooltipvue_type_script_lang_js_,
-  tooltipvue_type_template_id_41c5a5d7_scoped_true_render,
-  tooltipvue_type_template_id_41c5a5d7_scoped_true_staticRenderFns,
+var Tooltip_component = normalizeComponent(
+  Tooltip_Tooltipvue_type_script_lang_js_,
+  Tooltipvue_type_template_id_5ec916fa_render,
+  Tooltipvue_type_template_id_5ec916fa_staticRenderFns,
   false,
   null,
-  "41c5a5d7",
+  null,
   null
   
 )
 
-/* harmony default export */ var tooltip = (tooltip_component.exports);
+/* harmony default export */ var Tooltip = (Tooltip_component.exports);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Input/Input.vue?vue&type=template&id=36fb4b3a&scoped=true&
 var Inputvue_type_template_id_36fb4b3a_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('input',{ref:"input",staticClass:"hw-input",class:[_vm.customClass, _vm.size],style:({width: _vm.width, height: _vm.height}),attrs:{"placeholder":_vm.placeholder,"autofocus":_vm.autofocus},domProps:{"value":_vm.defaultValue},on:{"keypress":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.$_pressEnter($event)},"keyup":_vm.$_keyup}})}
 var Inputvue_type_template_id_36fb4b3a_scoped_true_staticRenderFns = []
@@ -3898,14 +4078,14 @@ var Input_component = normalizeComponent(
 )
 
 /* harmony default export */ var Input = (Input_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Toast/toast.vue?vue&type=template&id=2c7b1da2&scoped=true&
-var toastvue_type_template_id_2c7b1da2_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"gt-toast-fade"}},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isVisible),expression:"isVisible"}],staticClass:"gt-toast-container",attrs:{"data-direction":_vm.direction}},[_c('div',{staticClass:"gt-toast",class:_vm.customClass},[_vm._v(" "+_vm._s(_vm.message)+" ")])])])}
-var toastvue_type_template_id_2c7b1da2_scoped_true_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Toast/Toast.vue?vue&type=template&id=403dd10f&scoped=true&
+var Toastvue_type_template_id_403dd10f_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"gt-toast-fade"}},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isVisible),expression:"isVisible"}],staticClass:"gt-toast-container",attrs:{"data-direction":_vm.direction}},[_c('div',{staticClass:"gt-toast",class:_vm.customClass},[_vm._v(" "+_vm._s(_vm.message)+" ")])])])}
+var Toastvue_type_template_id_403dd10f_scoped_true_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Toast/toast.vue?vue&type=template&id=2c7b1da2&scoped=true&
+// CONCATENATED MODULE: ./src/components/Toast/Toast.vue?vue&type=template&id=403dd10f&scoped=true&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Toast/toast.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Toast/Toast.vue?vue&type=script&lang=js&
 
 //
 //
@@ -3917,7 +4097,7 @@ var toastvue_type_template_id_2c7b1da2_scoped_true_staticRenderFns = []
 //
 //
 //
-/* harmony default export */ var toastvue_type_script_lang_js_ = ({
+/* harmony default export */ var Toastvue_type_script_lang_js_ = ({
   name: "gt-toast",
   props: {
     value: {
@@ -3977,12 +4157,12 @@ var toastvue_type_template_id_2c7b1da2_scoped_true_staticRenderFns = []
     }
   }
 });
-// CONCATENATED MODULE: ./src/components/Toast/toast.vue?vue&type=script&lang=js&
- /* harmony default export */ var Toast_toastvue_type_script_lang_js_ = (toastvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/Toast/toast.vue?vue&type=style&index=0&id=2c7b1da2&lang=scss&scoped=true&
-var toastvue_type_style_index_0_id_2c7b1da2_lang_scss_scoped_true_ = __webpack_require__("fc51");
+// CONCATENATED MODULE: ./src/components/Toast/Toast.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Toast_Toastvue_type_script_lang_js_ = (Toastvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/components/Toast/Toast.vue?vue&type=style&index=0&id=403dd10f&lang=scss&scoped=true&
+var Toastvue_type_style_index_0_id_403dd10f_lang_scss_scoped_true_ = __webpack_require__("8b19");
 
-// CONCATENATED MODULE: ./src/components/Toast/toast.vue
+// CONCATENATED MODULE: ./src/components/Toast/Toast.vue
 
 
 
@@ -3991,18 +4171,18 @@ var toastvue_type_style_index_0_id_2c7b1da2_lang_scss_scoped_true_ = __webpack_r
 
 /* normalize component */
 
-var toast_component = normalizeComponent(
-  Toast_toastvue_type_script_lang_js_,
-  toastvue_type_template_id_2c7b1da2_scoped_true_render,
-  toastvue_type_template_id_2c7b1da2_scoped_true_staticRenderFns,
+var Toast_component = normalizeComponent(
+  Toast_Toastvue_type_script_lang_js_,
+  Toastvue_type_template_id_403dd10f_scoped_true_render,
+  Toastvue_type_template_id_403dd10f_scoped_true_staticRenderFns,
   false,
   null,
-  "2c7b1da2",
+  "403dd10f",
   null
   
 )
 
-/* harmony default export */ var toast = (toast_component.exports);
+/* harmony default export */ var Toast = (Toast_component.exports);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Pagination/Pagination.vue?vue&type=template&id=6cd89c88&scoped=true&
 var Paginationvue_type_template_id_6cd89c88_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"gt-pagination"},[_c('button',{staticClass:"gt-pagination-nav",class:{'gt-disabled': _vm.enabledPrev},attrs:{"type":"button","disabled":_vm.enabledPrev},on:{"click":function($event){return _vm.setPageFirst()}}},[_c('i',{staticClass:"gi gi-double-arrows-left"})]),_c('button',{staticClass:"gt-pagination-nav",class:{'gt-disabled': _vm.enabledPrev},attrs:{"type":"button","disabled":_vm.enabledPrev},on:{"click":function($event){return _vm.setPagePrev()}}},[_c('i',{staticClass:"gi gi-short-arrow-left-alt"})]),_vm._l((_vm.paginate),function(p,index){return _c('button',{key:index,staticClass:"gt-pagination-num",class:{'gt-active':p == _vm.current_page},attrs:{"type":"button"},on:{"click":function($event){return _vm.setPage(p)}}},[_vm._v(" "+_vm._s(p)+" ")])}),_c('button',{staticClass:"gt-pagination-nav",class:{'gt-disabled': _vm.enabledNext},attrs:{"type":"button","disabled":_vm.enabledNext},on:{"click":function($event){return _vm.setPageNext()}}},[_c('i',{staticClass:"gi gi-short-arrow-right-alt"})]),_c('button',{staticClass:"gt-pagination-nav",class:{'gt-disabled': _vm.enabledNext},attrs:{"type":"button","disabled":_vm.enabledNext},on:{"click":function($event){return _vm.setPageEnd()}}},[_c('i',{staticClass:"gi gi-double-arrows-right"})])],2)}
 var Paginationvue_type_template_id_6cd89c88_scoped_true_staticRenderFns = []
@@ -4590,11 +4770,11 @@ var gtris = __webpack_require__("f0d9");
 var src_install = function install(Vue) {
   Vue.component(Button_button.name, Button_button), Vue.component(Collapse.name, Collapse);
   Vue.component(CollapseItem.name, CollapseItem);
-  Vue.component(tooltip.name, tooltip);
+  Vue.component(Tooltip.name, Tooltip);
   Vue.component(Pagination.name, Pagination);
   Vue.directive(PaginationInfinite.name, PaginationInfinite);
   Vue.component(Input.name, Input);
-  Vue.component(toast.name, toast); //! 사용성 테스트 필요  
+  Vue.component(Toast.name, Toast); //! 사용성 테스트 필요  
 
   Vue.component(Modal.name, Modal);
 }; // auto install if used in browser
@@ -4613,17 +4793,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 /* harmony default export */ var entry_lib = __webpack_exports__["default"] = (src);
 
 
-
-/***/ }),
-
-/***/ "fc51":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_toast_vue_vue_type_style_index_0_id_2c7b1da2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ff31");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_toast_vue_vue_type_style_index_0_id_2c7b1da2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_toast_vue_vue_type_style_index_0_id_2c7b1da2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_toast_vue_vue_type_style_index_0_id_2c7b1da2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -4694,13 +4863,6 @@ module.exports = NATIVE_SYMBOL
   // eslint-disable-next-line no-undef
   && typeof Symbol.iterator == 'symbol';
 
-
-/***/ }),
-
-/***/ "ff31":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
