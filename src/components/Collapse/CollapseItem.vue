@@ -20,7 +20,7 @@ export default {
   name: "gt-collapse-item",
   data() {
     return {
-      id: this.name || `gt-collapse-item-${Math.random().toString(36).substr(2, 8)}`  // props로 name을 지정하지 않은 경우 랜덤 생성
+      itemName: this.name || `gt-collapse-item-${Math.random().toString(36).substr(2, 8)}`  // props로 name을 지정하지 않은 경우 랜덤 생성
     }
   },
   props: {
@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     isShowing() {
-      return this.activeItems.indexOf(this.id) !== -1;
+      return this.activeItems.indexOf(this.itemName) !== -1;
     },
     parent() {
       return this.$parent;
@@ -39,13 +39,13 @@ export default {
   },
   methods: {
     $_toggle() {
-      const index = this.activeItems.indexOf(this.id);
+      const index = this.activeItems.indexOf(this.itemName);
       // accordion
       if(this.parent.accordion) {
         if(index !== -1) {
           this.activeItems.splice(index, 1);
         } else {
-          this.activeItems.splice(index, 1, this.id);
+          this.activeItems.splice(index, 1, this.itemName);
         }
       }
       // default
@@ -53,7 +53,7 @@ export default {
         if(index !== -1) {
           this.activeItems.splice(index, 1);
         } else {
-          this.activeItems.push(this.id);
+          this.activeItems.push(this.itemName);
         }
       }
       
@@ -63,10 +63,10 @@ export default {
     isShowing(newValue, oldValue) {
       if(newValue != oldValue) {
         if(this.isShowing) {
-          this.parent.$emit('gt::opened::collapse', this.id);
+          this.parent.$emit('gt::opened::collapse-item', this.itemName);
         }
         else {
-          this.parent.$emit('gt::closed::collapse', this.id);
+          this.parent.$emit('gt::closed::collapse-item', this.itemName);
         }
       }
     }

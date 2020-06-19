@@ -2,13 +2,27 @@
   <div id="app">
     <div>
       <!-- Test -->
-      <gt-button indicator="danger" invert="true">버튼(Primary)</gt-button>
+      <gt-button indicator="danger" invert="true" @click="openAllItems('collapse1')">모두 열기</gt-button>
+      <gt-button indicator="danger" invert="true" @click="closeAllItems('collapse1')">모두 닫기</gt-button>
+      <br><br>
+      <gt-collapse name="collapse1">
+        <gt-collapse-item>
+          <template #head>제목없음 1</template>
+          <template #content>것은 가을로 아스라히 멀듯이, 말 어머니, 부끄러운 별이 까닭입니다. 속의 오는 된 봅니다.</template>
+        </gt-collapse-item>
+        <gt-collapse-item>
+          <template #head>제목없음 2</template>
+          <template #content>위에도 보고, 시와 까닭입니다. 책상을 이름자 하나에 불러 가득 까닭입니다. 별 같이 옥 않은 둘 노루, 봅니다.</template>
+        </gt-collapse-item>
+      </gt-collapse>
     </div>
   </div>
 </template>
 
 <script>
 import gtButton from './components/Button/button'
+import gtCollapse from './components/Collapse/Collapse'
+import gtCollapseItem from './components/Collapse/CollapseItem'
 //import gtInfinite from './components/Pagination/PaginationInfinite'
 //import pagination from './components/Pagination.vue'
 //import gttooltip from "./components/tooltip.vue"
@@ -17,6 +31,8 @@ export default {
   name: 'app',
   components: {
     gtButton,
+    gtCollapse,
+    gtCollapseItem,
   },
   directives: {
       //infiniteScroll: gtInfinite
