@@ -4853,17 +4853,17 @@ var Modal_component = normalizeComponent(
 
 /* harmony default export */ var Modal = (Modal_component.exports);
 // CONCATENATED MODULE: ./src/components/Mixins/EventMixin.js
-var CollapseMixin = {
+var EventMixin = {
   methods: {
-    closeAllItems: function closeAllItems(targetName) {
+    closeAllCollapseItems: function closeAllCollapseItems(targetName) {
       this.$eventHub.$emit("gt::closeAll::collapse-".concat(targetName));
     },
-    openAllItems: function openAllItems(targetName) {
+    openAllCollapseItems: function openAllCollapseItems(targetName) {
       this.$eventHub.$emit("gt::openAll::collapse-".concat(targetName));
     }
   }
 };
-/* harmony default export */ var EventMixin = (CollapseMixin);
+/* harmony default export */ var Mixins_EventMixin = (EventMixin);
 // EXTERNAL MODULE: ./src/assets/sass/gtris.scss
 var gtris = __webpack_require__("f0d9");
 
@@ -4890,7 +4890,7 @@ var src_install = function install(Vue) {
   Vue.component(Input.name, Input);
   Vue.component(toast.name, toast); //! 사용성 테스트 필요  
 
-  Vue.component(Modal.name, Modal), Vue.mixin(EventMixin);
+  Vue.component(Modal.name, Modal), Vue.mixin(Mixins_EventMixin);
 }; // auto install if used in browser
 
 
