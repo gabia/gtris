@@ -7,7 +7,7 @@ import gttoast from "./components/Toast/toast.vue"
 import gtpagination from "./components/Pagination/Pagination.vue"
 import gtpaginationscroll from "./components/Pagination/PaginationInfinite.js"
 import gtModal from "./components/Modal/Modal.vue"
-import CollapseMixin from './components/Mixins/EventMixin.js'
+import EventMixin from './components/Mixins/EventMixin.js'
 import '@/assets/sass/gtris.scss';
 
 const install = (Vue) => {
@@ -20,7 +20,7 @@ const install = (Vue) => {
   Vue.component(gtinput.name, gtinput)    
   Vue.component(gttoast.name, gttoast)  //! 사용성 테스트 필요  
   Vue.component(gtModal.name, gtModal),
-  Vue.mixin(CollapseMixin)
+  Vue.mixin(EventMixin)
 }
 
 // auto install if used in browser
