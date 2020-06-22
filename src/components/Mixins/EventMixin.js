@@ -1,12 +1,12 @@
-let CollapseMixin = {
+let EventMixin = {
   methods: {
-    closeAllItems(targetName) {
+    closeAllCollapseItems(targetName) {
       this.$eventHub.$emit(`gt::closeAll::collapse-${targetName}`);
     },
-    openAllItems(targetName) {
+    openAllCollapseItems(targetName) {
       this.$eventHub.$emit(`gt::openAll::collapse-${targetName}`);
     },
   }
 }
 
-export default CollapseMixin;
+export default EventMixin;
