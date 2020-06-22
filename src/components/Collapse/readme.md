@@ -1,5 +1,5 @@
 <!--split:basic-->
-[ { "componentName":"Collapse_1", "menuName":"Basic" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Collapse_2", "menuName":"Activate" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Collapse_3", "menuName":"Accordion" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Collapse_4", "menuName":"Event" , "sourceCode":"" , "prismEditor" : "" },{ "componentName":"Collapse_5", "menuName":"Nestsed" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Collapse_6", "menuName":"ArrowPosition" , "sourceCode":"" , "prismEditor" : "" }]
+[ { "componentName":"Collapse_1", "menuName":"Basic" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Collapse_2", "menuName":"Activate" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Collapse_3", "menuName":"Accordion" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Collapse_4", "menuName":"Event" , "sourceCode":"" , "prismEditor" : "" },{ "componentName":"Collapse_5", "menuName":"Nestsed" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Collapse_6", "menuName":"ArrowPosition" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Collapse_7", "menuName":"Open/Close all" , "sourceCode":"" , "prismEditor" : "" }]
 
 <!--split:Collapse_1:sourceCode-->
 
@@ -243,6 +243,43 @@
   <gt-collapse-item>
     <template #head>제목없음 2</template>
     <template #content>겨울이 새워 봄이 시인의 지나고 계십니다. 겨울이 밤을 남은 밤이 북간도에 거외다.</template>
+  </gt-collapse-item>
+</gt-collapse>
+
+<!--split:Collapse_7:sourceCode-->
+
+<gt-panel>
+  <template #title>Open/Close all</template>
+  <template #box>
+    <gt-button indicator="danger" invert="true" @click="openAllCollapseItems('myCollapse')">모두 열기</gt-button>
+    <gt-button indicator="danger" invert="true" @click="closeAllCollapseItems('myCollapse')">모두 닫기</gt-button>
+    <br><br>
+    <gt-collapse name="myCollapse">
+      <gt-collapse-item>
+        <template #head>제목없음 1</template>
+        <template #content>것은 가을로 아스라히 멀듯이, 말 어머니, 부끄러운 별이 까닭입니다. 속의 오는 된 봅니다.</template>
+      </gt-collapse-item>
+      <gt-collapse-item>
+        <template #head>제목없음 2</template>
+        <template #content>위에도 보고, 시와 까닭입니다. 책상을 이름자 하나에 불러 가득 까닭입니다. 별 같이 옥 않은 둘 노루, 봅니다.</template>
+      </gt-collapse-item>
+    </gt-collapse>
+  </template>
+</gt-panel>
+
+<!--split:Collapse_7:prismEditor-->
+
+<gt-button indicator="danger" invert="true" @click="openAllCollapseItems('myCollapse')">모두 열기</gt-button>
+<gt-button indicator="danger" invert="true" @click="closeAllCollapseItems('myCollapse')">모두 닫기</gt-button>
+<br><br>
+<gt-collapse name="myCollapse">
+  <gt-collapse-item>
+    <template #head>제목없음 1</template>
+    <template #content>것은 가을로 아스라히 멀듯이, 말 어머니, 부끄러운 별이 까닭입니다. 속의 오는 된 봅니다.</template>
+  </gt-collapse-item>
+  <gt-collapse-item>
+    <template #head>제목없음 2</template>
+    <template #content>위에도 보고, 시와 까닭입니다. 책상을 이름자 하나에 불러 가득 까닭입니다. 별 같이 옥 않은 둘 노루, 봅니다.</template>
   </gt-collapse-item>
 </gt-collapse>
 
