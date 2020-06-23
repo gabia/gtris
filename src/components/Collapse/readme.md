@@ -269,8 +269,8 @@
 
 <!--split:Collapse_7:prismEditor-->
 
-<gt-button indicator="danger" invert="true" @click="openAllCollapseItems('myCollapse')">모두 열기</gt-button>
-<gt-button indicator="danger" invert="true" @click="closeAllCollapseItems('myCollapse')">모두 닫기</gt-button>
+<gt-button indicator="primary" @click="openAllCollapseItems('myCollapse')">모두 열기</gt-button>
+<gt-button indicator="primary" @click="closeAllCollapseItems('myCollapse')">모두 닫기</gt-button>
 <br><br>
 <gt-collapse name="myCollapse">
   <gt-collapse-item>
