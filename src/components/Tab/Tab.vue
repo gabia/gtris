@@ -15,12 +15,10 @@ export default {
   data() {
     return {
       activeItem: '',
-      navData: [],
-      tabName: this.name || `gt-tab-${Math.random().toString(36).substr(2, 8)}`  // props로 name을 지정하지 않은 경우 랜덤 생성
+      navData: []
     }
   },
   props: {
-    name: {type: [String, Number], required: false, default: null},
     init: {type: String, required: false, default: null},
     customClass: {type: String, required: false, default: null}
   },
@@ -46,7 +44,7 @@ export default {
         this.$slots.default.forEach(tabItem => {
           this.navData.push({
             'label': tabItem.componentInstance.label,
-            'name': tabItem.componentInstance.name
+            'name': tabItem.componentInstance.tabItemName
           });
         });
       }
