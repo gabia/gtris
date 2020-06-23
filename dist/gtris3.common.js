@@ -968,6 +968,13 @@ module.exports = function (bitmap, value) {
 
 /***/ }),
 
+/***/ "5ee4":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "5fda":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1378,6 +1385,38 @@ module.exports = Object.create || function create(O, Properties) {
   } else result = NullProtoObject();
   return Properties === undefined ? result : defineProperties(result, Properties);
 };
+
+
+/***/ }),
+
+/***/ "7db0":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__("23e7");
+var $find = __webpack_require__("b727").find;
+var addToUnscopables = __webpack_require__("44d2");
+var arrayMethodUsesToLength = __webpack_require__("ae40");
+
+var FIND = 'find';
+var SKIPS_HOLES = true;
+
+var USES_TO_LENGTH = arrayMethodUsesToLength(FIND);
+
+// Shouldn't skip holes
+if (FIND in []) Array(1)[FIND](function () { SKIPS_HOLES = false; });
+
+// `Array.prototype.find` method
+// https://tc39.github.io/ecma262/#sec-array.prototype.find
+$({ target: 'Array', proto: true, forced: SKIPS_HOLES || !USES_TO_LENGTH }, {
+  find: function find(callbackfn /* , that = undefined */) {
+    return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
+
+// https://tc39.github.io/ecma262/#sec-array.prototype-@@unscopables
+addToUnscopables(FIND);
 
 
 /***/ }),
@@ -3189,6 +3228,17 @@ module.exports = function (it) {
 
 /***/ }),
 
+/***/ "f454":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TabNav_vue_vue_type_style_index_0_id_5c1459a5_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("5ee4");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TabNav_vue_vue_type_style_index_0_id_5c1459a5_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TabNav_vue_vue_type_style_index_0_id_5c1459a5_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TabNav_vue_vue_type_style_index_0_id_5c1459a5_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "f5df":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4852,6 +4902,187 @@ var Modal_component = normalizeComponent(
 )
 
 /* harmony default export */ var Modal = (Modal_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tab/Tab.vue?vue&type=template&id=949246f6&
+var Tabvue_type_template_id_949246f6_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"gt-tab",class:_vm.customClass},[_c('tab-nav',{attrs:{"navData":_vm.navData}},[_vm._v("tab-nav")]),_vm._t("default")],2)}
+var Tabvue_type_template_id_949246f6_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/Tab/Tab.vue?vue&type=template&id=949246f6&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.find.js
+var es_array_find = __webpack_require__("7db0");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tab/TabNav.vue?vue&type=template&id=5c1459a5&scoped=true&
+var TabNavvue_type_template_id_5c1459a5_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tab-nav-list",class:_vm.customClass},_vm._l((_vm.navData),function(nav){return _c('button',{key:("{gt-tab-nav-" + (nav.name) + "}"),staticClass:"gt-tab-nav",class:{'active': _vm.$_isActive(nav.name)},attrs:{"type":"button"},on:{"click":function($event){return _vm.$_selectedNav(nav.name)}}},[_vm._v(_vm._s(nav.label))])}),0)}
+var TabNavvue_type_template_id_5c1459a5_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/Tab/TabNav.vue?vue&type=template&id=5c1459a5&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tab/TabNav.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var TabNavvue_type_script_lang_js_ = ({
+  name: "gt-tab-nav",
+  data: function data() {
+    return {
+      activeItem: null
+    };
+  },
+  props: {
+    navData: {
+      type: Array,
+      required: true
+    },
+    customClass: {
+      type: String,
+      required: false,
+      default: null
+    }
+  },
+  methods: {
+    $_isActive: function $_isActive(navName) {
+      return this.$parent.activeItem === navName;
+    },
+    $_selectedNav: function $_selectedNav(navName) {
+      this.$parent.$emit('gt::selected::tab-nav', navName);
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Tab/TabNav.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Tab_TabNavvue_type_script_lang_js_ = (TabNavvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/components/Tab/TabNav.vue?vue&type=style&index=0&id=5c1459a5&lang=scss&scoped=true&
+var TabNavvue_type_style_index_0_id_5c1459a5_lang_scss_scoped_true_ = __webpack_require__("f454");
+
+// CONCATENATED MODULE: ./src/components/Tab/TabNav.vue
+
+
+
+
+
+
+/* normalize component */
+
+var TabNav_component = normalizeComponent(
+  Tab_TabNavvue_type_script_lang_js_,
+  TabNavvue_type_template_id_5c1459a5_scoped_true_render,
+  TabNavvue_type_template_id_5c1459a5_scoped_true_staticRenderFns,
+  false,
+  null,
+  "5c1459a5",
+  null
+  
+)
+
+/* harmony default export */ var TabNav = (TabNav_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tab/Tab.vue?vue&type=script&lang=js&
+
+
+
+
+
+
+
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var Tabvue_type_script_lang_js_ = ({
+  name: "gt-tab",
+  components: {
+    TabNav: TabNav
+  },
+  data: function data() {
+    return {
+      activeItem: '',
+      navData: [],
+      tabName: this.name || "gt-tab-".concat(Math.random().toString(36).substr(2, 8)) // props로 name을 지정하지 않은 경우 랜덤 생성
+
+    };
+  },
+  props: {
+    name: {
+      type: [String, Number],
+      required: false,
+      default: null
+    },
+    init: {
+      type: String,
+      required: false,
+      default: null
+    },
+    customClass: {
+      type: String,
+      required: false,
+      default: null
+    }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    this.$_setTabNav(); // initialize
+
+    this.activeItem = this.init && this.$_isValidateName(this.init) ? this.init : this.navData[0].name; // event handling
+
+    this.$on('gt::selected::tab-nav', function (payload) {
+      _this.activeItem = payload;
+    });
+    this.$eventHub.$on('gt::activate::tab-item', function (payload) {
+      _this.activeItem = payload;
+    });
+    this.$on('gt::tab-nav-update', this.$_setTabNav);
+  },
+  methods: {
+    $_setTabNav: function $_setTabNav() {
+      var _this2 = this;
+
+      if (this.$slots.default) {
+        this.navData = [];
+        this.$slots.default.forEach(function (tabItem) {
+          _this2.navData.push({
+            'label': tabItem.componentInstance.label,
+            'name': tabItem.componentInstance.name
+          });
+        });
+      }
+    },
+    $_isValidateName: function $_isValidateName(name) {
+      return this.navData.find(function (nav) {
+        return nav.name === name;
+      }) ? true : false;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Tab/Tab.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Tab_Tabvue_type_script_lang_js_ = (Tabvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/Tab/Tab.vue
+
+
+
+
+
+/* normalize component */
+
+var Tab_component = normalizeComponent(
+  Tab_Tabvue_type_script_lang_js_,
+  Tabvue_type_template_id_949246f6_render,
+  Tabvue_type_template_id_949246f6_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var Tab = (Tab_component.exports);
 // CONCATENATED MODULE: ./src/components/Mixins/EventMixin.js
 var EventMixin = {
   methods: {
@@ -4860,6 +5091,9 @@ var EventMixin = {
     },
     openAllCollapseItems: function openAllCollapseItems(targetName) {
       this.$eventHub.$emit("gt::openAll::collapse-".concat(targetName));
+    },
+    activateTabItem: function activateTabItem(targetName) {
+      this.$eventHub.$emit('gt::activate::tab-item', targetName);
     }
   }
 };
@@ -4868,6 +5102,7 @@ var EventMixin = {
 var gtris = __webpack_require__("f0d9");
 
 // CONCATENATED MODULE: ./src/index.js
+
 
 
 
@@ -4890,7 +5125,7 @@ var src_install = function install(Vue) {
   Vue.component(Input.name, Input);
   Vue.component(toast.name, toast); //! 사용성 테스트 필요  
 
-  Vue.component(Modal.name, Modal), Vue.mixin(Mixins_EventMixin);
+  Vue.component(Modal.name, Modal), Vue.component(Tab.name, Tab), Vue.mixin(Mixins_EventMixin);
 }; // auto install if used in browser
 
 

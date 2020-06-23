@@ -6,6 +6,9 @@ let EventMixin = {
     openAllCollapseItems(targetName) {
       this.$eventHub.$emit(`gt::openAll::collapse-${targetName}`);
     },
+    activateTabItem(targetName) {
+      this.$eventHub.$emit('gt::activate::tab-item', targetName);
+    }
   }
 }
 
