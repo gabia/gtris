@@ -28,9 +28,8 @@ export default {
     this.$_setTabNav();
 
     // initialize
-    if(this.init) {
-      this.activeItem = this.init;
-    }
+    this.activeItem = this.init && this.$_isValidateName(this.init) ? this.init : this.navData[0].name;
+
     // event handling
     this.$on('gt::selected::tab-nav', (payload) => {
       this.activeItem = payload;
@@ -49,6 +48,9 @@ export default {
         });
       }
     },
+    $_isValidateName(name) {
+      return this.navData.find(nav => nav.name === name) ? true: false;
+    }
   }
 }
 </script>
