@@ -15,6 +15,19 @@
           <template #content>위에도 보고, 시와 까닭입니다. 책상을 이름자 하나에 불러 가득 까닭입니다. 별 같이 옥 않은 둘 노루, 봅니다.</template>
         </gt-collapse-item>
       </gt-collapse>
+
+      
+      <gt-checkbox label="item" name="helloworld" @input="$_checkedItem" :checked='false' :disabled='false' > test </gt-checkbox>
+      <br>
+
+      <gt-checkbox label="item1" name="helloworld1" :all='allFlag' @input="$_checkedItem"> helloworld1 </gt-checkbox>
+      <gt-checkbox label="item2" name="helloworld2" :all='allFlag' @input="$_checkedItem"> helloworld2 </gt-checkbox>
+      <gt-checkbox label="item3" name="helloworld3" :all='allFlag' @input="$_checkedItem"> helloworld3 </gt-checkbox>
+      <div style="margin-top:30px">
+        <gt-button indicator="danger"  @click="()=>{this.allFlag = 'A'}" style="margin-right:20px">모두 체크</gt-button>
+        <gt-button indicator="primary" @click="()=>{this.allFlag = 'N'}">모두 해제</gt-button>
+      </div>
+
     </div>
   </div>
 </template>
@@ -23,6 +36,7 @@
 import gtButton from './components/Button/button'
 import gtCollapse from './components/Collapse/Collapse'
 import gtCollapseItem from './components/Collapse/CollapseItem'
+import gtCheckbox from './components/CheckBox/Checkbox'
 //import gtInfinite from './components/Pagination/PaginationInfinite'
 //import pagination from './components/Pagination.vue'
 //import gttooltip from "./components/tooltip.vue"
@@ -33,6 +47,7 @@ export default {
     gtButton,
     gtCollapse,
     gtCollapseItem,
+    gtCheckbox
   },
   directives: {
       //infiniteScroll: gtInfinite
@@ -41,12 +56,16 @@ export default {
     return {
       page : 1,
       scrolling: false,
-      height: 0
+      height: 0,
+      allFlag:'N'
     };
     //gtinput
     //,gttooltip
   },
   methods: {
+    $_checkedItem(val){
+      console.log(val)
+    },
     doScroll: function() {
         var self = this;
         var scrollHeight = 100;
