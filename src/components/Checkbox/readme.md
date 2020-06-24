@@ -23,8 +23,8 @@
     <gt-checkbox label="item2" name="helloworld2" :all='allFlag' @input="$_checkedItem"> helloworld2 </gt-checkbox>
     <gt-checkbox label="item3" name="helloworld3" :all='allFlag' @input="$_checkedItem"> helloworld3 </gt-checkbox>
     <div style="margin-top:30px">
-      <gt-button indicator="danger"  @click="()=>{this.allFlag = 'A'}" style="margin-right:20px">모두 체크</gt-button>
-      <gt-button indicator="primary" @click="()=>{this.allFlag = 'N'}">모두 해제</gt-button>
+      <gt-button indicator="danger"  @click="$_checkAll('A')" style="margin-right:20px">모두 체크</gt-button>
+      <gt-button indicator="primary" @click="$_checkAll('N')">모두 해제</gt-button>
     </div>
   </template>
 </gt-panel>
