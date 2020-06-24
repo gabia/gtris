@@ -8,6 +8,7 @@ import gtpagination from "./components/Pagination/Pagination.vue"
 import gtpaginationscroll from "./components/Pagination/PaginationInfinite.js"
 import gtModal from "./components/Modal/Modal.vue"
 import gtTab from "./components/Tab/Tab.vue"
+import gtTabItem from './components/Tab/TabItem'
 import EventMixin from './components/Mixins/EventMixin.js'
 import '@/assets/sass/gtris.scss';
 
@@ -22,6 +23,7 @@ const install = (Vue) => {
   Vue.component(gttoast.name, gttoast)  //! 사용성 테스트 필요  
   Vue.component(gtModal.name, gtModal),
   Vue.component(gtTab.name, gtTab),
+  Vue.component(gtTabItem.name, gtTabItem),
   Vue.mixin(EventMixin)
 }
 
