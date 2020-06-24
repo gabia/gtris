@@ -5073,6 +5073,79 @@ var Tab_component = normalizeComponent(
 )
 
 /* harmony default export */ var Tab = (Tab_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"3e6d9548-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tab/TabItem.vue?vue&type=template&id=24900507&
+var TabItemvue_type_template_id_24900507_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.isActive),expression:"isActive"}],staticClass:"gt-tab-item",class:_vm.customClass},[_vm._t("default")],2)}
+var TabItemvue_type_template_id_24900507_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/Tab/TabItem.vue?vue&type=template&id=24900507&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tab/TabItem.vue?vue&type=script&lang=js&
+
+
+
+
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var TabItemvue_type_script_lang_js_ = ({
+  name: "gt-tab-item",
+  data: function data() {
+    return {
+      tabItemName: this.name || "gt-tab-item-".concat(Math.random().toString(36).substr(2, 8)) // props로 name을 지정하지 않은 경우 랜덤 생성
+
+    };
+  },
+  props: {
+    name: {
+      type: [String, Number],
+      required: false,
+      default: null
+    },
+    label: {
+      type: [String, Number],
+      required: true
+    },
+    customClass: {
+      type: String,
+      required: false,
+      default: null
+    }
+  },
+  computed: {
+    isActive: function isActive() {
+      return this.$parent.activeItem === this.tabItemName;
+    }
+  },
+  updated: function updated() {
+    this.$parent.$emit('gt::tab-nav-update');
+  }
+});
+// CONCATENATED MODULE: ./src/components/Tab/TabItem.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Tab_TabItemvue_type_script_lang_js_ = (TabItemvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/Tab/TabItem.vue
+
+
+
+
+
+/* normalize component */
+
+var TabItem_component = normalizeComponent(
+  Tab_TabItemvue_type_script_lang_js_,
+  TabItemvue_type_template_id_24900507_render,
+  TabItemvue_type_template_id_24900507_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var TabItem = (TabItem_component.exports);
 // CONCATENATED MODULE: ./src/components/Mixins/EventMixin.js
 var EventMixin = {
   methods: {
@@ -5081,6 +5154,12 @@ var EventMixin = {
     },
     openAllCollapseItems: function openAllCollapseItems(targetName) {
       this.$eventHub.$emit("gt::openAll::collapse-".concat(targetName));
+    },
+    closeModal: function closeModal(targetName) {
+      this.$eventHub.$emit("gt::closed::modal-".concat(targetName), targetName);
+    },
+    openModal: function openModal(targetName) {
+      this.$eventHub.$emit("gt::opened::modal-".concat(targetName), targetName);
     },
     activateTabItem: function activateTabItem(targetName) {
       this.$eventHub.$emit('gt::activate::tab-item', targetName);
@@ -5106,6 +5185,7 @@ var gtris = __webpack_require__("f0d9");
 
 
 
+
 var src_install = function install(Vue) {
   Vue.component(Button_button.name, Button_button), Vue.component(Collapse.name, Collapse);
   Vue.component(CollapseItem.name, CollapseItem);
@@ -5115,7 +5195,7 @@ var src_install = function install(Vue) {
   Vue.component(Input.name, Input);
   Vue.component(toast.name, toast); //! 사용성 테스트 필요  
 
-  Vue.component(Modal.name, Modal), Vue.component(Tab.name, Tab), Vue.mixin(Mixins_EventMixin);
+  Vue.component(Modal.name, Modal), Vue.component(Tab.name, Tab), Vue.component(TabItem.name, TabItem), Vue.mixin(Mixins_EventMixin);
 }; // auto install if used in browser
 
 
