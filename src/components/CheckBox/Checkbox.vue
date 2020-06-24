@@ -20,7 +20,7 @@
       <span class="label"><slot></slot></span>
     </div>
   </label>
-</template>
+</template> 
 
 <script>
 export default {
