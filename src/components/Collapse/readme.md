@@ -251,8 +251,8 @@
 <gt-panel>
   <template #title>Open/Close all</template>
   <template #box>
-    <gt-button indicator="danger" invert="true" @click="openAllCollapseItems('myCollapse')">모두 열기</gt-button>
-    <gt-button indicator="danger" invert="true" @click="closeAllCollapseItems('myCollapse')">모두 닫기</gt-button>
+    <gt-button indicator="primary" @click="openAllCollapseItems('myCollapse')">모두 열기</gt-button>
+    <gt-button indicator="primary" @click="closeAllCollapseItems('myCollapse')">모두 닫기</gt-button>
     <br><br>
     <gt-collapse name="myCollapse">
       <gt-collapse-item>
@@ -264,6 +264,10 @@
         <template #content>위에도 보고, 시와 까닭입니다. 책상을 이름자 하나에 불러 가득 까닭입니다. 별 같이 옥 않은 둘 노루, 봅니다.</template>
       </gt-collapse-item>
     </gt-collapse>
+  </template>
+  <template #text>
+    openAllCollapseItems(collapseName) 내장함수로 다른 컴포넌트에서도 접근하여 모든 아이템을 열 수 있습니다.<br>
+    closeAllCollapseItems(collapseName) 내장함수로 다른 컴포넌트에서도 접근하여 모든 아이템을 닫을 수 있습니다.
   </template>
 </gt-panel>
 
@@ -296,3 +300,10 @@
 | customClass | String | null | 사용자화를 위한 클래스명. |
 | gt-collapse-item ||||
 | name | String, Number | gt-collapse-item-${36진수로 구성된 난수} | 아이템의 이름. 중복되지 않는 유일한 값.|
+
+<!--split:methods-->
+
+| NAME | DESCRIPTION |
+|--|--|
+| openAllCollapseItems(collapseName) | 호출 시 매개변수에 매칭되는 이름의 하위 아이템이 모두 열립니다. |
+| closeAllCollapseItems(collapseName) | 호출 시 매개변수에 매칭되는 이름의 하위 아이템이 모두 닫힙니다. |

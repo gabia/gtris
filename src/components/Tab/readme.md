@@ -63,7 +63,7 @@
     </gt-tab>
   </template>
   <template #text>
-    activateTabItem(tabItemName) 메소드로 다른 컴포넌트에서도 접근하여 특정 탭을 활성화 할 수 있습니다.
+    activateTabItem(tabItemName) 내장함수로 다른 컴포넌트에서도 접근하여 특정 탭을 활성화 할 수 있습니다.
   </template>
 </gt-panel>
 
@@ -87,3 +87,9 @@
 | name | String, Number | gt-tab-item-${36진수로 구성된 난수} | 아이템의 이름. 중복되지 않는 유일한 값.|
 | label | String, Number | 필수값 | 각 아이템에 매칭되는 nav의 이름.|
 | customClass | String | null | 사용자화를 위한 클래스명. |
+
+<!--split:methods-->
+
+| NAME | DESCRIPTION |
+|--|--|
+| activateTabItem(tabItemName) | 호출 시 매개변수에 매칭되는 이름의 탭 아이템을 활성화 합니다. |
