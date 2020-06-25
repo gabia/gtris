@@ -8,7 +8,7 @@ import gtpagination from "./components/Pagination/Pagination.vue"
 import gtpaginationscroll from "./components/Pagination/PaginationInfinite.js"
 import gtModal from "./components/Modal/Modal.vue"
 import gtTab from "./components/Tab/Tab.vue"
-import gtTabItem from './components/Tab/TabItem'
+import gtTabItem from './components/Tab/TabItem.vue'
 import gtCheckbox from "./components/Checkbox/Checkbox.vue"
 import EventMixin from './components/Mixins/EventMixin.js'
 import '@/assets/sass/gtris.scss';
