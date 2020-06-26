@@ -7,9 +7,7 @@
   <template #title>Basic</template>
   <template #box>
     <gt-tab>
-      <gt-tab-item label="사과"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
-      <gt-tab-item label="복숭아"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
-      <gt-tab-item label="아보카도"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
+      <gt-tab-item label="사과"><div>🍏🍏🍏🍏🍏</div></gt-tab-item><gt-tab-item label="복숭아"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item><gt-tab-item label="아보카도"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
     </gt-tab>
   </template>
   <template #text>
