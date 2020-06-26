@@ -7,7 +7,9 @@
   <template #title>Basic</template>
   <template #box>
     <gt-tab>
-      <gt-tab-item label="사과"><div>🍏🍏🍏🍏🍏</div></gt-tab-item><gt-tab-item label="복숭아"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item><gt-tab-item label="아보카도"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
+      <gt-tab-item label="사과"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
+      <gt-tab-item label="복숭아"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
+      <gt-tab-item label="아보카도"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
     </gt-tab>
   </template>
   <template #text>
@@ -29,9 +31,9 @@
   <template #title>Activate</template>
   <template #box>
     <gt-tab init="peach">
-      <gt-tab-item label="사과" name="apple"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
-      <gt-tab-item label="복숭아" name="peach"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
-      <gt-tab-item label="아보카도" name="avocado"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
+      <gt-tab-item label="사과" name="apple_1"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
+      <gt-tab-item label="복숭아" name="peach_1"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
+      <gt-tab-item label="아보카도" name="avocado_1"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
     </gt-tab>
   </template>
   <template #text>
@@ -42,9 +44,9 @@
 <!--split:Tab_2:prismEditor-->
 
 <gt-tab init="peach">
-  <gt-tab-item label="사과" name="apple"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
-  <gt-tab-item label="복숭아" name="peach"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
-  <gt-tab-item label="아보카도" name="avocado"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
+  <gt-tab-item label="사과" name="apple_2"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
+  <gt-tab-item label="복숭아" name="peach_2"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
+  <gt-tab-item label="아보카도" name="avocado_2"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
 </gt-tab>
 
 <!--split:Tab_3:sourceCode-->
@@ -52,11 +54,11 @@
 <gt-panel>
   <template #title>Method</template>
   <template #box>
-    <gt-button indicator="primary" @click="activateTabItem('avocado')">아보카도 보기</gt-button>
+    <gt-button indicator="primary" @click="activateTabItem('avocado_3')">아보카도 보기</gt-button>
     <gt-tab>
-      <gt-tab-item label="사과" name="apple"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
-      <gt-tab-item label="복숭아" name="peach"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
-      <gt-tab-item label="아보카도" name="avocado"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
+      <gt-tab-item label="사과" name="apple_3"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
+      <gt-tab-item label="복숭아" name="peach_3"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
+      <gt-tab-item label="아보카도" name="avocado_3"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
     </gt-tab>
   </template>
   <template #text>
