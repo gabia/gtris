@@ -23,7 +23,6 @@ export default {
     }
   },
   updated() {
-    console.log('tabItem updated');
     this.$parent.$emit('gt::tab-item-update');
   }
 }
