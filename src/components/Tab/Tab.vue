@@ -35,17 +35,19 @@ export default {
     this.$eventHub.$on('gt::activate::tab-item', payload => {
       this.activeItem = payload;
     });
-    this.$on('gt::tab-nav-update', this.$_setTabNav);
+    this.$on('gt::tab-item-update', this.$_setTabNav);
   },
   methods: {
     $_setTabNav() {
       if (this.$slots.default) {
         this.navData = [];
         this.$slots.default.forEach(tabItem => {
-          this.navData.push({
-            'label': tabItem.componentInstance.label,
-            'name': tabItem.componentInstance.tabItemName
-          });
+          if(tabItem.componentInstance) {
+            this.navData.push({
+              'label': tabItem.componentInstance.label,
+              'name': tabItem.componentInstance.tabItemName
+            });
+          }
         });
       }
     },

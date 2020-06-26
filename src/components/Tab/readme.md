@@ -7,9 +7,7 @@
   <template #title>Basic</template>
   <template #box>
     <gt-tab>
-      <gt-tab-item label="사과"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
-      <gt-tab-item label="복숭아"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
-      <gt-tab-item label="아보카도"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
+      <gt-tab-item label="사과"><div>🍏🍏🍏🍏🍏</div></gt-tab-item><gt-tab-item label="복숭아"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item><gt-tab-item label="아보카도"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
     </gt-tab>
   </template>
   <template #text>
@@ -43,8 +41,7 @@
 
 <!--split:Tab_2:prismEditor-->
 
-<gt-button indicator="primary" @click="activateTabItem('avocado')">아보카도 보기</gt-button>
-<gt-tab>
+<gt-tab init="peach">
   <gt-tab-item label="사과" name="apple"><div>🍏🍏🍏🍏🍏</div></gt-tab-item>
   <gt-tab-item label="복숭아" name="peach"><div>🍑🍑🍑🍑🍑🍑</div></gt-tab-item>
   <gt-tab-item label="아보카도" name="avocado"><div>🥑🥑🥑🥑🥑🥑</div></gt-tab-item>
