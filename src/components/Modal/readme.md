@@ -129,7 +129,7 @@
   <template #title>ClickBackdrop</template>
   <template #box>
     <gt-button @click="openModal('clickBackdropModal')" indicator="primary">Open Modal</gt-button>
-    <gt-modal name="clickBackdropModal">
+    <gt-modal name="clickBackdropModal" :closeOnClickBackdrop="true">
       <template #head>제목없음</template>
       <template #body>
         청춘이 이름자를 시와 같이 피어나듯이 그러나 시인의 없이 있습니다. 새겨지는 풀이 애기 묻힌 우는 같이 까닭입니다. 덮어 그리워 묻힌 듯합니다. 아침이 이름자를 사람들의 별빛이 경, 내 파란 아무 있습니다. 하나에 풀이 패, 거외다. 하나에 내 않은 하나의 무엇인지 시인의 북간도에 이름과, 봅니다. 어머님, 하나에 헤일 까닭입니다. 그리워 나의 프랑시스 없이 나는 시와 있습니다. 남은 가난한 마리아 동경과 이제 까닭입니다. 별빛이 파란 이런 별에도 때 한 있습니다.
@@ -144,7 +144,7 @@
 <!--split:Modal_4:prismEditor-->
 
 <gt-button @click="openModal('clickBackdropModal')" indicator="primary">Open Modal</gt-button>
-<gt-modal name="clickBackdropModal">
+<gt-modal name="clickBackdropModal" :closeOnClickBackdrop="true">
   <template #head>제목없음</template>
   <template #body>
     청춘이 이름자를 시와 같이 피어나듯이 그러나 시인의 없이 있습니다. 새겨지는 풀이 애기 묻힌 우는 같이 까닭입니다. 덮어 그리워 묻힌 듯합니다. 아침이 이름자를 사람들의 별빛이 경, 내 파란 아무 있습니다. 하나에 풀이 패, 거외다. 하나에 내 않은 하나의 무엇인지 시인의 북간도에 이름과, 봅니다. 어머님, 하나에 헤일 까닭입니다. 그리워 나의 프랑시스 없이 나는 시와 있습니다. 남은 가난한 마리아 동경과 이제 까닭입니다. 별빛이 파란 이런 별에도 때 한 있습니다.
