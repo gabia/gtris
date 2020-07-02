@@ -1,5 +1,5 @@
 {
-  "name": "@gtris/vue",
+  "name": "gtris",
   "version": "0.1.4",
   "main": "dist/gtris3.common.js",
   "scripts": {
@@ -27,6 +27,6 @@
     "last 2 versions"
   ],
   "publishConfig": {
-    "registry": "http://repo.gabia.com/repository/npm-repository/"
+    "registry": "https://github.com/gabia/gtris.git"
   }
 }
