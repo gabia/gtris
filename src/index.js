@@ -3,7 +3,7 @@ import gtcollapse from './components/Collapse/Collapse.vue'
 import gtcollapseitem from './components/Collapse/CollapseItem.vue'
 import gttooltip from "./components/Tooltip/tooltip.vue"
 import gtinput from "./components/Input/Input.vue"
-import gttoast from "./components/Toast/toast.vue"
+import gttoast from "./components/Toast/Toast.vue"
 import gtpagination from "./components/Pagination/Pagination.vue"
 import gtpaginationscroll from "./components/Pagination/PaginationInfinite.js"
 import gtModal from "./components/Modal/Modal.vue"
