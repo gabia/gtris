@@ -6,7 +6,7 @@
 <gt-panel>
   <template #title>Basic</template>
   <template #box>
-    <gt-button @click="openModal('basicModal')" indicator="primary">Open Modal</gt-button>
+    <gt-button @click="openModal('basicModal')" indicator="primary">모달 열기</gt-button>
     <gt-modal name="basicModal">
       <template #head>제목없음</template>
       <template #body>
@@ -19,6 +19,7 @@
     </gt-modal>
   </template>
   <template #text>
+    기본 형태의 모달입니다.<br>
     openModal(modalName) 내장함수로 다른 컴포넌트에서도 접근하여 모달을 열 수 있습니다.<br>
     closeModal(modalName) 내장함수로 다른 컴포넌트에서도 접근하여 모달을 닫을 수 있습니다.
   </template>
@@ -26,7 +27,7 @@
 
 <!--split:Modal_1:prismEditor-->
 
-<gt-button @click="openModal('basicModal')" indicator="primary">Open Modal</gt-button>
+<gt-button @click="openModal('basicModal')" indicator="primary">모달 열기</gt-button>
 <gt-modal name="basicModal">
   <template #head>제목없음</template>
   <template #body>
@@ -43,7 +44,7 @@
 <gt-panel>
   <template #title>Untitled</template>
   <template #box>
-    <gt-button @click="openModal('untitledModal')" indicator="primary">Open Modal</gt-button>
+    <gt-button @click="openModal('untitledModal')" indicator="primary">모달 열기</gt-button>
     <gt-modal name="untitledModal">
       <template #body>
         청춘이 이름자를 시와 같이 피어나듯이 그러나 시인의 없이 있습니다. 새겨지는 풀이 애기 묻힌 우는 같이 까닭입니다. 덮어 그리워 묻힌 듯합니다. 아침이 이름자를 사람들의 별빛이 경, 내 파란 아무 있습니다. 하나에 풀이 패, 거외다. 하나에 내 않은 하나의 무엇인지 시인의 북간도에 이름과, 봅니다. 어머님, 하나에 헤일 까닭입니다. 그리워 나의 프랑시스 없이 나는 시와 있습니다. 남은 가난한 마리아 동경과 이제 까닭입니다. 별빛이 파란 이런 별에도 때 한 있습니다.<br>
@@ -54,11 +55,14 @@
       </template>
     </gt-modal>
   </template>
+  <template #text>
+    제목이 없는 형태의 모달입니다. 단순히 제목 부분을 입력하지 않으면 제목 영역이 노출되지 않습니다.
+  </template>
 </gt-panel>
 
 <!--split:Modal_2:prismEditor-->
 
-<gt-button @click="openModal('untitledModal')" indicator="primary">Open Modal</gt-button>
+<gt-button @click="openModal('untitledModal')" indicator="primary">모달 열기</gt-button>
 <gt-modal name="untitledModal">
   <template #body>
     청춘이 이름자를 시와 같이 피어나듯이 그러나 시인의 없이 있습니다. 새겨지는 풀이 애기 묻힌 우는 같이 까닭입니다. 덮어 그리워 묻힌 듯합니다. 아침이 이름자를 사람들의 별빛이 경, 내 파란 아무 있습니다. 하나에 풀이 패, 거외다. 하나에 내 않은 하나의 무엇인지 시인의 북간도에 이름과, 봅니다. 어머님, 하나에 헤일 까닭입니다. 그리워 나의 프랑시스 없이 나는 시와 있습니다. 남은 가난한 마리아 동경과 이제 까닭입니다. 별빛이 파란 이런 별에도 때 한 있습니다.<br>
@@ -74,7 +78,7 @@
 <gt-panel>
   <template #title>Nested</template>
   <template #box>
-    <gt-button @click="openModal('outerModal')" indicator="primary">Open Modal</gt-button>
+    <gt-button @click="openModal('outerModal')" indicator="primary">모달 열기</gt-button>
     <gt-modal name="outerModal">
       <template #head>제목없음</template>
       <template #body>
@@ -83,7 +87,7 @@
       </template>
       <template #foot>
         <gt-button @click="closeModal('outerModal')" indicator="primary">확인</gt-button>
-        <gt-button @click="openModal('innerModal')" indicator="primary" invert="true">Open innerModal</gt-button>
+        <gt-button @click="openModal('innerModal')" indicator="primary" invert="true">모달 또 열기</gt-button>
       </template>
     </gt-modal>
     <gt-modal name="innerModal" width="400px"> 
@@ -95,11 +99,14 @@
       </template>
     </gt-modal>
   </template>
+  <template #text>
+    모달 내부에서도 다른 모달을 중첩하여 열 수 있습니다.
+  </template>
 </gt-panel>
 
 <!--split:Modal_3:prismEditor-->
 
-<gt-button @click="openModal('outerModal')" indicator="primary">Open Modal</gt-button>
+<gt-button @click="openModal('outerModal')" indicator="primary">모달 열기</gt-button>
 <!-- outer modal -->
 <gt-modal name="outerModal">
   <template #head>제목없음</template>
@@ -109,7 +116,7 @@
   </template>
   <template #foot>
     <gt-button @click="closeModal('outerModal')" indicator="primary">확인</gt-button>
-    <gt-button @click="openModal('innerModal')" indicator="primary" invert="true">Open innerModal</gt-button>
+    <gt-button @click="openModal('innerModal')" indicator="primary" invert="true">모달 또 열기</gt-button>
   </template>
 </gt-modal>
 <!-- inner modal -->
@@ -128,7 +135,7 @@
 <gt-panel>
   <template #title>ClickBackdrop</template>
   <template #box>
-    <gt-button @click="openModal('clickBackdropModal')" indicator="primary">Open Modal</gt-button>
+    <gt-button @click="openModal('clickBackdropModal')" indicator="primary">모달 열기</gt-button>
     <gt-modal name="clickBackdropModal" :closeOnClickBackdrop="true">
       <template #head>제목없음</template>
       <template #body>
@@ -139,11 +146,14 @@
       </template>
     </gt-modal>
   </template>
+  <template #text>
+    closeOnClickBackdrop 옵션이 true인 경우, 배경을 클릭했을 때 모달을 닫을 수 있습니다.
+  </template>
 </gt-panel>
 
 <!--split:Modal_4:prismEditor-->
 
-<gt-button @click="openModal('clickBackdropModal')" indicator="primary">Open Modal</gt-button>
+<gt-button @click="openModal('clickBackdropModal')" indicator="primary">모달 열기</gt-button>
 <gt-modal name="clickBackdropModal" :closeOnClickBackdrop="true">
   <template #head>제목없음</template>
   <template #body>
