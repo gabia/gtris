@@ -10,20 +10,17 @@
       <gt-button indicator="primary" >bottom</gt-button>
     </gt-tooltip>
     <gt-tooltip content="안녕하세요" placement="top"  style="margin-right:30px;"  >
-      <gt-button indicator="secondary" >top</gt-button>
+      <gt-button indicator="primary" >top</gt-button>
     </gt-tooltip>
     <gt-tooltip content="안녕하세요" placement="left"  style="margin-right:30px;" >
-        <gt-button indicator="danger" >left</gt-button>
+        <gt-button indicator="primary" >left</gt-button>
     </gt-tooltip>
     <gt-tooltip content="안녕하세요" placement="right"   style="margin-right:30px;"  >
-      <gt-button type="icon" icon="lock" />
+      <gt-button indicator="primary" >right</gt-button>
     </gt-tooltip>
-    <gt-tooltip v-bind="{ placement: 'bottom', content: 'userStyle' , gtrisColor:{color:'white', background:'primary'}  }" style="margin-right:30px;"  >
-      <gt-button indicator="secondary" >userStyle</gt-button>
-    </gt-tooltip>
-    <gt-tooltip content="안녕하세요" placement="bottom" color="aquamarine" fontSize="1.1em" background="red"  style="margin-right:30px;"  >
-      <gt-button indicator="secondary" >userStyle</gt-button>
-    </gt-tooltip>   
+    <gt-tooltip v-bind="{ placement: 'bottom', content: 'gtris color system에 정의된 색상을 이용해 사용자화 할 수 있습니다.' , gtrisColor:{color:'white', background:'warning'}  }" style="margin-right:30px;"  >
+      <gt-button indicator="secondary" >customized</gt-button>
+    </gt-tooltip> 
   </template>
 </gt-panel>
 
@@ -33,20 +30,17 @@
   <gt-button indicator="primary" >bottom</gt-button>
 </gt-tooltip>
 <gt-tooltip content="안녕하세요" placement="top"  style="margin-right:30px;"  >
-  <gt-button indicator="secondary" >top</gt-button>
+  <gt-button indicator="primary" >top</gt-button>
 </gt-tooltip>
 <gt-tooltip content="안녕하세요" placement="left"  style="margin-right:30px;" >
-    <gt-button indicator="danger" >left</gt-button>
+    <gt-button indicator="primary" >left</gt-button>
 </gt-tooltip>
 <gt-tooltip content="안녕하세요" placement="right"   style="margin-right:30px;"  >
-  <gt-button type="icon" icon="lock" />
+  <gt-button indicator="primary" >right</gt-button>
 </gt-tooltip>
-<gt-tooltip v-bind="{ placement: 'bottom', content: 'userStyle' , gtrisColor:{color:'white', background:'primary'}  }" style="margin-right:30px;"  >
-  <gt-button indicator="secondary" >userStyle</gt-button>
+<gt-tooltip v-bind="{ placement: 'bottom', content: 'gtris color system에 정의된 색상을 이용해 사용자화 할 수 있습니다.' , gtrisColor:{color:'white', background:'warning'}  }" style="margin-right:30px;"  >
+  <gt-button indicator="secondary" >customized</gt-button>
 </gt-tooltip>
-<gt-tooltip content="안녕하세요" placement="bottom" color="aquamarine" fontSize="1.1em" background="red"  style="margin-right:30px;"  >
-  <gt-button indicator="secondary" >userStyle</gt-button>
-</gt-tooltip>    
 
 <!--split:props-->
 
