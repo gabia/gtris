@@ -1,30 +1,30 @@
 <!--split:basic-->
-[ { "componentName":"Checkbox_1", "menuName":"basic" , "sourceCode":"" , "prismEditor" : "" },{ "componentName":"Checkbox_2", "menuName":"checkall" , "sourceCode":"" , "prismEditor" : "" }]
+[ { "componentName":"Checkbox_1", "menuName":"Basic" , "sourceCode":"" , "prismEditor" : "" },{ "componentName":"Checkbox_2", "menuName":"CheckAll" , "sourceCode":"" , "prismEditor" : "" }]
 
 <!--split:Checkbox_1:sourceCode-->
 
 <gt-panel>
-  <template #title>basic</template>
+  <template #title>Basic</template>
   <template #box>
-    <gt-checkbox label="item" name="helloworld" @input="$_checkedItem" :checked='false' :disabled='false' > test </gt-checkbox>
+    <gt-checkbox label="item" name="helloworld" @input="$_checkedItem" :checked='false' :disabled='false' > basic </gt-checkbox>
   </template>
 </gt-panel>
 
 <!--split:Checkbox_1:prismEditor-->
 
-<gt-checkbox label="item" name="helloworld" @input="$_checkedItem" :checked='false' :disabled='false' > test </gt-checkbox> 
+<gt-checkbox label="item" name="helloworld" @input="$_checkedItem" :checked='false' :disabled='false' > basic </gt-checkbox> 
 
 <!--split:Checkbox_2:sourceCode-->
 
 <gt-panel>
-  <template #title>basic</template>
+  <template #title>CheckAll</template>
   <template #box>
-    <gt-checkbox label="item1" name="helloworld1" :all='allFlag' @input="$_checkedItem"> helloworld1 </gt-checkbox>
-    <gt-checkbox label="item2" name="helloworld2" :all='allFlag' @input="$_checkedItem"> helloworld2 </gt-checkbox>
-    <gt-checkbox label="item3" name="helloworld3" :all='allFlag' @input="$_checkedItem"> helloworld3 </gt-checkbox>
+    <gt-checkbox label="item1" name="helloworld1" :all='allFlag' @input="$_checkedItem" style="margin-right:10px;"> helloworld1 </gt-checkbox>
+    <gt-checkbox label="item2" name="helloworld2" :all='allFlag' @input="$_checkedItem" style="margin-right:10px;"> helloworld2 </gt-checkbox>
+    <gt-checkbox label="item3" name="helloworld3" :all='allFlag' @input="$_checkedItem" style="margin-right:10px;"> helloworld3 </gt-checkbox>
     <div style="margin-top:30px">
-      <gt-button indicator="danger"  @click="$_checkAll('A')" style="margin-right:20px">모두 체크</gt-button>
-      <gt-button indicator="primary" @click="$_checkAll('N')">모두 해제</gt-button>
+      <gt-button indicator="primary"  @click="$_checkAll('A')" style="margin-right:20px">모두 체크</gt-button>
+      <gt-button indicator="secondary" @click="$_checkAll('N')">모두 해제</gt-button>
     </div>
   </template>
 </gt-panel>
@@ -35,8 +35,8 @@
 <gt-checkbox label="item2" name="helloworld2" :all='allFlag' @input="$_checkedItem"> helloworld2 </gt-checkbox>
 <gt-checkbox label="item3" name="helloworld3" :all='allFlag' @input="$_checkedItem"> helloworld3 </gt-checkbox>
 <div style="margin-top:30px">
-  <gt-button indicator="danger"  @click="()=>{this.allFlag = 'A'}" style="margin-right:20px">모두 체크</gt-button>
-  <gt-button indicator="primary" @click="()=>{this.allFlag = 'N'}">모두 해제</gt-button>
+  <gt-button indicator="primary"  @click="()=>{this.allFlag = 'A'}" style="margin-right:20px">모두 체크</gt-button>
+  <gt-button indicator="secondary" @click="()=>{this.allFlag = 'N'}">모두 해제</gt-button>
 </div>
 
 <!--split:props-->
