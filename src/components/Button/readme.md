@@ -1,10 +1,10 @@
 <!--split:basic-->
-[ { "componentName":"Button_1", "menuName":"basic" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Button_2", "menuName":"Colored" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Button_3", "menuName":"Icon" , "sourceCode":"" , "prismEditor" : "" }]
+[ { "componentName":"Button_1", "menuName":"Basic" , "sourceCode":"" , "prismEditor" : "" }, { "componentName":"Button_2", "menuName":"Colored" , "sourceCode":"" , "prismEditor" : "" } ,{ "componentName":"Button_3", "menuName":"Icon" , "sourceCode":"" , "prismEditor" : "" }]
 
 <!--split:Button_1:sourceCode-->
 
 <gt-panel>
-  <template #title>Default</template>
+  <template #title>Basic</template>
   <template #box>
     <gt-button>버튼(default)</gt-button>
     <gt-button :disabled="true">버튼(disabled)</gt-button>
@@ -22,21 +22,21 @@
 <gt-panel>
   <template #title>Colored</template>
   <template #box>
-    <gt-button indicator="primary" style="margin-right:10px;">버튼(Primary)</gt-button>
-    <gt-button indicator="secondary" style="margin-right:10px;">버튼(Secondary)</gt-button>
-    <gt-button indicator="danger" style="margin-right:10px;">버튼(Danger)</gt-button>
-    <gt-button indicator="primary" style="margin-right:10px;" :disabled="true">
+    <gt-button indicator="primary" style="margin-right:10px;margin-bottom:10px;">버튼(Primary)</gt-button>
+    <gt-button indicator="secondary" style="margin-right:10px;margin-bottom:10px;">버튼(Secondary)</gt-button>
+    <gt-button indicator="danger" style="margin-right:10px;margin-bottom:10px;">버튼(Danger)</gt-button>
+    <gt-button indicator="primary" style="margin-right:10px;margin-bottom:10px;" :disabled="true">
       버튼(Primary)
     </gt-button>
-    <gt-button indicator="secondary" style="margin-right:10px;" :disabled="true">
+    <gt-button indicator="secondary" style="margin-right:10px;margin-bottom:10px;" :disabled="true">
       버튼(Secondary)
     </gt-button>
-    <gt-button indicator="danger" style="margin-right:10px;" :disabled="true">
+    <gt-button indicator="danger" style="margin-right:10px;margin-bottom:10px;" :disabled="true">
       버튼(Danger)
     </gt-button>
-    <gt-button indicator="primary" invert="true" style="margin-right:10px;">버튼(Primary)</gt-button>
-    <gt-button indicator="secondary" invert="true" style="margin-right:10px;">버튼(Secondary)</gt-button>
-    <gt-button indicator="danger" invert="true" style="margin-right:10px;">버튼(Danger)</gt-button>
+    <gt-button indicator="primary" invert="true" style="margin-right:10px;margin-bottom:10px;">버튼(Primary)</gt-button>
+    <gt-button indicator="secondary" invert="true" style="margin-right:10px;margin-bottom:10px;">버튼(Secondary)</gt-button>
+    <gt-button indicator="danger" invert="true" style="margin-right:10px;margin-bottom:10px;">버튼(Danger)</gt-button>
   </template>
 </gt-panel>
 
@@ -58,7 +58,7 @@
 <!--split:Button_3:sourceCode-->
 
 <gt-panel>
-  <template #title>아이콘 버튼</template>
+  <template #title>Icon</template>
   <template #box>
     <gt-button type="icon" icon="trash" ></gt-button>
     <gt-button type="icon" icon="check" ></gt-button>
