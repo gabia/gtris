@@ -17,6 +17,9 @@
       </gt-collapse-item>
     </gt-collapse>
   </template>
+  <template #text>
+    기본 형태의 Collapse입니다.
+  </template>
 </gt-panel>
 
 <!--split:Collapse_1:prismEditor-->
@@ -49,6 +52,9 @@
       </gt-collapse-item>
     </gt-collapse>
   </template>
+  <template #text>
+    초기에 활성화하고 싶은 아이템이 있다면 init값에 그 아이템의 name을 지정하면 됩니다.
+  </template>
 </gt-panel>
 
 <!--split:Collapse_2:prismEditor-->
@@ -80,6 +86,9 @@
       </gt-collapse-item>
     </gt-collapse>
   </template>
+  <template #text>
+    accordion 옵션이 있는 경우, 하나의 아이템을 클릭하여 열면 다른 아이템들을 모두 닫습니다.
+  </template>
 </gt-panel>
 
 <!--split:Collapse_3:prismEditor-->
@@ -110,6 +119,10 @@
         <template #content>위에도 보고, 시와 까닭입니다. 책상을 이름자 하나에 불러 가득 까닭입니다. 별 같이 옥 않은 둘 노루, 봅니다.</template>
       </gt-collapse-item>
     </gt-collapse>
+  </template>
+  <template #text>
+    아이템이 열리거나 닫혔을 때 실행하고 싶은 함수가 있다면, opened/closed로 함수를 넘겨주면 됩니다.<br>
+    아이템이 열리거나 닫히면 그 아이템의 name을 넘겨받을 수 있습니다.
   </template>
 </gt-panel>
 
@@ -169,6 +182,9 @@
         </template>
       </gt-collapse-item> 
     </gt-collapse>
+  </template>
+  <template #text>
+    필요한 경우 중첩된 구조를 사용할 수 있습니다.
   </template>
 </gt-panel>
 
@@ -230,6 +246,9 @@
         <template #content>겨울이 새워 봄이 시인의 지나고 계십니다. 겨울이 밤을 남은 밤이 북간도에 거외다.</template>
       </gt-collapse-item>
     </gt-collapse>
+  </template>
+  <template #text>
+    아이콘의 위치는 기본적으로 오른쪽이지만, arrowPositionLeft 값을 true로 지정하면 왼쪽에 배치할 수 있습니다.
   </template>
 </gt-panel>
 
