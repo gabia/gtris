@@ -1,6 +1,6 @@
 {
   "name": "gtris",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/gtris3.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
