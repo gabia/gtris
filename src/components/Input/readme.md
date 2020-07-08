@@ -1,5 +1,5 @@
 <!--split:basic-->
-[ { "componentName":"Input_1", "menuName":"basic" , "sourceCode":"" , "prismEditor" : "" }]
+[ { "componentName":"Input_1", "menuName":"Basic" , "sourceCode":"" , "prismEditor" : "" }]
 
 
 <!--split:Input_1:sourceCode-->
