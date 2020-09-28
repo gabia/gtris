@@ -1,12 +1,12 @@
 <template>
-  <div class="gt-pagination">
-    <button type="button" class="gt-pagination-nav" :disabled="enabledPrev" :class="{'gt-disabled': enabledPrev}"  @click="setPageFirst()"><i class="gi gi-double-arrows-left"></i></button>
-    <button type="button" class="gt-pagination-nav" :disabled="enabledPrev"  :class="{'gt-disabled': enabledPrev}" @click="setPagePrev()"><i class="gi gi-short-arrow-left-alt"></i></button>
+  <div v-show="isVisible" class="gt-pagination" :class="[`gt-flex-${justify}`]">
+    <button type="button" class="gt-pagination-nav" :disabled="disabledPrev" :class="{'gt-disabled': disabledPrev}"  @click="setPageFirst"><i class="gi gi-double-arrows-left"></i></button>
+    <button type="button" class="gt-pagination-nav" :disabled="disabledPrev"  :class="{'gt-disabled': disabledPrev}" @click="setPagePrev"><i class="gi gi-short-arrow-left-alt"></i></button>
     <button type="button" class="gt-pagination-num" v-for="(p, index) in paginate" :key="index" :class="{'gt-active':p == current_page}" @click="setPage(p)">
         {{ p }}
     </button>
-    <button type="button" class="gt-pagination-nav" :disabled="enabledNext" :class="{'gt-disabled': enabledNext}"  @click="setPageNext()"><i class="gi gi-short-arrow-right-alt"></i></button>
-    <button type="button" class="gt-pagination-nav" :disabled="enabledNext" :class="{'gt-disabled': enabledNext}" @click="setPageEnd()"><i class="gi gi-double-arrows-right" /></button>
+    <button type="button" class="gt-pagination-nav" :disabled="disabledNext" :class="{'gt-disabled': disabledNext}"  @click="setPageNext"><i class="gi gi-short-arrow-right-alt"></i></button>
+    <button type="button" class="gt-pagination-nav" :disabled="disabledNext" :class="{'gt-disabled': disabledNext}" @click="setPageEnd"><i class="gi gi-double-arrows-right" /></button>
   </div>
 </template>
 
@@ -26,34 +26,37 @@ export default {
     last_page : {
       type: Number,
       default: 1,
+    },
+    justify : {
+      type: String,
+      default: 'center'
     }
   },
   computed: {
     paginate : function() {
       // 현재 페이지 번호 동기화
-      let number = [];
       let start = Math.floor((this.current_page - 1)/this.length)*this.length + 1;
       let end = start + this.length - 1;
       if(end > this.last_page) end = this.last_page;
-      for(var p = start; p <= end; p++){
-        number.push(p);
+      let pages = new Array(end - start + 1);
+      for(let i = 0; i < pages.length; i++){
+        pages[i] = start + i;
       }
-      return number;
+      return pages;
     },
-    enabledNext() {
-      if((this.current_page + 1) <= this.last_page) return false;
-      else return true;
+    disabledNext() {
+      return (this.current_page + 1) <= this.last_page ? false : true
     },
-    enabledPrev() {
-      if((this.current_page - 1) > 0) return false;
-      else return true;
+    disabledPrev() {
+      return (this.current_page - 1) > 0 ? false : true
     },
     isVisible(){
       return (this.last_page > 1) ? true : false;
     }
   },
   methods : {    
-    setPage(num) {      
+    setPage(num) {
+      console.log(num);
       if (num > this.last_page || num < 0) {
         throw(e) => {
           alert("잘못된 접근 : " + e);
@@ -64,52 +67,28 @@ export default {
         this.$emit('input', this.current_page); // 현재 페이지
       }
     },
-    setPageNext() {
-      if(this.enabledNext !== false || this.current_page === 0 ){
-        return;
-      }
-
-      let tmpNext = Math.ceil(this.current_page/ this.length) * this.length + 1 ; 
-      if (tmpNext < this.last_page  ){
-        this.setPage(tmpNext);
-      }else{
-        this.setPage(this.last_page);
-      }
+    setPageFirst() {
+      if(!this.disabledPrev) this.setPage(1);
     },
     setPagePrev() {
-      if(this.enabledPrev !== false || this.current_page === 0){
-        return;
-      }
-      let tmpPrev = (Math.ceil(this.current_page/ this.length) - 1 ) * this.length  ;
-      if( tmpPrev > 0 ) {	
-        this.setPage(tmpPrev);
-      }else{
-        this.setPage(1);
-      }
+      if(!this.disabledPrev) this.setPage(this.current_page - 1);
     },
-    setPageFirst() {
-      if((this.current_page - 1) > 0){
-        let _page = 1;
-        this.setPage(_page);
-      }
+    setPageNext() {
+      if(!this.disabledNext) this.setPage(this.current_page + 1);
     },
     setPageEnd() {
-      if((this.current_page + 1) <= this.last_page){
-        let _page = this.last_page;
-        this.setPage(_page);
-      }
+      if(!this.disabledNext) this.setPage(this.last_page);
     },
-    isActive(Number) {
-      if(this.current_page == Number) return true;
-      else return false;
-    }
+    // isActive(Number) {
+    //   if(this.current_page == Number) return true;
+    //   else return false;
+    // }
   }
 }
 </script>
 
 <style lang="scss" scoped>/* Pagination */
 .gt-pagination { display: flex; }
-
 .gt-pagination .gt-pagination-nav,
 .gt-pagination .gt-pagination-num { 
   display: inline-block;
@@ -128,14 +107,12 @@ export default {
   transition-duration: .1s;
   outline: 0;
 }
-
 .gt-pagination .gt-pagination-nav:hover,
 .gt-pagination .gt-pagination-num:hover {
   background: $pagination-bg-hover;
   border-color: $pagination-border-hover;
   color: $pagination-font-hover
 }
-
 .gt-pagination .gt-pagination-nav.gt-active,
 .gt-pagination .gt-pagination-num.gt-active {
   background: $pagination-bg-active;
@@ -143,13 +120,14 @@ export default {
   color: $pagination-font-active;
   pointer-events: none
 }
-
 .gt-pagination .gt-pagination-nav.gt-disabled,
 .gt-pagination .gt-pagination-num.gt-disabled {
   pointer-events: none;
   opacity: .5;
 }
-
+.gt-flex-left {
+  justify-content: flex-start;
+}
 .gt-flex-center {
   justify-content: center;
 }
