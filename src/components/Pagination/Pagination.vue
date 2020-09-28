@@ -56,7 +56,6 @@ export default {
   },
   methods : {    
     setPage(num) {
-      console.log(num);
       if (num > this.last_page || num < 0) {
         throw(e) => {
           alert("잘못된 접근 : " + e);
